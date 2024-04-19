@@ -1,0 +1,13 @@
+# blacklist
+*
+
+# track me
+!.gitignore
+
+# LocalMods
+!LocalMods/
+!LocalMods/*
+
+# ModLists
+!ModLists/
+!ModLists/*
