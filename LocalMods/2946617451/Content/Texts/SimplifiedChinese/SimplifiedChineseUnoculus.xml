@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Simplified Chinese" nowhitespace="true" translatedname="中文(简体)">
+  <submarine.name.unoculus>Unoculus</submarine.name.unoculus>
+  <submarine.description.unoculus>Unoculus是一种独一无二的潜水艇，配备有一个大型球形观察室在前部，先进的人工智能和最新的导航和监测技术，能够及早发现潜在的危险。基于Alterra Corporation ©的Cyclops结构，只要保持良好的运行状态，Unoculus就能满足您的所有需求。</submarine.description.unoculus>
+  <entityname.Aheadslowbutton>减速前进</entityname.Aheadslowbutton>
+  <entityname.AheadStandardbutton>标准速度前进</entityname.AheadStandardbutton>
+  <entityname.AheadFlankbutton>全速前进</entityname.AheadFlankbutton>
+  <entityname.Enginebutton>发动机功率</entityname.Enginebutton>
+  <entityname.Silentbutton>静音模式</entityname.Silentbutton>
+  <entityname.musiccontrol>音乐</entityname.musiccontrol>
+  <entityname.msgRadioChannel>此终端用于尚未生效的字幕系统。实际上，一切都准备就绪，但由于错误，目前还不可能实现（至少在所有语言中都是如此）。已报告了错误，因此需要等待下一个 Barotrauma 更新。感谢您使用 Unoculus。</entityname.msgRadioChannel>
+  <!-- <entityname.msgRadioChannel>欢迎使用字幕系统。请设置字幕传输的无线电频道。默认频道：2。</entityname.msgRadioChannel>-->
+  <!-- Subtitles section -->
+  <label.AheadFlank>前方侧翼，紧急速度。</label.AheadFlank>
+  <label.AheadSlow>前进缓慢。</label.AheadSlow>
+  <label.AheadStandard>前进标准。</label.AheadStandard>
+  <label.HullIntegrityLow>注意，船体完整性：低。</label.HullIntegrityLow>
+  <label.Decoy>部署诱饵。</label.Decoy>
+  <label.EmergencyPower>仅应急电力。氧气生产：离线。</label.EmergencyPower>
+  <label.SystemFailure>紧急，系统故障。</label.SystemFailure>
+  <label.EngineUp>引擎：启动中。</label.EngineUp>
+  <label.EngineDown>引擎：关机中。</label.EngineDown>
+  <label.ExternalHullDamage>检测到外部船体损伤。</label.ExternalHullDamage>
+  <label.FireExtinguished>火灾扑灭，启动空气净化器。</label.FireExtinguished>
+  <label.FireNeutralization>灭火系统：激活。</label.FireNeutralization>
+  <label.PowerLow>电力不足。</label.PowerLow>
+  <label.SilentRunning>准备进入悄无声息模式。</label.SilentRunning>
+  <label.SystemAttention>部分系统需要关注。</label.SystemAttention>
+  <label.EngineCritical>警告，引擎热量临界。</label.EngineCritical>
+  <label.EngineOverheat>警告，引擎过热。</label.EngineOverheat>
+  <label.FireDetected>警告，检测到火灾。</label.FireDetected>
+  <label.HullBreach>警告，船体搁浅检测。</label.HullBreach>
+  <label.HullIntegrityCritical>警告，船体完整性临界。</label.HullIntegrityCritical>
+  <label.MaximumDepth>警告，已达到最大深度。船体损坏即将发生。</label.MaximumDepth>
+  <label.CreatureAttack>警告，生物攻击。</label.CreatureAttack>
+  <label.BestCaptain>你是地球上最优秀的船长。我甚至没在开玩笑。</label.BestCaptain>
+</infotexts>

@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Randomevents>
+  <EventSprites>
+    <Sprite identifier="de_oldman" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="34,512,188,255" origin="0.5,0.5" />
+  </EventSprites>
+  <EventPrefabs>
+    <ScriptedEvent identifier="reactoroperatorcoalition" commonness="100">
+      <TagAction criteria="player" tag="player" />
+      <Label name="waitforinput" />
+      <TriggerAction target1tag="reactoroperator" target2tag="player" applytotarget2="ro_trig_player" waitforinteraction="true" />
+      <CheckReputationAction targettype="faction" identifier="coalition" condition="gte -20">
+        <Success>
+          <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.interact" eventsprite="engineer">
+            <Option text="eventtext.shop.engineer.option.fuelrod">
+              <CheckMoneyAction Amount="900">
+                <Success>
+                  <MoneyAction amount="-900" />
+                  <SpawnAction itemidentifier="fuelrod" targetinventory="ro_trig_player" />
+                  <SpawnAction itemidentifier="fuelrod" targetinventory="ro_trig_player" />
+                  <SpawnAction itemidentifier="fuelrod" targetinventory="ro_trig_player" />
+                  <SpawnAction itemidentifier="fuelrod" targetinventory="ro_trig_player" />
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.fuelrod.buy.success" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.fuelrod.buy.failure" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                  <GoTo name="waitforinput" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.shop.engineer.option.fpga">
+              <CheckMoneyAction Amount="250">
+                <Success>
+                  <MoneyAction amount="-250" />
+                  <SpawnAction itemidentifier="fpgacircuit" targetinventory="ro_trig_player" />
+                  <SpawnAction itemidentifier="fpgacircuit" targetinventory="ro_trig_player" />
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.fpga.buy.success" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.fpga.buy.failure" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                  <GoTo name="waitforinput" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.shop.engineer.option.extinguisher">
+              <CheckMoneyAction Amount="100">
+                <Success>
+                  <MoneyAction amount="-100" />
+                  <SpawnAction itemidentifier="extinguisher" targetinventory="ro_trig_player" />
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.extinguisher.buy.success" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.extinguisher.buy.failure" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                  <GoTo name="waitforinput" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.option.leave">
+              <ConversationAction text="eventtext.general.decline" targettag="ro_trig_player" />
+              <ClearTagAction tag="ro_trig_player" />
+              <GoTo name="waitforinput" />
+            </Option>
+          </ConversationAction>
+        </Success>
+        <Failure>
+          <RNGAction chance="0.90">
+            <Success>
+              <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.unfriedly" eventsprite="group" />
+              <ClearTagAction tag="ro_trig_player" />
+            </Success>
+            <Failure>
+              <CombatAction combatmode="Offensive" npctag="reactoroperator" enemytag="ro_trig_player" isinstigator="true" guardreaction="arrest" witnessreaction="retreat" />
+              <CombatAction combatmode="Offensive" npctag="quartermaster" enemytag="ro_trig_player" isinstigator="true" guardreaction="arrest" witnessreaction="retreat" />
+              <SpawnAction itemidentifier="volatilecompoundn" targetinventory="reactoroperator" />
+              <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.co.attack" eventsprite="group" />
+              <ClearTagAction tag="ro_trig_player" />
+            </Failure>
+          </RNGAction>
+        </Failure>
+      </CheckReputationAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="reactoroperatorseparatists" commonness="100">
+      <TagAction criteria="player" tag="player" />
+      <Label name="waitforinput" />
+      <TriggerAction target1tag="reactoroperator" target2tag="player" applytotarget2="ro_trig_player" waitforinteraction="true" />
+      <CheckReputationAction targettype="faction" identifier="separatists" condition="gte -20">
+        <Success>
+          <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.interact" eventsprite="engineer">
+            <Option text="eventtext.shop.engineer.option.fuelrod">
+              <CheckMoneyAction Amount="900">
+                <Success>
+                  <MoneyAction amount="-900" />
+                  <SpawnAction itemidentifier="fuelrod" targetinventory="ro_trig_player" />
+                  <SpawnAction itemidentifier="fuelrod" targetinventory="ro_trig_player" />
+                  <SpawnAction itemidentifier="fuelrod" targetinventory="ro_trig_player" />
+                  <SpawnAction itemidentifier="fuelrod" targetinventory="ro_trig_player" />
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.fuelrod.buy.success" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.fuelrod.buy.failure" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                  <GoTo name="waitforinput" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.shop.engineer.option.fpga">
+              <CheckMoneyAction Amount="250">
+                <Success>
+                  <MoneyAction amount="-250" />
+                  <SpawnAction itemidentifier="fpgacircuit" targetinventory="ro_trig_player" />
+                  <SpawnAction itemidentifier="fpgacircuit" targetinventory="ro_trig_player" />
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.fpga.buy.success" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.fpga.buy.failure" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                  <GoTo name="waitforinput" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.shop.engineer.option.extinguisher">
+              <CheckMoneyAction Amount="100">
+                <Success>
+                  <MoneyAction amount="-100" />
+                  <SpawnAction itemidentifier="extinguisher" targetinventory="ro_trig_player" />
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.extinguisher.buy.success" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.option.extinguisher.buy.failure" eventsprite="engineer" />
+                  <ClearTagAction tag="ro_trig_player" />
+                  <GoTo name="waitforinput" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.option.leave">
+              <ConversationAction text="eventtext.general.decline" targettag="ro_trig_player" />
+              <ClearTagAction tag="ro_trig_player" />
+              <GoTo name="waitforinput" />
+            </Option>
+          </ConversationAction>
+        </Success>
+        <Failure>
+          <RNGAction chance="0.90">
+            <Success>
+              <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.unfriedly" eventsprite="group" />
+              <ClearTagAction tag="ro_trig_player" />
+            </Success>
+            <Failure>
+              <CombatAction combatmode="Offensive" npctag="reactoroperator" enemytag="ro_trig_player" isinstigator="true" guardreaction="arrest" witnessreaction="retreat" />
+              <CombatAction combatmode="Offensive" npctag="quartermaster" enemytag="ro_trig_player" isinstigator="true" guardreaction="arrest" witnessreaction="retreat" />
+              <SpawnAction itemidentifier="volatilecompoundn" targetinventory="reactoroperator" />
+              <ConversationAction targettag="ro_trig_player" text="eventtext.shop.engineer.attack" eventsprite="group" />
+              <ClearTagAction tag="ro_trig_player" />
+            </Failure>
+          </RNGAction>
+        </Failure>
+      </CheckReputationAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="quartermaster" commonness="100">
+      <TagAction criteria="player" tag="player" />
+      <SpawnAction npcsetidentifier="DE_outpostnpcs" npcidentifier="quartermaster" targettag="quartermaster" spawnlocation="Outpost" spawnpointtype="Path" />
+      <Label name="waitforinput" />
+      <TriggerAction target1tag="quartermaster" target2tag="player" applytotarget2="qm_trig_player" radius="200" waitforinteraction="true" />
+      <ConversationAction targettag="qm_trig_player" text="eventtext.shop.quartermaster.interact" eventsprite="mechanic">
+        <Option text="eventtext.shop.quartermaster.option.weldingfuel">
+          <CheckMoneyAction Amount="1000">
+            <Success>
+              <MoneyAction amount="-1000" />
+              <SpawnAction itemidentifier="weldingfueltank" targetinventory="qm_trig_player" />
+              <SpawnAction itemidentifier="weldingfueltank" targetinventory="qm_trig_player" />
+              <SpawnAction itemidentifier="weldingfueltank" targetinventory="qm_trig_player" />
+              <SpawnAction itemidentifier="weldingfueltank" targetinventory="qm_trig_player" />
+              <SpawnAction itemidentifier="weldingfueltank" targetinventory="qm_trig_player" />
+              <SpawnAction itemidentifier="weldingfueltank" targetinventory="qm_trig_player" />
+              <SpawnAction itemidentifier="weldingfueltank" targetinventory="qm_trig_player" />
+              <SpawnAction itemidentifier="weldingfueltank" targetinventory="qm_trig_player" />
+              <ConversationAction targettag="qm_trig_player" text="eventtext.shop.quartermaster.option.weldingfuel.buy.success" eventsprite="mechanic" />
+              <ClearTagAction tag="qm_trig_player" />
+            </Success>
+            <Failure>
+              <ConversationAction targettag="qm_trig_player" text="eventtext.shop.quartermaster.option.weldingfuel.buy.failure" eventsprite="mechanic" />
+              <ClearTagAction tag="qm_trig_player" />
+              <GoTo name="waitforinput" />
+            </Failure>
+          </CheckMoneyAction>
+        </Option>
+        <Option text="eventtext.shop.quartermaster.option.scrap">
+          <CheckMoneyAction Amount="1000">
+            <Success>
+              <MoneyAction amount="-1000" />
+              <SpawnAction itemidentifier="scrap" targetinventory="qm_trig_player" />
+              <ConversationAction targettag="qm_trig_player" text="eventtext.shop.quartermaster.option.scrap.buy.success" eventsprite="mechanic" />
+              <MissionAction missiontag="salvagewreck" />
+              <ClearTagAction tag="qm_trig_player" />
+            </Success>
+            <Failure>
+              <ConversationAction targettag="qm_trig_player" text="eventtext.shop.quartermaster.option.scrap.buy.failure" eventsprite="mechanic" />
+              <ClearTagAction tag="qm_trig_player" />
+              <GoTo name="waitforinput" />
+            </Failure>
+          </CheckMoneyAction>
+        </Option>
+        <Option text="eventtext.option.leave">
+          <ConversationAction text="eventtext.general.decline" targettag="qm_trig_player" />
+          <ClearTagAction tag="qm_trig_player" />
+          <GoTo name="waitforinput" />
+        </Option>
+      </ConversationAction>
+    </ScriptedEvent>
+    <!--COALITION SECURITY OFFICER
+    <ScriptedEvent identifier="securityofficer" commonness="100">
+      <TagAction criteria="player" tag="player"/>
+      <Label name="restart"/>
+      <TriggerAction target1tag="securitynpc" target2tag="player" applytotarget2="cso_trig_player" radius="200" allowmultipletargets="true"/>
+      <CheckReputationAction targettype="faction" identifier="coalition" condition="gte 20">
+        <Success>
+          <TriggerAction target1tag="securitynpc" target2tag="player" applytotarget2="cso_trig_player" radius="200" waitforinteraction="true"/>
+          <NPCWaitAction npctag="securitynpc" wait="true"/>
+          <ConversationAction targettag="cso_trig_player" text="eventtext.shop.securityofficer.interact" eventsprite="security">
+            <Option text="eventtext.shop.securityofficer.option.coilgunammo">
+              <CheckMoneyAction Amount="150">
+                <Success>
+                  <MoneyAction amount="-150"/>
+                  <SpawnAction itemidentifier="coilgunammobox" targetinventory="cso_trig_player"/>
+                  <ConversationAction targettag="cso_trig_player" text="eventtext.shop.securityofficer.option.coilgunammo.buy.success"/>
+                  <NPCWaitAction npctag="securitynpc" wait="false"/>
+                  <ClearTagAction tag="cso_trig_player"/>
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="cso_trig_player" text="eventtext.shop.securityofficer.option.coilgunammo.buy.failure"/>
+                  <NPCWaitAction npctag="securitynpc" wait="false"/>
+                  <ClearTagAction tag="cso_trig_player"/>
+                  <GoTo name="restart"/>
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.shop.securityofficer.option.revolverammo">
+              <CheckMoneyAction Amount="600">
+                <Success>
+                  <MoneyAction amount="-600"/>
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="revolverround" targetinventory="cso_trig_player" />
+                  <ConversationAction targettag="cso_trig_player" text="eventtext.shop.securityofficer.option.revolverammo.buy.success"/>
+                  <NPCWaitAction npctag="securitynpc" wait="false"/>
+                  <ClearTagAction tag="cso_trig_player"/>
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="cso_trig_player" text="eventtext.shop.securityofficer.option.revolverammo.buy.failure"/>
+                  <NPCWaitAction npctag="securitynpc" wait="false"/>
+                  <ClearTagAction tag="cso_trig_player"/>
+                  <GoTo name="restart"/>
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.shop.securityofficer.option.smgmagazine">
+              <CheckMoneyAction Amount="400">
+                <Success>
+                  <MoneyAction amount="-400"/>
+                  <SpawnAction itemidentifier="smgmagazine" targetinventory="cso_trig_player" />
+                  <SpawnAction itemidentifier="smgmagazine" targetinventory="cso_trig_player" />
+                  <ConversationAction targettag="cso_trig_player" text="eventtext.shop.securityofficer.option.smgmagazine.buy.success"/>
+                  <NPCWaitAction npctag="securitynpc" wait="false"/>
+                  <ClearTagAction tag="cso_trig_player"/>
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="cso_trig_player" text="eventtext.shop.securityofficer.option.smgmagazine.buy.failure"/>
+                  <NPCWaitAction npctag="securitynpc" wait="false"/>
+                  <ClearTagAction tag="cso_trig_player"/>
+                  <GoTo name="restart"/>
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.securityofficer.option.insult">
+              <ReputationAction targettype="Faction" identifier="coalition" increase="-10"/>
+              <ConversationAction text="eventtext.securityofficer.option.insult.answer" targettag="cso_trig_player">
+                <Option text="eventtext.securityofficer.option.insult">
+                  <ReputationAction targettype="Faction" identifier="coalition" increase="-20"/>
+                  <ConversationAction text="eventtext.securityofficer.option.insult.answer.insult.answer" targettag="cso_trig_player"/>
+                  <NPCWaitAction npctag="securitynpc" wait="false"/>
+                  <GoTo name="arrest"/>
+                </Option>
+                <Option text="eventtext.option.leave">
+                  <ConversationAction text="eventtext.securityofficer.option.insult.leave.answer" targettag="cso_trig_player"/>
+                  <NPCWaitAction npctag="securitynpc" wait="false"/>
+                </Option>
+              </ConversationAction>
+            </Option>
+            <Option text="eventtext.option.leave">
+              <ConversationAction text="eventtext.general.decline" targettag="cso_trig_player"/>
+              <NPCWaitAction npctag="securitynpc" wait="false"/>
+              <ClearTagAction tag="cso_trig_player"/>
+              <GoTo name="restart"/>
+            </Option>
+          </ConversationAction>
+        </Success>
+        <Failure>
+          <CheckReputationAction targettype="faction" identifier="coalition" condition="gte -60">
+            <Success>
+              <RNGAction chance="0.4">
+                <Success>
+                  <NPCFollowAction npctag="securitynpc" targettag="cso_trig_player" follow="true"/>
+                  <SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="securitynpccoalition" targettag="backup" spawnlocation="Outpost" spawnpointtype="Path"/>
+                  <CheckItemAction targettag="cso_trig_player" RequiredConditionalMatchPercentage="1">
+                    <Conditional HasTag="stolen" targetcontainedItem="true" />
+                    <Success>
+                      <ReputationAction targettype="Faction" identifier="coalition" increase="-10"/>
+                      <NPCFollowAction npctag="securitynpc" targettag="cso_trig_player" follow="false"/>
+                      <GoTo name="arrest"/>
+                    </Success>
+                    <Failure>
+                      <ConversationAction text="eventtext.securityofficer.interact" targettag="cso_trig_player">
+                        <Option text="eventtext.securityofficer.option.rude">
+                          <ReputationAction targettype="Faction" identifier="coalition" increase="-1"/>
+                          <ConversationAction text="eventtext.securityofficer.option.rude.answer" targettag="cso_trig_player"/>
+                        </Option>
+                        <Option text="eventtext.securityofficer.option.polite">
+                          <ConversationAction text="eventtext.securityofficer.option.polite.answer" targettag="cso_trig_player"/>
+                        </Option>
+                      </ConversationAction>
+                    </Failure>
+                  </CheckItemAction>
+                  <ConversationAction targettag="cso_trig_player" text="eventtext.securityofficer.bribe.interact" continueconversation="true">
+                    <Option text="eventtext.securityofficer.bribe.option.polite">
+                      <ConversationAction targettag="cso_trig_player" text="eventtext.securityofficer.bribe.option.polite.answer">
+                        <Option text="eventtext.securityofficer.bribe.option.bribe.high">
+                          <CheckMoneyAction Amount="500">
+                            <Success>
+                              <MoneyAction amount="-500"/>
+                              <ConversationAction text="eventtext.securityofficer.bribe.option.bribe.success" targettag="cso_trig_player"/>
+                              <ReputationAction targettype="Faction" identifier="coalition" increase="1"/>
+                              <NPCFollowAction npctag="securitynpc" targettag="cso_trig_player" follow="false"/>
+                              <ClearTagAction tag="cso_trig_player"/>
+                            </Success>
+                            <Failure>
+                              <ConversationAction targettag="cso_trig_player" text="eventtext.securityofficer.bribe.option.bribe.failure"/>
+                              <GoTo name="arrest"/>
+                            </Failure>
+                          </CheckMoneyAction>
+                        </Option>
+                        <Option text="eventtext.securityofficer.bribe.option.bribe.medium">
+                          <RNGAction chance="0.75">
+                            <Success>
+                              <CheckMoneyAction Amount="250">
+                                <Success>
+                                  <MoneyAction amount="-250"/>
+                                  <ConversationAction text="eventtext.securityofficer.bribe.option.bribe.success" targettag="cso_trig_player"/>
+                                  <ReputationAction targettype="Faction" identifier="coalition" increase="1"/>
+                                  <NPCFollowAction npctag="securitynpc" targettag="cso_trig_player" follow="false"/>
+                                  <ClearTagAction tag="cso_trig_player"/>
+                                </Success>
+                                <Failure>
+                                  <ConversationAction targettag="cso_trig_player" text="eventtext.securityofficer.bribe.option.bribe.failure"/>
+                                  <GoTo name="arrest"/>
+                                </Failure>
+                              </CheckMoneyAction>
+                            </Success>
+                            <Failure>
+                              <ConversationAction targettag="cso_trig_player" text="eventtext.securityofficer.bribe.option.bribe.rejected"/>
+                              <GoTo name="arrest"/>
+                            </Failure>
+                          </RNGAction>
+                        </Option>
+                        <Option text="eventtext.securityofficer.bribe.option.bribe.low">
+                          <RNGAction chance="0.50">
+                            <Success>
+                              <CheckMoneyAction Amount="75">
+                                <Success>
+                                  <MoneyAction amount="-75"/>
+                                  <ConversationAction text="eventtext.securityofficer.bribe.option.bribe.success" targettag="cso_trig_player"/>
+                                  <ReputationAction targettype="Faction" identifier="coalition" increase="1"/>
+                                  <NPCFollowAction npctag="securitynpc" targettag="cso_trig_player" follow="false"/>
+                                  <ClearTagAction tag="cso_trig_player"/>
+                                </Success>
+                                <Failure>
+                                  <ConversationAction targettag="cso_trig_player" text="eventtext.securityofficer.bribe.option.bribe.failure"/>
+                                  <GoTo name="arrest"/>
+                                </Failure>
+                              </CheckMoneyAction>
+                            </Success>
+                            <Failure>
+                              <ConversationAction targettag="cso_trig_player" text="eventtext.securityofficer.bribe.option.bribe.rejected"/>
+                              <GoTo name="arrest"/>
+                            </Failure>
+                          </RNGAction>
+                        </Option>
+                        <Option text="eventtext.option.leave">
+                          <ConversationAction text="eventtext.securityofficer.bribe.option.leave.answer" targettag="cso_trig_player"/>
+                          <ClearTagAction tag="cso_trig_player"/>
+                        </Option>
+                      </ConversationAction>
+                    </Option>
+                    <Option text="eventtext.securityofficer.bribe.option.rude">
+                      <ReputationAction targettype="Faction" identifier="coalition" increase="-5"/>
+                      <CombatAction combatmode="arrest" npctag="securitynpc" enemytag="cso_trig_player" witnessreaction="retreat"/>
+                      <ConversationAction text="eventtext.securityofficer.bribe.option.rude.answer" targettag="cso_trig_player"/>
+                      <ClearTagAction tag="cso_trig_player"/>
+                    </Option>
+                    <Option text="eventtext.option.leave">
+                      <ConversationAction text="eventtext.securityofficer.bribe.option.leave.answer" targettag="cso_trig_player"/>
+                      <GoTo name="arrest"/>
+                    </Option>
+                  </ConversationAction>
+                </Success>
+                <Failure>
+                  <Label name="patrol"/>
+                  <NPCWaitAction npctag="securityofficer" wait="false"/>
+                  <ClearTagAction tag="cso_trig_player"/>
+                </Failure>
+              </RNGAction>
+            </Success>
+            <Failure>
+              <Label name="arrest"/>
+              <CombatAction combatmode="arrest" npctag="securitynpc" enemytag="cso_trig_player" isinstigator="false" guardreaction="none" witnessreaction="retreat"/>
+              <WaitAction time="60"/>
+              <GoTo name="patrol"/>
+            </Failure>
+          </CheckReputationAction>
+        </Failure>
+      </CheckReputationAction>
+    </ScriptedEvent>
+    -->
+    <!-- PIRATE SECURITY OFFICER -->
+    <ScriptedEvent identifier="piratesecurityofficer" commonness="100">
+      <SpawnAction npcsetidentifier="outpostnpcspirate" npcidentifier="securitynpcpirate" targettag="dockingguard" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <NPCWaitAction npctag="dockingguard" wait="true" />
+      <Label name="CheckData" />
+      <WaitAction time="1" />
+      <CheckDataAction identifier="pirateoutpostdestruction" condition="eq 1">
+        <Success>
+          <Goto name="CheckData" />
+        </Success>
+        <Failure>
+          <Goto name="Start" />
+        </Failure>
+      </CheckDataAction>
+      <Label name="Start" />
+      <NPCWaitAction npctag="dockingguard" wait="false" />
+      <TagAction criteria="player" tag="player" />
+      <Label name="patrol" />
+      <TriggerAction target1tag="securitynpcpirate" target2tag="player" applytotarget2="pso_trig_player" radius="600" />
+      <CheckReputationAction targettype="faction" identifier="coalition" condition="lte -20">
+        <Success>
+          <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="false" />
+          <TriggerAction target2tag="securitynpcpirate" target1tag="pso_trig_player" radius="200" waitforinteraction="true" allowmultipletargets="true" />
+          <ConversationAction targettag="pso_trig_player" text="eventtext.shop.piratesecurityofficer.interact" eventsprite="security">
+            <Option text="eventtext.shop.piratesecurityofficer.option.hyperzine">
+              <CheckMoneyAction amount="500">
+                <Success>
+                  <MoneyAction amount="-500" />
+                  <SpawnAction itemidentifier="hyperzine" targetinventory="pso_trig_player" />
+                  <ConversationAction targettag="pso_trig_player" text="eventtext.shop.piratesecurityofficer.option.hyperzine.buy.success" />
+                  <ClearTagAction tag="pso_trig_player" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="pso_trig_player" text="eventtext.shop.piratesecurityofficer.option.hyperzine.buy.failure" />
+                  <ClearTagAction tag="pso_trig_player" />
+                  <GoTo name="patrol" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.shop.piratesecurityofficer.option.handcannonammo">
+              <CheckMoneyAction Amount="1000">
+                <Success>
+                  <MoneyAction amount="-1000" />
+                  <SpawnAction itemidentifier="handcannonround" targetinventory="pso_trig_player" />
+                  <SpawnAction itemidentifier="handcannonround" targetinventory="pso_trig_player" />
+                  <SpawnAction itemidentifier="handcannonround" targetinventory="pso_trig_player" />
+                  <SpawnAction itemidentifier="handcannonround" targetinventory="pso_trig_player" />
+                  <SpawnAction itemidentifier="handcannonround" targetinventory="pso_trig_player" />
+                  <SpawnAction itemidentifier="handcannonround" targetinventory="pso_trig_player" />
+                  <ConversationAction targettag="pso_trig_player" text="eventtext.shop.piratesecurityofficer.option.handcannonammo.buy.success" />
+                  <ClearTagAction tag="pso_trig_player" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="pso_trig_player" text="eventtext.shop.piratesecurityofficer.option.handcannonammo.buy.failure" />
+                  <ClearTagAction tag="pso_trig_player" />
+                  <GoTo name="patrol" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.shop.piratesecurityofficer.option.assaultriflemagazine">
+              <CheckMoneyAction Amount="1000">
+                <Success>
+                  <MoneyAction amount="-1000" />
+                  <SpawnAction itemidentifier="assaultriflemagazine" targetinventory="pso_trig_player" />
+                  <SpawnAction itemidentifier="assaultriflemagazine" targetinventory="pso_trig_player" />
+                  <ConversationAction targettag="pso_trig_player" text="eventtext.shop.piratesecurityofficer.option.assaultriflemagazine.buy.success" />
+                  <ClearTagAction tag="pso_trig_player" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="pso_trig_player" text="eventtext.shop.piratesecurityofficer.option.assaultriflemagazine.buy.failure" />
+                  <ClearTagAction tag="pso_trig_player" />
+                  <GoTo name="patrol" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="eventtext.option.leave">
+              <ConversationAction text="eventtext.general.decline" targettag="pso_trig_player" />
+              <ClearTagAction tag="pso_trig_player" />
+              <GoTo name="patrol" />
+            </Option>
+          </ConversationAction>
+        </Success>
+        <Failure>
+          <CheckReputationAction targettype="faction" identifier="coalition" condition="lt 20">
+            <Success>
+              <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="true" />
+              <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.low.interact">
+                <Option text="eventtext.piratesecurityofficer.toll.low.option.pay.high">
+                  <CheckMoneyAction Amount="1000">
+                    <Success>
+                      <MoneyAction amount="-1000" />
+                      <ConversationAction text="eventtext.piratesecurityofficer.toll.low.option.pay.high.success" targettag="pso_trig_player" />
+                      <ReputationAction targettype="Location" increase="10" />
+                      <ConversationAction text="eventtext.piratesecurityofficer.toll.low.option.pay.high.success.extra.reputation" targettag="pso_trig_player">
+                        <Option text="eventtext.piratesecurityofficer.toll.low.option.pay.high.success.extra.reputation.buy">
+                          <CheckMoneyAction Amount="1000">
+                            <Success>
+                              <MoneyAction amount="-1000" />
+                              <ReputationAction targettype="Faction" identifier="coalition" increase="-20" />
+                              <ConversationAction text="eventtext.piratesecurityofficer.toll.low.option.pay.high.success.extra.reputation.buy.success" targettag="pso_trig_player" />
+                              <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="false" />
+                              <ClearTagAction tag="pso_trig_player" />
+                            </Success>
+                            <Failure>
+                              <ConversationAction text="eventtext.piratesecurityofficer.toll.low.option.pay.high.success.extra.reputation.buy.failure" />
+                              <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="false" />
+                              <ClearTagAction tag="pso_trig_player" />
+                            </Failure>
+                          </CheckMoneyAction>
+                        </Option>
+                        <Option text="eventtext.option.leave">
+                          <ConversationAction text="eventtext.piratesecurityofficer.toll.low.option.pay.high.success.extra.reputation.declined" targettag="pso_trig_player" />
+                          <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="false" />
+                          <ClearTagAction tag="pso_trig_player" />
+                        </Option>
+                      </ConversationAction>
+                    </Success>
+                    <Failure>
+                      <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.low.option.pay.high.failure" />
+                      <GoTo name="attack" />
+                    </Failure>
+                  </CheckMoneyAction>
+                </Option>
+                <Option text="eventtext.piratesecurityofficer.toll.low.option.pay.medium">
+                  <RNGAction chance="0.75">
+                    <Success>
+                      <CheckMoneyAction Amount="750">
+                        <Success>
+                          <MoneyAction amount="-750" />
+                          <ConversationAction text="eventtext.piratesecurityofficer.toll.low.option.pay.medium.success" targettag="pso_trig_player" />
+                          <ReputationAction targettype="Location" increase="-10" />
+                          <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="false" />
+                          <ClearTagAction tag="pso_trig_player" />
+                        </Success>
+                        <Failure>
+                          <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.low.option.pay.medium.failure" />
+                          <GoTo name="attack" />
+                        </Failure>
+                      </CheckMoneyAction>
+                    </Success>
+                    <Failure>
+                      <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.option.pay.medium.rejected" />
+                      <GoTo name="attack" />
+                    </Failure>
+                  </RNGAction>
+                </Option>
+                <Option text="eventtext.piratesecurityofficer.toll.low.option.pay.low">
+                  <RNGAction chance="0.50">
+                    <Success>
+                      <CheckMoneyAction Amount="100">
+                        <Success>
+                          <MoneyAction amount="-100" />
+                          <ConversationAction text="eventtext.piratesecurityofficer.toll.low.option.pay.low.success" targettag="pso_trig_player" />
+                          <ReputationAction targettype="Location" increase="-25" />
+                          <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="false" />
+                          <ClearTagAction tag="pso_trig_player" />
+                        </Success>
+                        <Failure>
+                          <CombatAction combatmode="Offensive" npctag="securitynpcpirate" enemytag="pso_trig_player" isinstigator="false" guardreaction="none" witnessreaction="none" />
+                          <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.low.option.pay.low.failure" />
+                          <GoTo name="attack" />
+                        </Failure>
+                      </CheckMoneyAction>
+                    </Success>
+                    <Failure>
+                      <CombatAction combatmode="Offensive" npctag="securitynpcpirate" enemytag="pso_trig_player" isinstigator="false" guardreaction="none" witnessreaction="none" />
+                      <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.low.option.pay.low.rejected" />
+                      <GoTo name="attack" />
+                    </Failure>
+                  </RNGAction>
+                </Option>
+                <Option text="eventtext.option.leave">
+                  <CombatAction combatmode="Offensive" npctag="securitynpcpirate" enemytag="pso_trig_player" isinstigator="false" guardreaction="none" witnessreaction="none" />
+                  <ConversationAction text="eventtext.piratesecurityofficer.toll.option.leave.answer" targettag="pso_trig_player" />
+                  <GoTo name="attack" />
+                </Option>
+                <Option text="eventtext.piratesecurityofficer.toll.option.insult">
+                  <ReputationAction targettype="Location" increase="-30" />
+                  <CombatAction combatmode="Offensive" npctag="securitynpcpirate" enemytag="pso_trig_player" isinstigator="false" guardreaction="none" witnessreaction="none" />
+                  <ConversationAction text="eventtext.piratesecurityofficer.toll.option.insult.answer" targettag="pso_trig_player" />
+                  <GoTo name="attack" />
+                </Option>
+              </ConversationAction>
+            </Success>
+            <Failure>
+              <CheckReputationAction targettype="faction" identifier="coalition" condition="lt 60">
+                <Success>
+                  <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="true" />
+                  <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.high.interact">
+                    <Option text="eventtext.piratesecurityofficer.toll.high.option.pay.high">
+                      <CheckMoneyAction Amount="5000">
+                        <Success>
+                          <MoneyAction amount="-5000" />
+                          <ConversationAction text="eventtext.piratesecurityofficer.toll.high.option.pay.high.success" targettag="pso_trig_player" />
+                          <ReputationAction targettype="Location" increase="10" />
+                          <ConversationAction text="eventtext.piratesecurityofficer.toll.high.option.pay.high.success.extra.reputation" targettag="pso_trig_player">
+                            <Option text="eventtext.piratesecurityofficer.toll.high.option.pay.high.success.extra.reputation.buy">
+                              <CheckMoneyAction Amount="5000">
+                                <Success>
+                                  <MoneyAction amount="-5000" />
+                                  <ReputationAction targettype="Faction" identifier="coalition" increase="-40" />
+                                  <ConversationAction text="eventtext.piratesecurityofficer.toll.high.option.pay.high.success.extra.reputation.buy.success" targettag="pso_trig_player" />
+                                  <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="false" />
+                                  <ClearTagAction tag="pso_trig_player" />
+                                </Success>
+                                <Failure>
+                                  <ConversationAction text="eventtext.piratesecurityofficer.toll.high.option.pay.high.success.extra.reputation.buy.failure" />
+                                  <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="false" />
+                                  <ClearTagAction tag="pso_trig_player" />
+                                </Failure>
+                              </CheckMoneyAction>
+                            </Option>
+                            <Option text="eventtext.option.leave">
+                              <ConversationAction text="eventtext.piratesecurityofficer.toll.high.option.pay.high.success.extra.reputation.declined" targettag="pso_trig_player" />
+                              <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="false" />
+                              <ClearTagAction tag="pso_trig_player" />
+                            </Option>
+                          </ConversationAction>
+                        </Success>
+                        <Failure>
+                          <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.high.option.pay.high.failure" />
+                          <GoTo name="attack" />
+                        </Failure>
+                      </CheckMoneyAction>
+                    </Option>
+                    <Option text="eventtext.piratesecurityofficer.toll.high.option.pay.medium">
+                      <RNGAction chance="0.75">
+                        <Success>
+                          <CheckMoneyAction Amount="3000">
+                            <Success>
+                              <MoneyAction amount="-3000" />
+                              <ConversationAction text="eventtext.piratesecurityofficer.toll.high.option.pay.medium.success" targettag="pso_trig_player" />
+                              <ReputationAction targettype="Location" increase="-10" />
+                              <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="false" />
+                              <ClearTagAction tag="pso_trig_player" />
+                            </Success>
+                            <Failure>
+                              <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.high.option.pay.medium.failure" />
+                              <GoTo name="attack" />
+                            </Failure>
+                          </CheckMoneyAction>
+                        </Success>
+                        <Failure>
+                          <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.high.pay.medium.rejected" />
+                          <GoTo name="attack" />
+                        </Failure>
+                      </RNGAction>
+                    </Option>
+                    <Option text="eventtext.piratesecurityofficer.toll.high.option.pay.low">
+                      <RNGAction chance="0.50">
+                        <Success>
+                          <CheckMoneyAction Amount="1000">
+                            <Success>
+                              <MoneyAction amount="-1000" />
+                              <ConversationAction text="eventtext.piratesecurityofficer.toll.high.option.pay.low.success" targettag="pso_trig_player" />
+                              <ReputationAction targettype="Location" increase="-25" />
+                              <NPCFollowAction npctag="securitynpcpirate" targettag="pso_trig_player" follow="false" />
+                              <ClearTagAction tag="pso_trig_player" />
+                            </Success>
+                            <Failure>
+                              <CombatAction combatmode="Offensive" npctag="securitynpcpirate" enemytag="pso_trig_player" isinstigator="false" guardreaction="none" witnessreaction="none" />
+                              <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.high.option.pay.low.failure" />
+                              <GoTo name="attack" />
+                            </Failure>
+                          </CheckMoneyAction>
+                        </Success>
+                        <Failure>
+                          <CombatAction combatmode="Offensive" npctag="securitynpcpirate" enemytag="pso_trig_player" isinstigator="false" guardreaction="none" witnessreaction="none" />
+                          <ConversationAction targettag="pso_trig_player" text="eventtext.piratesecurityofficer.toll.high.option.pay.low.rejected" />
+                          <GoTo name="attack" />
+                        </Failure>
+                      </RNGAction>
+                    </Option>
+                    <Option text="eventtext.option.leave">
+                      <CombatAction combatmode="Offensive" npctag="securitynpcpirate" enemytag="pso_trig_player" isinstigator="false" guardreaction="none" witnessreaction="none" />
+                      <ConversationAction text="eventtext.piratesecurityofficer.toll.option.leave.answer" targettag="pso_trig_player" />
+                      <GoTo name="attack" />
+                    </Option>
+                    <Option text="eventtext.piratesecurityofficer.toll.option.insult">
+                      <ReputationAction targettype="Location" increase="-30" />
+                      <CombatAction combatmode="Offensive" npctag="securitynpcpirate" enemytag="pso_trig_player" isinstigator="false" guardreaction="none" witnessreaction="none" />
+                      <ConversationAction text="eventtext.piratesecurityofficer.toll.option.insult.answer" targettag="pso_trig_player" />
+                      <Label name="attack" />
+                      <ConversationAction text="eventtext.piratesecurityofficer.attack" targettag="pso_trig_player" />
+                      <CombatAction combatmode="Offensive" npctag="securitynpcpirate" enemytag="pso_trig_player" isinstigator="false" guardreaction="none" witnessreaction="none" />
+                      <WaitAction time="60" />
+                      <ClearTagAction tag="pso_trig_player" />
+                      <GoTo name="patrol" />
+                    </Option>
+                  </ConversationAction>
+                </Success>
+                <Failure>
+                  <Label name="hostile" />
+                  <ConversationAction text="eventtext.piratesecurityofficer.attack.coalition" targettag="pso_trig_player" />
+                  <NPCChangeTeamAction npctag="piratenpc" teamtag="Team2" />
+                  <Label name="attackplayer" />
+                  <TriggerAction target1tag="player" target2tag="piratenpc" applytotarget1="pso_trig_player" applytotarget2="attacker" radius="800" disableincombat="true" disableiftargetincapacitated="true" waitforinteraction="false" allowmultipletargets="true" />
+                  <CombatAction combatmode="Offensive" npctag="attacker" enemytag="player" isinstigator="true" guardreaction="none" witnessreaction="none" />
+                  <WaitAction time="10" />
+                  <GoTo name="attackplayer" />
+                </Failure>
+              </CheckReputationAction>
+            </Failure>
+          </CheckReputationAction>
+        </Failure>
+      </CheckReputationAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="piratemissioninformant" commonness="100">
+      <Label name="CheckData" />
+      <WaitAction time="2" />
+      <CheckDataAction identifier="pirateoutpostdestruction" condition="eq 1">
+        <Success>
+          <Goto name="CheckData" />
+        </Success>
+        <Failure>
+          <Goto name="Start" />
+        </Failure>
+      </CheckDataAction>
+      <Label name="Start" />
+      <TagAction criteria="player" tag="player" />
+      <SpawnAction npcsetidentifier="outpostnpcspirate" npcidentifier="outpostmanagerpirate" targettag="managerpirate" spawnlocation="Outpost" spawnpointtag="pirateadmin" />
+      <Label name="waitforinput" />
+      <TriggerAction target1tag="managerpirate" target2tag="player" applytotarget2="pmi_trig_player" radius="200" waitforinteraction="true" />
+      <ConversationAction targettag="pmi_trig_player" text="eventtext.piratemissioninformant.interact" eventsprite="de_oldman">
+        <Option text="eventtext.piratemissioninformant.option.buy">
+          <CheckMoneyAction Amount="1000">
+            <Success>
+              <MoneyAction amount="-1000" />
+              <ConversationAction targettag="pmi_trig_player" text="eventtext.piratemissioninformant.option.buy.success" eventsprite="de_oldman" />
+              <MissionAction missiontag="coalitionciv" />
+              <ClearTagAction tag="pmi_trig_player" />
+            </Success>
+            <Failure>
+              <ConversationAction targettag="pmi_trig_player" text="eventtext.piratemissioninformant.option.buy.failure" eventsprite="de_oldman" />
+              <ClearTagAction tag="pmi_trig_player" />
+              <GoTo name="waitforinput" />
+            </Failure>
+          </CheckMoneyAction>
+        </Option>
+        <Option text="eventtext.option.leave">
+          <ConversationAction text="eventtext.general.decline" targettag="pmi_trig_player" />
+          <ClearTagAction tag="pmi_trig_player" />
+          <GoTo name="waitforinput" />
+        </Option>
+      </ConversationAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="missionevent.piratevscoalition" commonness="200">
+      <NPCWaitAction npctag="managerpirate" wait="true" />
+      <ConversationAction text="EventText.missionevent.piratevscoalition.c1" speakertag="managerpirate" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="piratevscoalition" />
+      <NPCWaitAction npctag="managerpirate" wait="false" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="missionevent.piratevsseparatists" commonness="200">
+      <NPCWaitAction npctag="managerpirate" wait="true" />
+      <ConversationAction text="EventText.missionevent.piratevsseparatists.c1" speakertag="managerpirate" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="piratevsseparatists" />
+      <NPCWaitAction npctag="managerpirate" wait="false" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="missionevent.clearlair" commonness="85">
+      <NPCWaitAction npctag="outpostmanager" wait="true" />
+      <ConversationAction text="EventText.missionevent_lair.c1" speakertag="outpostmanager" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="lair" />
+      <MissionAction missiontag="lair" minlocationdistance="2" unlockfurtheronmap="true" />
+      <NPCWaitAction npctag="outpostmanager" wait="false" />
+    </ScriptedEvent>
+    <!-- Mission Events -->
+    <ScriptedEvent identifier="missionevent_pirateany" commonness="100">
+      <NPCWaitAction npctag="outpostmanager" wait="true" />
+      <ConversationAction text="eventtext.missionevent_piratemission1.c1" speakertag="outpostmanager" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="piratemission" />
+      <NPCWaitAction npctag="outpostmanager" wait="false" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="missionevent_pirateheavy" commonness="100">
+      <NPCWaitAction npctag="outpostmanager" wait="true" />
+      <ConversationAction text="eventtext.missionevent_piratemission1.c1" speakertag="outpostmanager" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="heavypirate" />
+      <NPCWaitAction npctag="outpostmanager" wait="false" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="missionevent_pirateparty" commonness="100">
+      <NPCWaitAction npctag="outpostmanager" wait="true" />
+      <ConversationAction text="eventtext.missionevent_piratemission2.c1" speakertag="outpostmanager" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="partypirate" />
+      <NPCWaitAction npctag="outpostmanager" wait="false" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="missionevent_piratestrange" commonness="100">
+      <NPCWaitAction npctag="outpostmanager" wait="true" />
+      <ConversationAction text="eventtext.missionevent_piratemission3.c1" speakertag="outpostmanager" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="strangepirate" />
+      <NPCWaitAction npctag="outpostmanager" wait="false" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="missionevent_killmonster_thegreatsea" commonness="85">
+      <NPCWaitAction npctag="outpostmanager" wait="true" />
+      <ConversationAction text="eventtext.missionevent_killmonster_regional.c1" speakertag="outpostmanager" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="killmonster_thegreatsea" />
+      <NPCWaitAction npctag="outpostmanager" wait="false" />
+    </ScriptedEvent>
+  </EventPrefabs>
+</Randomevents>

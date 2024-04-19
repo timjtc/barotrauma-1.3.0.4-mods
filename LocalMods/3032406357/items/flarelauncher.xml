@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- Flare Launcher -->
+  <Item name="Flare Launcher" description="" identifier="flarelauncher" Tags="flarelauncher,turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.22" focusonselected="true" offsetonselected="780" interactdistance="100" linkable="true" allowedlinks="flareloader">
+    <Sprite texture="%ModDir%/items/flarelauncher.png" depth="0.01" sourcerect="340,0,340,328" origin="0.5,0.5" scale="1" />
+    <MinimapIcon name="Command_Weapons_Flarelauncher" texture="%ModDir%/items/flarelauncher.png" sourcerect="680,208,128,128" />
+    <SwappableItem price="3000" replacementonuninstall="utilityhardpoint" origin="0,150" swapidentifier="utilityturret">
+      <SchematicSprite texture="%ModDir%/items/flarelauncher.png" sourcerect="808,0,128,336" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+    </SwappableItem>
+    <UpgradePreviewSprite scale="2.5" texture="%ModDir%/items/flarelauncher.png" sourcerect="552,328,80,64" origin="0.5,0.5" />
+    <Turret canbeselected="false" linkable="true" characterusable="false" barrelpos="60, 61" rotationlimits="180,360" powerconsumption="50.0" springstiffnesslowskill="25" springstiffnesshighskill="25" springdampinglowskill="5" springdampinghighskill="5" rotationspeedlowskill="0.5" rotationspeedhighskill="0.5">
+      <RailSprite texture="%ModDir%/items/flarelauncher.png" depth="0.011" sourcerect="0,0,340,412" origin="0.461, 0.558" />
+      <WeaponIndicator texture="%ModDir%/items/flarelauncher.png" sourcerect="632,336,66,36" origin="0.24, 0.472" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" range="5000" />
+      <Sound file="Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" range="5000" />
+      <Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" range="5000" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <ParticleEmitter particle="muzzleflashcoilgun" particleamount="1" velocitymin="50" scalemin="0.4" scalemax="0.6" velocitymax="100" />
+      <ParticleEmitter particle="risingbubbles" particleamount="1" velocitymin="50" velocitymax="50" />
+      <LightComponent LightColor="0.8,0.8,0.5,0.8" Flicker="0.0" range="200" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="-0.04,0.555" size="1.0,1.0" />
+      </LightComponent>
+      <RequiredSkill identifier="weapons" level="40" />
+    </Turret>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="set_light" displayname="connection.setlight" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+    </ConnectionPanel>
+    <SkillRequirementHint identifier="weapons" level="40" />
+    <ItemContainer hideitems="true" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="82,-270" iteminterval="0,0" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.18,0.23" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="flarecanister" />
+      <StatusEffect type="OnUse" target="Contained">
+        <RequiredItem items="flarecanister" type="Contained" />
+        <Use />
+      </StatusEffect>
+    </ItemContainer>
+  </Item>
+  <!-- Searchlight -->
+  <Item name="Searchlight" identifier="searchlightutility" tags="searchlight,utilityturret,turret" aliases="Searchlight" category="Machine" focusonselected="true" offsetonselected="780" linkable="false" showinstatusmonitor="false" Scale="0.5">
+    <Upgrade gameversion="0.9.5.0" scale="0.5" />
+    <Sprite texture="Content/Items/SearchLight/SearchLightBase.png" depth="0.01" sourcerect="0,0,98,81" canflipy="false" />
+    <SwappableItem price="1500" replacementonuninstall="utilityhardpoint" origin="0,0" swapidentifier="utilityturret">
+      <SchematicSprite texture="%ModDir%/items/flarelauncher.png" sourcerect="936,100,64,100" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+    </SwappableItem>
+    <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
+    <Turret canbeselected="true" linkable="false" barrelpos="49,24" reload="999999999" rotationlimits="180,360" powerconsumption="10000.0" showchargeindicator="false" showprojectileindicator="false" springstiffnesslowskill="25" springstiffnesshighskill="25" springdampinglowskill="5" springdampinghighskill="5" rotationspeedlowskill="0.5" rotationspeedhighskill="0.5">
+      <BarrelSprite texture="Content/Items/SearchLight/SearchLightBase.png" sourcerect="99,0,64,88" origin="0.5, 0.75" />
+      <LightComponent LightColor="1.0,1.0,1.0,1.0" Flicker="0.0" range="2500" IsOn="true" powerconsumption="50" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+    </Turret>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+  </Item>
+  <!---->
+  <!-- Ammo -->
+  <!-- Decoy Flare -->
+  <Item name="Decoy Flare" identifier="decoyflare" tags="decoy,light,provocative" Scale="0.5" impactsoundtag="impact_soft" sonarsize="5" hideinmenus="true" isshootable="true" damagedbymonsters="true" health="100">
+    <!-- Debug <Sprite texture="Content/Items/Tools/tools.png" sourcerect="227,205,54,18" depth="0.55" origin="0.5,0.5" /> -->
+    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
+    <Body width="50" height="15" density="10.01" />
+    <AiTarget sightrange="4000.0" maxsoundrange="4000" minsoundrange="0" fadeouttime="15" sonardisruption="0.4" />
+    <Projectile characterusable="false" launchimpulse="1" impulsespread="0.5" sticktocharacters="false" />
+    <LightComponent characterusable="false" LightColor="255,50,50,255" Flicker="0.5" range="600" IsOn="true" shadows="false" drawbehindsubs="true">
+      <sound file="Content/Items/Tools/FlareLoop.ogg" type="OnActive" range="2048.0" loop="true" />
+      <StatusEffect type="OnActive" target="This" Condition="-1">
+        <Conditional PhysicsBodyActive="eq true" />
+        <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+        <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" interval="0.5">
+        <Conditional PhysicsBodyActive="eq true" />
+        <Explosion range="20" force="0.0" camerashake="0" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="burn" strength="2" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </LightComponent>
+  </Item>
+  <!-- Decoy Flare Projectile -->
+  <Item name="decoyflareprojectile" identifier="decoyflareprojectile" tags="decoy,light,provocative" Scale="0.5" impactsoundtag="impact_soft" sonarsize="5" hideinmenus="true">
+    <Sprite texture="%ModDir%/items/flarelauncher.png" sourcerect="340,396,56,16" depth="0.55" origin="0.5,0.5" />
+    <Body width="20" height="22" density="30" />
+    <AiTarget sightrange="4000.0" maxsoundrange="4000" minsoundrange="0" fadeouttime="15" sonardisruption="0.4" />
+    <Projectile characterusable="false" launchimpulse="28.0" sticktocharacters="false">
+      <StatusEffect type="OnActive" target="This">
+        <Conditional PhysicsBodyActive="eq true" />
+        <ParticleEmitter particle="nasonovsparkles" copyentityangle="true" particlespersecond="100" emitinterval="0" particleamount="0" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="0" velocitymin="100" velocitymax="100" />
+        <ParticleEmitter particle="FlareBubbles" particlespersecond="10" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" delay="0.5" interval="0.5">
+        <SpawnItem identifiers="decoyflare" spawnposition="This" RotationType="Collider" count="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" delay="2" condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnItem identifiers="decoyflare" spawnposition="This" count="1" />
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <!-- Decoy Flare Canister -->
+  <Item name="Decoy Flare Canister" description="A militarized flare canister, capable of being fired out of an appropriate launcher. The payload releases six bright marine flares in succession before burning out. Great for distracting any monster that lurks in the dark." identifier="decoyflarecanister" scale="0.5" tags="flarecanister" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="flareloader" mincondition="1" />
+    <Price baseprice="200" sold="false" displaynonempty="true" minleveldifficulty="15" />
+    <Deconstruct time="10">
+      <Item identifier="phosphorus" mincondition="0.95" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="flashpowder" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="8">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="flashpowder" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="decoyflarecanister" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/flarelauncher.png" sourcerect="680,104,104,104" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/flarelauncher.png" depth="0.54" sourcerect="340,362,216,34" origin="0.5,0.5" />
+    <Body width="216" height="30" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" canBeCombined="true" removeOnCombined="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet" spawnwithid="decoyflareprojectile">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="decoyflareprojectile" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-25" disabledeltatime="true">
+        <RequiredItem items="decoyflareprojectile" type="Contained" />
+      </StatusEffect>
+      <Containable items="decoyflareprojectile" />
+    </ItemContainer>
+  </Item>
+  <!-- Magnesium Flare -->
+  <Item name="Magnesium Flare" identifier="magnesiumflare" tags="light,provocative" Scale="0.5" impactsoundtag="impact_soft" sonarsize="5" hideinmenus="true" isshootable="true" damagedbymonsters="true" health="300">
+    <!-- Debug <Sprite texture="Content/Items/Tools/tools.png" sourcerect="227,205,54,18" depth="0.55" origin="0.5,0.5" /> -->
+    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
+    <Body width="50" height="15" density="10" />
+    <AiTarget sightrange="512.0" maxsoundrange="512" minsoundrange="0" fadeouttime="15" sonardisruption="0.5" />
+    <Projectile characterusable="false" launchimpulse="2" sticktocharacters="false" />
+    <LightComponent characterusable="false" LightColor="255,255,240,255" Flicker="0.15" range="8192" IsOn="true" shadows="false" drawbehindsubs="true">
+      <sound file="Content/Items/Tools/FlareLoop.ogg" type="OnActive" range="512.0" loop="true" />
+      <StatusEffect type="OnActive" target="This" Condition="-0.25">
+        <Conditional PhysicsBodyActive="eq true" />
+        <ParticleEmitter particle="flare" colormultiplier="60,200,130,180" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+        <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" interval="0.5">
+        <Conditional PhysicsBodyActive="eq true" />
+        <Explosion range="30" force="0.0" camerashake="0" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="burn" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </LightComponent>
+  </Item>
+  <!-- Magnesium Flare Projectile -->
+  <Item name="magnesiumflareprojectile" identifier="magnesiumflareprojectile" tags="light" Scale="0.5" impactsoundtag="impact_soft" sonarsize="5" hideinmenus="true">
+    <Sprite texture="%ModDir%/items/flarelauncher.png" sourcerect="396,396,56,16" depth="0.55" origin="0.5,0.5" />
+    <Body width="20" height="22" density="30" />
+    <AiTarget sightrange="4000.0" maxsoundrange="4000" minsoundrange="0" fadeouttime="15" sonardisruption="0.4" />
+    <Projectile characterusable="false" launchimpulse="28.0" sticktocharacters="false">
+      <StatusEffect type="OnActive" target="This">
+        <Conditional PhysicsBodyActive="eq true" />
+        <ParticleEmitter particle="nasonovsparkles" copyentityangle="true" particlespersecond="100" emitinterval="0" particleamount="0" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="0" velocitymin="100" velocitymax="100" />
+        <ParticleEmitter particle="FlareBubbles" particlespersecond="10" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" delay="1.5" condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnItem identifiers="magnesiumflare" spawnposition="This" RotationType="Collider" count="1" />
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <!-- Magnesium Flare Canister -->
+  <Item name="Magnesium Flare Canister" description="A militarized flare canister, capable of being fired out of an appropriate launcher. The payload releases a single bright magnesium flare, capable of lighting up dark seas for long periods of time." identifier="magnesiumflarecanister" scale="0.5" tags="flarecanister" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="flareloader" mincondition="1" />
+    <Price baseprice="200" sold="false" displaynonempty="true" minleveldifficulty="15" />
+    <Deconstruct time="10">
+      <Item identifier="magnesium" mincondition="0.95" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="flashpowder" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="8">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="flashpowder" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="magnesiumflarecanister" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/flarelauncher.png" sourcerect="680,0,104,104" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/flarelauncher.png" depth="0.54" sourcerect="340,328,216,34" origin="0.5,0.5" />
+    <Body width="216" height="30" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="10,-50" handle1="-30,0" handle2="30,0" aimable="false" canBeCombined="true" removeOnCombined="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="magnesiumflareprojectile" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-25" disabledeltatime="true">
+        <RequiredItem items="magnesiumflareprojectile" type="Contained" />
+      </StatusEffect>
+      <Containable items="magnesiumflareprojectile" />
+    </ItemContainer>
+  </Item>
+</Items>

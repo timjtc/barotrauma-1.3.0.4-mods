@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--Item name="Harmonica Sheet : " identifier="" tags="smallitem,harmonicasheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true" >
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+	
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+	
+    <Fabricate suitablefabricators="fabricator" >
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+	
+    <InventoryIcon texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+
+    <Sprite texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+	
+    <Body width="311" height="340" density="9" />
+	
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect"  >
+		<StatusEffect type="OnUse" target="Character" >
+			<Sound file="%ModDir%/Sounds/Harmonica/.ogg" range="800" volume="1.0" loop="true" />
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="NearbyCharacters" range="800" >
+			<ReduceAffliction identifier="mood" amount="0.3" />
+		</StatusEffect>
+	</Holdable>
+  </Item-->
+  <Item name="Harmonica Sheet : Always Remember Us This Way" identifier="Always Remember Us This Way" tags="smallitem,harmonicasheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Harmonica/Always Remember Us This Way.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Harmonica Sheet : Bad Romance" identifier="Bad Romance" tags="smallitem,harmonicasheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Harmonica/Bad Romance.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Harmonica Sheet : I Want It That Way" identifier="I Want It That Way" tags="smallitem,harmonicasheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Harmonica/I Want It That Way.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Harmonica Sheet : Korobeiniki" identifier="Korobeiniki" tags="smallitem,harmonicasheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Harmonica/Korobeiniki.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Harmonica Sheet : Nausicaa Requiem" identifier="Nausicaa Requiem" tags="smallitem,harmonicasheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Harmonica/Nausicaa Requiem.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Harmonica Sheet : Never Gonna Give You Up" identifier="Never Gonna Give You Up harmonica" tags="smallitem,harmonicasheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Harmonica/Never Gonna Give You Up.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Harmonica Sheet : The Merry Go Round" identifier="The Merry Go Round" tags="smallitem,harmonicasheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Harmonica/The Merry Go Round.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Harmonica Sheet : Vandraren" identifier="Vandraren" tags="smallitem,harmonicasheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Harmonica/Vandraren.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>

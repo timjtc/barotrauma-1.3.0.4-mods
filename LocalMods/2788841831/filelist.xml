@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Týr-提尔号" modversion="1.0.25" corepackage="False" steamworkshopid="2788841831" gameversion="1.0.7.0" expectedhash="06A7D068456DE75A157F91B8BF3D43F2">
+  <Text file="%ModDir%/SimplifiedChinese_Týr-提尔号.xml" />
+  <Text file="%ModDir%/English_Týr-提尔号.xml" />
+  <Submarine file="%ModDir%/Týr drone.sub" />
+  <Submarine file="%ModDir%/Týr shuttle.sub" />
+  <Submarine file="%ModDir%/Týr class battleship [en].sub" />
+  <Submarine file="%ModDir%/Týr lite [cn][en].sub" />
+  <Submarine file="%ModDir%/Týr-提尔号 [cn].sub" />
+</contentpackage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+  <interaction.openpressurevalve>Открыть клапан давления</interaction.openpressurevalve>
+  <interaction.closepressurevalve>Закрыть клапан давления</interaction.closepressurevalve>
+  <interaction.togglesuitlight>Налобный фонарь</interaction.togglesuitlight>
+  <afflictionname.pressure4000>Герметизирован (4000м)</afflictionname.pressure4000>
+  <afflictiondescription.pressure4000>Защищает от давления воды, эквивалентного глубине в 4000 метров, при полно герметизации.</afflictiondescription.pressure4000>
+  <afflictionname.pressure6000>Герметизирован (6000m)</afflictionname.pressure6000>
+  <afflictiondescription.pressure6000>Защищает от давления воды, эквивалентного глубине в 6000 метров, при полном давлении.</afflictiondescription.pressure6000>
+  <afflictionname.pressure8000>Герметизирован (8000m)</afflictionname.pressure8000>
+  <afflictiondescription.pressure8000>Защищает от давления воды, эквивалентного глубине в 8000 метров, при полном давлении.</afflictiondescription.pressure8000>
+  <afflictionname.pressure10000>Герметизирован (10000m)</afflictionname.pressure10000>
+  <afflictiondescription.pressure10000>Защищает от давления воды, эквивалентного глубине в 10000 метров, при полном давлении.</afflictiondescription.pressure10000>
+  <entityname.respawndivingsuithelmetpermanent>Водолазный шлем (оранжевый)</entityname.respawndivingsuithelmetpermanent>
+  <entityname.divingsuithelmet>Водолазный шлем (обычный)</entityname.divingsuithelmet>
+  <entityname.abyssdivingsuithelmet>Водолазный шлем (Бездна)</entityname.abyssdivingsuithelmet>
+  <entityname.combatdivingsuithelmet>Водолазный шлем (Боевой)</entityname.combatdivingsuithelmet>
+  <entityname.pucsdivingsuithelmet>Водолазный шлем (УЗК)</entityname.pucsdivingsuithelmet>
+  <entityname.slipsuithelmet>Водолазный шлем (Гидрокостюм)</entityname.slipsuithelmet>
+  <entityname.utilityhardsuithelmet>Водолазный шлем (Utility)</entityname.utilityhardsuithelmet>
+  <entityname.oxygeardivingsuithelmet>Водолазный шлем (OxyGear)</entityname.oxygeardivingsuithelmet>
+  <entityname.anechoicdivingsuithelmet>Водолазный шлем (Anechoic)</entityname.anechoicdivingsuithelmet>
+  <entityname.earenegadedivingsuithelmet>Водолазный шлем (Сеператисткий)</entityname.earenegadedivingsuithelmet>
+  <entityname.eacombatdivingsuithelmet>Водолазный шлем (Боевой коалиции)</entityname.eacombatdivingsuithelmet>
+  <entityname.eainterceptordivingsuithelmet>Водолазный шлем (Перехватчик)</entityname.eainterceptordivingsuithelmet>
+  <entityname.divingsuithelmet>Водолазный шлем</entityname.divingsuithelmet>
+  <entityname.botdivingsuithelmet>Водолазный шлем Ботов</entityname.botdivingsuithelmet>
+  <entityname.respawndivingsuithelmet>Водолазный шлем (Одноразовый)</entityname.respawndivingsuithelmet>
+  <entityname.suitseal>Уплотнитель костюма</entityname.suitseal>
+  <entitydescription.suitseal>Уплотнитель, необходимый для герметизации водолазного костюма с водолазным шлемом.</entitydescription.suitseal>
+</infotexts>

@@ -6,8 +6,7 @@
 
 # LocalMods
 !LocalMods/
-!LocalMods/*
-!LocalMods/*/
+!LocalMods/**
 
 # ModLists
 !ModLists/

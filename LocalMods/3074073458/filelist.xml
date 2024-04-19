@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Immersive Diving Gear - Real Sonar Compatibility Patch" modversion="1.0.3" corepackage="False" steamworkshopid="3074073458" gameversion="1.1.19.3" expectedhash="9BC99C44ECB35341502724E7654C3FA6">
+  <Item file="%ModDir%/Content/Items/Diving/divinggear_helmets.xml" />
+  <Item file="%ModDir%/Content/Items/Diving/divinggear_suits.xml" />
+</contentpackage>

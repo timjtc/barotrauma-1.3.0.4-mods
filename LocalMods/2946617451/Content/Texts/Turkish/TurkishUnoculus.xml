@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Turkish" nowhitespace="false" translatedname="Türkçe">
+  <submarine.name.unoculus>Unoculus</submarine.name.unoculus>
+  <submarine.description.unoculus>Unoculus, önünde büyük bir gözlem küresi, sofistike yapay zeka ve navigasyon ve gözetleme konusunda son teknolojiye sahip bir denizaltıdır. Olası tüm tehlikeler hakkında uyarıda bulunarak, beklentilerinizi karşılayacaktır. Alterra Corporation © Cyclops yapısı temel alınarak tasarlanan Unoculus, iyi bir işletme durumunda tutulduğu takdirde tüm ihtiyaçlarınızı karşılayacaktır.</submarine.description.unoculus>
+  <entityname.Aheadslowbutton>Yavaş ileri</entityname.Aheadslowbutton>
+  <entityname.AheadStandardbutton>Normal hızda ileri</entityname.AheadStandardbutton>
+  <entityname.AheadFlankbutton>Tam gaz ileri</entityname.AheadFlankbutton>
+  <entityname.Enginebutton>Motor gücü</entityname.Enginebutton>
+  <entityname.Silentbutton>Sessiz mod</entityname.Silentbutton>
+  <entityname.musiccontrol>Müzik</entityname.musiccontrol>
+  <entityname.msgRadioChannel>Bu terminal, henüz yürürlüğe girmeyen altyazı sistemi içindir. Aslında, her şey hazır, ancak bir hatadan dolayı henüz mümkün değil (en azından tüm dillerde). Hata bildirildi, bu nedenle Barotrauma'nın bir sonraki güncellemesini beklememiz gerekiyor. Unoculus'u kullandığınız için teşekkür ederiz.</entityname.msgRadioChannel>
+  <!-- <entityname.msgRadioChannel>Altyazı sistemi hoş geldiniz. Lütfen altyazıların iletilmesi gereken radyo kanalını girin. Varsayılan kanal: 2.</entityname.msgRadioChannel>-->
+  <!-- Subtitles section -->
+  <label.AheadFlank>Motorlara tam kapasitede güç veriliyor.</label.AheadFlank>
+  <label.AheadSlow>Motorlara çeyrek kapasitede güç veriliyor.</label.AheadSlow>
+  <label.AheadStandard>Motorlara yarım kapasitede güç veriliyor.</label.AheadStandard>
+  <label.HullIntegrityLow>Dikkat, karina dayanıklılığı düşük seviyede.</label.HullIntegrityLow>
+  <label.Decoy>Yem fırlatıldı.</label.Decoy>
+  <label.EmergencyPower>Acil durum gücü devrede. Oksijen devde dışı bırakıldı.</label.EmergencyPower>
+  <label.SystemFailure>Acil durum, sistemler işlevsiz halde.</label.SystemFailure>
+  <label.EngineUp>Motora güç veriliyor.</label.EngineUp>
+  <label.EngineDown>Motor kapatılıyor.</label.EngineDown>
+  <label.ExternalHullDamage>Karina çatlağı saptandı.</label.ExternalHullDamage>
+  <label.FireExtinguished>Yangın söndürüldü. Hava arıtma sistemleri devrede.</label.FireExtinguished>
+  <label.FireNeutralization>Yangın söndürme sistemleri aktif.</label.FireNeutralization>
+  <label.PowerLow>Yakıt seviyesi düşük.</label.PowerLow>
+  <label.SilentRunning>Sessiz yol almak için sistemler devreye girdi.</label.SilentRunning>
+  <label.SystemAttention>Bazı sistemlere tamir gerekiyor.</label.SystemAttention>
+  <label.EngineCritical>Dikkat, motor sıcaklığı kritik seviyede.</label.EngineCritical>
+  <label.EngineOverheat>Dikkat, motor aşırı ısındı.</label.EngineOverheat>
+  <label.FireDetected>Dikkat, yangın tespit edildi.</label.FireDetected>
+  <label.HullBreach>Dikkat, karina işlevsiz hale geldi.</label.HullBreach>
+  <label.HullIntegrityCritical>Dikkat, karina bütünlülüğü kritik seviyede.</label.HullIntegrityCritical>
+  <label.MaximumDepth>Dikkat, denizaltının elverdiği maksimum derinliğe ulaştınız. Karina hasarı bekleniyor.</label.MaximumDepth>
+  <label.CreatureAttack>Dikkat, bilinmeyen yaşam formu saldırısı.</label.CreatureAttack>
+  <label.BestCaptain>Sen bu gezegendeki en iyi kaptansın, dalga geçmiyorum.</label.BestCaptain>
+</infotexts>

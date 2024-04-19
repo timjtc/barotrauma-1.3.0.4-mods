@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="AUTO_TURRETS wip" modversion="1.0.1" corepackage="False" gameversion="1.1.18.1">
+  <Outpost file="%ModDir%/AUTO_TURRETS wip.sub" />
+</contentpackage>

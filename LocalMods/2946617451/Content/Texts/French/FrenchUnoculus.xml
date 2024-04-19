@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="French" nowhitespace="false" translatedname="Français">
+  <submarine.name.unoculus>Unoculus</submarine.name.unoculus>
+  <submarine.description.unoculus>L'Unoculus est un sous-marin unique en son genre, doté d'un grand observatoire sphérique à l'avant, d'une intelligence artificielle sophistiquée et de la dernière technologie en matière de navigation et de surveillance, soyez avertis de tous dangers potentiels. Basé sur la structure du Cyclops d'Alterra Corporation ©, l'Unoculus sera satisfaire toutes vos envies à condition de la garder dans un bon état de marche.</submarine.description.unoculus>
+  <entityname.Aheadslowbutton>Vitesse minimale</entityname.Aheadslowbutton>
+  <entityname.AheadStandardbutton>Vitesse de croisière</entityname.AheadStandardbutton>
+  <entityname.AheadFlankbutton>Vitesse Maximale</entityname.AheadFlankbutton>
+  <entityname.Enginebutton>Alimentation moteur</entityname.Enginebutton>
+  <entityname.Silentbutton>Mode silencieux</entityname.Silentbutton>
+  <entityname.musiccontrol>Music</entityname.musiccontrol>
+  <entityname.msgRadioChannel>Ce terminal est destiné au système de sous-titres qui n'est pas encore en vigueur. En effet, tout est prêt, mais en raison d'un bug, ce n'est pas encore possible (du moins dans toutes les langues). Le bug a été signalé, il faut donc attendre la prochaine mise à jour de Barotrauma. Merci d'utiliser Unoculus.</entityname.msgRadioChannel>
+  <!-- <entityname.msgRadioChannel>Bienvenue dans le système de sous-titres. Merci d'entrer le canal radio où les sous-titres peuvent être transmis. Canal par défaut : 2.</entityname.msgRadioChannel>-->
+  <!-- Subtitles section -->
+  <label.AheadFlank>Vitesse maximale, vitesse d'urgence.</label.AheadFlank>
+  <label.AheadSlow>Vitesse minimale.</label.AheadSlow>
+  <label.AheadStandard>Vitesse de croisière.</label.AheadStandard>
+  <label.HullIntegrityLow>Attention, intégrité de la coque : Faible.</label.HullIntegrityLow>
+  <label.Decoy>Déploiement du leure.</label.Decoy>
+  <label.EmergencyPower>Alimentation d'urgence uniquement. Production d'oxygène : Hors ligne.</label.EmergencyPower>
+  <label.SystemFailure>Urgence, défaillance du système.</label.SystemFailure>
+  <label.EngineUp>Moteur : mise sous tension.</label.EngineUp>
+  <label.EngineDown>Moteur : mise hors tension.</label.EngineDown>
+  <label.ExternalHullDamage>Dommages externes de la coque détectés.</label.ExternalHullDamage>
+  <label.FireExtinguished>Feu éteint, activation des purificateurs d'air.</label.FireExtinguished>
+  <label.FireNeutralization>Système de neutralisation de feu : Actif.</label.FireNeutralization>
+  <label.PowerLow>Énergie faible.</label.PowerLow>
+  <label.SilentRunning>Mode silencieux.</label.SilentRunning>
+  <label.SystemAttention>Certains systèmes nécessitent de l'attention.</label.SystemAttention>
+  <label.EngineCritical>Avertissement, chaleur du moteur critique.</label.EngineCritical>
+  <label.EngineOverheat>Avertissement, surchauffe du moteur.</label.EngineOverheat>
+  <label.FireDetected>Avertissement, feu détecté.</label.FireDetected>
+  <label.HullBreach>Avertissement, détection de brèche de la coque.</label.HullBreach>
+  <label.HullIntegrityCritical>Avertissement, intégrité de la coque critique.</label.HullIntegrityCritical>
+  <label.MaximumDepth>Avertissement, profondeur maximale atteinte. Dommages à la coque imminents.</label.MaximumDepth>
+  <label.CreatureAttack>Avertissement, attaque de créature.</label.CreatureAttack>
+  <label.BestCaptain>Vous êtes le meilleur capitaine de la planète. Je ne blougue même pas.</label.BestCaptain>
+</infotexts>

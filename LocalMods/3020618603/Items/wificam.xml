@@ -1,0 +1,997 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- Periscope override to add the visual effects - Disabled -->
+  <!--
+  <Override>
+    <Item name="" description="" identifier="periscope" tags="periscope" category="Machine,Weapon" type="Controller" disableitemusagewhenselected="true" scale="0.5" isshootable="true" requireaimtouse="false" requireaimtosecondaryuse="false">
+      <SwappableItem canbebought="false" origin="67,0"/>
+      <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" depth="0.1" sourcerect="2,210,134,203" origin="0.5,0.5" />
+      <Controller UserPos="-35.0, -50.0" direction="Right" canbeselected="true" AllowSelectingWhenSelectedByBot="true" AllowSelectingWhenSelectedByOther="false" msg="ItemMsgInteractSelect">
+        <limbposition limb="Head" position="-10,-135" />
+        <limbposition limb="Torso" position="-10,-200" />
+        <limbposition limb="LeftHand" position="67,-170" />
+        <limbposition limb="RightHand" position="67,-170" />
+        <StatusEffect type="OnActive" target="Character" interval="0.1" setvalue="true" multiplyafflictionsbymaxvitality="true">
+          <Affliction identifier="camhud" amount="1" />
+        </StatusEffect>
+      </Controller>
+      <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+        <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+        <RequiredItem items="screwdriver" type="Equipped" />
+        <output name="position_out" displayname="connection.turretaimingout" fallbackdisplayname="inputtype.aim" />
+        <output name="trigger_out" displayname="connection.turrettriggerout" fallbackdisplayname="inputtype.shoot" />
+      </ConnectionPanel>
+    </Item>
+  </Override>
+  -->
+  <Item name="Camera Monitor Wiring Diagram" identifier="monitorwiringdiagram" category="Electrical" Tags="smallitem,logic" description="Displays the intended wiring setup for the camera monitor when equipped." cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" isshootable="true">
+    <Upgrade gameversion="0.9.9000.0" scale="0.25" />
+    <PreferredContainer primary="reactorcab" secondary="engcab" />
+    <Deconstruct time="5" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <RequiredSkill identifier="mechanical" level="5" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="323,193,60,61" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="149,371,69,93" depth="0.8" origin="0.5,0.5" />
+    <Body width="60" height="90" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" AutoHideScrollbar="true" readonly="true" autoscrolltobottom="false" linestartsymbol="" marginmultiplier="1.5" drawhudwhenequipped="true">
+      <GuiFrame relativesize="1.0,1.0" anchor="Center" style="MonitorWiringDiagram" hidedragicons="true" />
+    </Terminal>
+  </Item>
+  <Item name="Wifi Surveillance Camera" identifier="surveillancecamera" category="Equipment" Tags="smallitem,signal,camera" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Broadcasts the view to the configured wifi channel when wired to a power source. Can be attached anywhere on the inside and on fins and beams on the outside of your submarine." scale="0.325" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="divingcab,crewcab" />
+    <Deconstruct time="5">
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir:3020618603%/Items/SurveillanceCam.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3020618603%/Items/SurveillanceCam.png" depth="0.699" sourcerect="0,0,68,68" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="255.0,0.0,0.0,200.0" range="3" alphablend="true" blinkfrequency="0.5" castshadows="false" powerconsumption="10" allowingameediting="false" IsOn="true">
+      <LightTexture texture="Content/Lights/visioncircle.png" origin="0.5,0.5" size="0.1,0.1" />
+      <!-- Activate the camera by setting linktochat="true" if it receives power and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if no power is supplied or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface selectkey="Select" canbeselected="true" drawhudwhenequipped="false" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body width="64" height="64" density="12" />
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand,LeftHand,Any" msg="ItemMsgDetachWrench" PickingTime="2.0" aimpos="65,-10" holdpos="10,-40" handle1="1,1" handle2="0,0" attachable="true" aimable="true" attachedbydefault="false" allowingameediting="false" canflipx="false">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <!-- ConnectionPanel which needs all the pins for the item to work, despite only the power_in should actually be used ingame. Sadly no way to lock/hide the other pins -->
+    <ConnectionPanel selectkey="Action" canbeselected="true" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Camera Monitor" description="A monitor to watch the wifi camera broadcasts. Needs to be connected to a wifi component." identifier="cammonitor" tags="periscope" category="Machine,Weapon" type="Controller" disableitemusagewhenselected="true" scale="0.5" isshootable="true" requireaimtouse="false" requireaimtosecondaryuse="false" canflipx="false">
+    <Sprite texture="%ModDir:3020618603%/Items/WifiMonitor.png" sourcerect="0,0,184,135" depth="0.7" origin="0.5,0.5" canflipx="false" />
+    <!--DecorativeSprite texture="%ModDir:3020618603%/Items/WifiMonitor.png" depth="0.699" sourcerect="0,135,184,135" usewhenattached="true" HideWhenNotVisible="true" origin="0.5,0.5" canflipx="false">
+      <IsActiveConditional attached="true" targetitemcomponent="Holdable" />
+    </DecorativeSprite-->
+    <LightComponent range="70.0" lightcolor="255,255,255,10" powerconsumption="0" IsOn="true" alphablend="false" castshadows="false" allowingameediting="false">
+      <IsActive attached="true" targetitemcomponent="Holdable" />
+      <sprite texture="%ModDir:3020618603%/Items/WifiMonitor.png" depth="0.699" sourcerect="0,135,184,135" alpha="1.0" origin="0.5,0.5" canflipx="false" />
+    </LightComponent>
+    <Body width="160" height="128" density="15" />
+    <Deconstruct time="20">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="ItemMsgDetachWrench" PickingTime="3.0" aimpos="65,-10" holdpos="10,-40" handle1="1,1" handle2="0,0" attachable="true" aimable="true" attachedbydefault="false" allowingameediting="false" canflipx="false">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <Controller canbeselected="true" AllowSelectingWhenSelectedByBot="true" AllowSelectingWhenSelectedByOther="true" msg="ItemMsgInteractSelect" allowingameediting="false">
+      <Conditional attached="true" />
+      <limbposition limb="LeftHand" position="87,-105" />
+      <limbposition limb="RightHand" position="87,-105" />
+      <!-- Add a camera HUD and visual effects to the player using the monitor by applying an invisible affliction -->
+      <StatusEffect type="OnActive" target="Character" interval="0.1" setvalue="true" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="camhud" amount="1" />
+      </StatusEffect>
+    </Controller>
+    <ItemLabel scrollable="true" padding="48,39,10,12" textcolor="1,1,1,1" textscale="0.7" canbeselected="false">
+      <Upgrade gameversion="1.0.21.0" padding="48,39,10,12" />
+    </ItemLabel>
+    <ConnectionPanel selectkey="Use" canbeselected="true" drawhudwhenequipped="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="set_text" displayname="connection.set_text" fallbackdisplayname="connection.setoutput" />
+      <input name="set_color" displayname="connection.setcolor" />
+      <input name="set_text_color" displayname="connection.settextcolor" />
+      <output name="position_out" displayname="connection.turretaimingout" fallbackdisplayname="inputtype.aim" />
+      <output name="trigger_out" displayname="connection.turrettriggerout" fallbackdisplayname="inputtype.shoot" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Wifi Camera" identifier="wificam" category="Equipment" Tags="smallitem,signal,camera" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Broadcasts your view to the configured wifi channel. Requires a battery." scale="0.325" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="divingcab,crewcab" />
+    <PreferredContainer secondary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
+    <Deconstruct time="5">
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Sprite name="Wifi Camera" texture="%ModDir:3020618603%/Items/WifiCam.png" sourcerect="0,0,52,23" depth="0.6" origin="0.5,0.5" />
+    <ContainedSprite texture="%ModDir:3020618603%/Items/WifiCam.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="52,0,33,78" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" alphablend="true" powerconsumption="1" allowingameediting="false" IsOn="false">
+      <!-- Drain batteries by decreasing their condition by 0.05 each second. ~33 min duration with regular battery cell -->
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05" interval="1" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- Activate the camera by setting linktochat="true" if it receives power from a battery and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if the battery doesn't provide power or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <!-- Tickbox interface to toggle the camera on and off -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="-50,0" anchor="BottomCenter" relativesize="0.07,0.08" />
+      <TickBox text="ON/OFF">
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="false" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraBeep.ogg" range="200" loop="false" volume="3" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" duration="1" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="true" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraTurnOff.ogg" range="200" loop="true" volume="3" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body width="28" height="26" density="11.5" />
+    <Holdable pickkey="Select" slots="LeftHand,RightHand,Any" attachable="true" canbepicked="true" />
+    <Wearable limbtype="Head" slots="Head" msg="ItemMsgPickUpSelect">
+      <sprite name="Wifi Camera Wearable" texture="%ModDir:3020618603%/Items/WifiCam.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="0,0,52,23" origin="0.7,0.8" />
+    </Wearable>
+    <!-- ConnectionPanel which is required to exist inside the item for the WifiComponent to function, but is set to be inaccessable since it's not supposed to be used by the player -->
+    <ConnectionPanel selectkey="Action" canbeselected="false" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+  <!-- HELMETS -->
+  <Item name="Separatist Camera Helmet" identifier="wificampiratehelmet" category="Equipment" Tags="smallitem,signal,camera,clothing" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Protects your head and broadcasts your view to the configured wifi channel. Requires a battery." scale="0.325" impactsoundtag="impact_metal_heavy" isshootable="false">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Deconstruct time="5">
+      <Item identifier="piratehelmet" />
+      <Item identifier="wificam" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="piratehelmet" />
+      <RequiredItem identifier="wificam" />
+    </Fabricate>
+    <Sprite name="Separatist Camera Helmet 1" texture="%ModDir:3020618603%/Items/WifiCam.png" sourcerect="424,206,88,95" depth="0.6" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" alphablend="true" powerconsumption="1" allowingameediting="false" IsOn="false">
+      <!-- Drain batteries by decreasing their condition by 0.05 each second. ~33 min duration with regular battery cell -->
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05" interval="1" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- Activate the camera by setting linktochat="true" if it receives power from a battery and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if the battery doesn't provide power or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <!-- Tickbox interface to toggle the camera on and off -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="-50,0" anchor="BottomCenter" relativesize="0.07,0.08" />
+      <TickBox text="ON/OFF">
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="false" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraBeep.ogg" range="200" loop="false" volume="3" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" duration="1" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="true" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraTurnOff.ogg" range="200" loop="true" volume="3" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body radius="30" density="30" />
+    <Holdable pickkey="Select" slots="Any" attachable="true" canbepicked="true" />
+    <Wearable limbtype="Head" slots="Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds, blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <SkillModifier skillidentifier="weapons" skillvalue="5" />
+      <sprite name="Separatist Camera Helmet 1 Wearable" texture="%ModDir:3020618603%/Items/WifiCam.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidewearablesoftype="Hair" sourcerect="424,206,88,95" origin="0.6,0.5" />
+    </Wearable>
+    <!-- ConnectionPanel which is required to exist inside the item for the WifiComponent to function, but is set to be inaccessable since it's not supposed to be used by the player -->
+    <ConnectionPanel selectkey="Action" canbeselected="false" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Ballistic Camera Helmet" identifier="wificamballistichelmet1" category="Equipment" Tags="smallitem,signal,camera,clothing" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Protects your head and broadcasts your view to the configured wifi channel. Requires a battery." scale="0.325" impactsoundtag="impact_metal_heavy" isshootable="false">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Deconstruct time="5">
+      <Item identifier="ballistichelmet1" />
+      <Item identifier="wificam" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="ballistichelmet1" />
+      <RequiredItem identifier="wificam" />
+    </Fabricate>
+    <Sprite name="Ballistic Camera Helmet 1" texture="%ModDir:3020618603%/Items/WifiCam.png" sourcerect="7,215,85,68" depth="0.6" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" alphablend="true" powerconsumption="1" allowingameediting="false" IsOn="false">
+      <!-- Drain batteries by decreasing their condition by 0.05 each second. ~33 min duration with regular battery cell -->
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05" interval="1" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- Activate the camera by setting linktochat="true" if it receives power from a battery and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if the battery doesn't provide power or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <!-- Tickbox interface to toggle the camera on and off -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="-50,0" anchor="BottomCenter" relativesize="0.07,0.08" />
+      <TickBox text="ON/OFF">
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="false" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraBeep.ogg" range="200" loop="false" volume="3" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" duration="1" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="true" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraTurnOff.ogg" range="200" loop="true" volume="3" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body radius="30" density="25" />
+    <Holdable pickkey="Select" slots="Any" attachable="true" canbepicked="true" />
+    <Wearable limbtype="Head" slots="Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds, blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="Ballistic Camera Helmet 1 Wearable" texture="%ModDir:3020618603%/Items/WifiCam.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="Hair" sourcerect="7,215,85,68" origin="0.5,0.7" />
+    </Wearable>
+    <!-- ConnectionPanel which is required to exist inside the item for the WifiComponent to function, but is set to be inaccessable since it's not supposed to be used by the player -->
+    <ConnectionPanel selectkey="Action" canbeselected="false" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Gunner's Camera Helmet" identifier="wificamballistichelmet2" category="Equipment" Tags="smallitem,signal,camera,clothing" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Protects your head and broadcasts your view to the configured wifi channel. Requires a battery." scale="0.325" impactsoundtag="impact_metal_heavy" isshootable="false">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Deconstruct time="5">
+      <Item identifier="ballistichelmet2" />
+      <Item identifier="wificam" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="ballistichelmet2" />
+      <RequiredItem identifier="wificam" />
+    </Fabricate>
+    <Sprite name="Ballistic Camera Helmet 2" texture="%ModDir:3020618603%/Items/WifiCam.png" sourcerect="112,213,82,94" depth="0.6" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" alphablend="true" powerconsumption="1" allowingameediting="false" IsOn="false">
+      <!-- Drain batteries by decreasing their condition by 0.05 each second. ~33 min duration with regular battery cell -->
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05" interval="1" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- Activate the camera by setting linktochat="true" if it receives power from a battery and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if the battery doesn't provide power or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <!-- Tickbox interface to toggle the camera on and off -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="-50,0" anchor="BottomCenter" relativesize="0.07,0.08" />
+      <TickBox text="ON/OFF">
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="false" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraBeep.ogg" range="200" loop="false" volume="3" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" duration="1" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="true" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraTurnOff.ogg" range="200" loop="true" volume="3" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body radius="30" density="25" />
+    <Holdable pickkey="Select" slots="Any" attachable="true" canbepicked="true" />
+    <Wearable limbtype="Head" slots="Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <sprite name="Ballistic Helmet 2 Wearable" texture="%ModDir:3020618603%/Items/WifiCam.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="112,213,82,94" origin="0.625,0.5" />
+    </Wearable>
+    <!-- ConnectionPanel which is required to exist inside the item for the WifiComponent to function, but is set to be inaccessable since it's not supposed to be used by the player -->
+    <ConnectionPanel selectkey="Action" canbeselected="false" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Riot Camera Helmet" identifier="wificamballistichelmet3" category="Equipment" Tags="smallitem,signal,camera,clothing" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Protects your head and broadcasts your view to the configured wifi channel. Requires a battery." scale="0.325" impactsoundtag="impact_metal_heavy" isshootable="false">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Deconstruct time="5">
+      <Item identifier="ballistichelmet3" />
+      <Item identifier="wificam" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="ballistichelmet3" />
+      <RequiredItem identifier="wificam" />
+    </Fabricate>
+    <Sprite name="Ballistic Camera Helmet 3" texture="%ModDir:3020618603%/Items/WifiCam.png" sourcerect="207,201,104,101" depth="0.6" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" alphablend="true" powerconsumption="1" allowingameediting="false" IsOn="false">
+      <!-- Drain batteries by decreasing their condition by 0.05 each second. ~33 min duration with regular battery cell -->
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05" interval="1" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- Activate the camera by setting linktochat="true" if it receives power from a battery and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if the battery doesn't provide power or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <!-- Tickbox interface to toggle the camera on and off -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="-50,0" anchor="BottomCenter" relativesize="0.07,0.08" />
+      <TickBox text="ON/OFF">
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="false" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraBeep.ogg" range="200" loop="false" volume="3" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" duration="1" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="true" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraTurnOff.ogg" range="200" loop="true" volume="3" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body radius="30" density="25" />
+    <Holdable pickkey="Select" slots="Any" attachable="true" canbepicked="true" />
+    <Wearable limbtype="Head" slots="Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds, gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="Ballistic Helmet 3 Wearable" texture="%ModDir:3020618603%/Items/WifiCam.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="207,201,104,101" origin="0.575,0.55" />
+    </Wearable>
+    <!-- ConnectionPanel which is required to exist inside the item for the WifiComponent to function, but is set to be inaccessable since it's not supposed to be used by the player -->
+    <ConnectionPanel selectkey="Action" canbeselected="false" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Chitin Camera Helmet" identifier="wificamchitinhelmet" category="Equipment" Tags="smallitem,signal,camera,clothing" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Protects your head and broadcasts your view to the configured wifi channel. Requires a battery." scale="0.325" impactsoundtag="impact_metal_heavy" isshootable="false">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Deconstruct time="5">
+      <Item identifier="chitinhelmet" />
+      <Item identifier="wificam" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="chitinhelmet" />
+      <RequiredItem identifier="wificam" />
+    </Fabricate>
+    <Sprite name="Chitin Camera Helmet" texture="%ModDir:3020618603%/Items/WifiCam.png" sourcerect="207,8,100,95" depth="0.6" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" alphablend="true" powerconsumption="1" allowingameediting="false" IsOn="false">
+      <!-- Drain batteries by decreasing their condition by 0.05 each second. ~33 min duration with regular battery cell -->
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05" interval="1" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- Activate the camera by setting linktochat="true" if it receives power from a battery and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if the battery doesn't provide power or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <!-- Tickbox interface to toggle the camera on and off -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="-50,0" anchor="BottomCenter" relativesize="0.07,0.08" />
+      <TickBox text="ON/OFF">
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="false" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraBeep.ogg" range="200" loop="false" volume="3" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" duration="1" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="true" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraTurnOff.ogg" range="200" loop="true" volume="3" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body radius="30" density="20" />
+    <Holdable pickkey="Select" slots="Any" attachable="true" canbepicked="true" />
+    <Wearable limbtype="Head" slots="Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <sprite texture="%ModDir:3020618603%/Items/WifiCam.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="Hair" sourcerect="207,8,100,95" origin="0.55,0.5" />
+    </Wearable>
+    <!-- ConnectionPanel which is required to exist inside the item for the WifiComponent to function, but is set to be inaccessable since it's not supposed to be used by the player -->
+    <ConnectionPanel selectkey="Action" canbeselected="false" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Iron Camera Helmet" identifier="wificamironhelmet" category="Equipment" Tags="smallitem,signal,camera,clothing" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Protects your head and broadcasts your view to the configured wifi channel. Requires a battery." scale="0.325" impactsoundtag="impact_metal_heavy" isshootable="false">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Deconstruct time="5">
+      <Item identifier="ironhelmet" />
+      <Item identifier="wificam" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="ironhelmet" />
+      <RequiredItem identifier="wificam" />
+    </Fabricate>
+    <Sprite name="Iron Camera Helmet" texture="%ModDir:3020618603%/Items/WifiCam.png" sourcerect="249,529,90,102" depth="0.6" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" alphablend="true" powerconsumption="1" allowingameediting="false" IsOn="false">
+      <!-- Drain batteries by decreasing their condition by 0.05 each second. ~33 min duration with regular battery cell -->
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05" interval="1" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- Activate the camera by setting linktochat="true" if it receives power from a battery and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if the battery doesn't provide power or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <!-- Tickbox interface to toggle the camera on and off -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="-50,0" anchor="BottomCenter" relativesize="0.07,0.08" />
+      <TickBox text="ON/OFF">
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="false" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraBeep.ogg" range="200" loop="false" volume="3" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" duration="1" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="true" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraTurnOff.ogg" range="200" loop="true" volume="3" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body width="70" height="80" density="30" />
+    <Holdable pickkey="Select" slots="Any" attachable="true" canbepicked="true" />
+    <Wearable limbtype="Head" slots="Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true" />
+      <damagemodifier afflictionidentifiers="lacerations, bitewounds" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <sprite name="Iron Helmet" texture="%ModDir:3020618603%/Items/WifiCam.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="Hair" sourcerect="249,529,90,102" origin="0.5,0.5" />
+    </Wearable>
+    <!-- ConnectionPanel which is required to exist inside the item for the WifiComponent to function, but is set to be inaccessable since it's not supposed to be used by the player -->
+    <ConnectionPanel selectkey="Action" canbeselected="false" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+  <!-- MASKS -->
+  <Item name="Clown Camera Mask" identifier="wificamclownmask" category="Equipment" Tags="smallitem,signal,camera,clothing,clownmask" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Be a clown and broadcast your performance to the configured wifi channel. Requires a battery." scale="0.325" impactsoundtag="impact_metal_heavy" isshootable="false">
+    <PreferredContainer primary="crewcab" />
+    <Deconstruct time="5">
+      <Item identifier="clownmask" />
+      <Item identifier="wificam" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="clownmask" />
+      <RequiredItem identifier="wificam" />
+    </Fabricate>
+    <Sprite name="Clown Camera Mask" texture="%ModDir:3020618603%/Items/WifiCam.png" sourcerect="414,318,89,71" depth="0.6" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" alphablend="true" powerconsumption="1" allowingameediting="false" IsOn="false">
+      <!-- Drain batteries by decreasing their condition by 0.05 each second. ~33 min duration with regular battery cell -->
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05" interval="1" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- Activate the camera by setting linktochat="true" if it receives power from a battery and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if the battery doesn't provide power or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <!-- Tickbox interface to toggle the camera on and off -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="-50,0" anchor="BottomCenter" relativesize="0.07,0.08" />
+      <TickBox text="ON/OFF">
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="false" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraBeep.ogg" range="200" loop="false" volume="3" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" duration="1" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="true" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraTurnOff.ogg" range="200" loop="true" volume="3" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body width="40" radius="30" density="15" />
+    <Holdable pickkey="Select" slots="Any" attachable="true" canbepicked="true" />
+    <Wearable limbtype="Head" slots="Head" msg="ItemMsgPickUpSelect">
+      <sprite name="Clown Camera Mask Wearable" texture="%ModDir:3020618603%/Items/WifiCam.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.75" sourcerect="414,318,89,71" origin="0.5,0.6" />
+      <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
+    </Wearable>
+    <!-- ConnectionPanel which is required to exist inside the item for the WifiComponent to function, but is set to be inaccessable since it's not supposed to be used by the player -->
+    <ConnectionPanel selectkey="Action" canbeselected="false" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Mother's Countenance with Camera" identifier="wificamclownmaskunique" category="Equipment" Tags="smallitem,signal,camera,clothing,clownmask" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Broadcast the actions of Honkmother to the configured wifi channel. Requires a battery." scale="0.325" impactsoundtag="impact_metal_heavy" isshootable="false">
+    <PreferredContainer primary="crewcab" />
+    <Deconstruct time="5">
+      <Item identifier="clownmaskunique" />
+      <Item identifier="wificam" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="clownmaskunique" />
+      <RequiredItem identifier="wificam" />
+    </Fabricate>
+    <Sprite name="Clown Camera Mask Unique" texture="%ModDir:3020618603%/Items/WifiCam.png" sourcerect="414,417,89,71" depth="0.6" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" alphablend="true" powerconsumption="1" allowingameediting="false" IsOn="false">
+      <!-- Drain batteries by decreasing their condition by 0.05 each second. ~33 min duration with regular battery cell -->
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05" interval="1" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- Activate the camera by setting linktochat="true" if it receives power from a battery and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if the battery doesn't provide power or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <!-- Tickbox interface to toggle the camera on and off -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="-50,0" anchor="BottomCenter" relativesize="0.07,0.08" />
+      <TickBox text="ON/OFF">
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="false" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraBeep.ogg" range="200" loop="false" volume="3" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" duration="1" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="true" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraTurnOff.ogg" range="200" loop="true" volume="3" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body width="40" radius="30" density="15" />
+    <Holdable pickkey="Select" slots="Any" attachable="true" canbepicked="true" />
+    <Wearable limbtype="Head" slots="Head" msg="ItemMsgPickUpSelect">
+      <sprite name="Clown Camera Mask Unique Wearable" texture="%ModDir:3020618603%/Items/WifiCam.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="414,417,89,71" origin="0.5,0.6" />
+      <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
+    </Wearable>
+    <!-- ConnectionPanel which is required to exist inside the item for the WifiComponent to function, but is set to be inaccessable since it's not supposed to be used by the player -->
+    <ConnectionPanel selectkey="Action" canbeselected="false" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Clown Camera Diving Mask" identifier="wificamclowndivingmask" category="Equipment,Diving" Tags="smallitem,signal,camera,clownmask,diving,lightdiving" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Be a clown and broadcast your underwater performance to the configured wifi channel. Requires a battery." scale="0.325" impactsoundtag="impact_metal_heavy" isshootable="false">
+    <PreferredContainer primary="divingcab" secondary="supplycab" />
+    <Deconstruct time="5">
+      <Item identifier="clowndivingmask" />
+      <Item identifier="wificam" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="clowndivingmask" />
+      <RequiredItem identifier="wificam" />
+    </Fabricate>
+    <Sprite name="Clown Camera Diving Mask" texture="%ModDir:3020618603%/Items/WifiCam.png" sourcerect="421,529,80,70" depth="0.6" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" alphablend="true" powerconsumption="1" allowingameediting="false" IsOn="false">
+      <!-- Drain batteries by decreasing their condition by 0.05 each second. ~33 min duration with regular battery cell -->
+      <StatusEffect type="OnActive" targettype="Contained" targetslot="1" Condition="-0.05" interval="1" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- Activate the camera by setting linktochat="true" if it receives power from a battery and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if the battery doesn't provide power or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery" autoinject="true">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="oxygensource,weldingtoolfuel" excludeditems="oxygenitetank" />
+      <Containable items="oxygenitetank">
+        <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true" targetslot="0">
+          <Conditional IsDead="false" />
+        </StatusEffect>
+      </Containable>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mobilebattery">
+          <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+        </Containable>
+      </SubContainer>
+    </ItemContainer>
+    <!-- Tickbox interface to toggle the camera on and off -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="-50,0" anchor="BottomCenter" relativesize="0.07,0.08" />
+      <TickBox text="ON/OFF">
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="false" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraBeep.ogg" range="200" loop="false" volume="3" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" duration="1" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="true" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraTurnOff.ogg" range="200" loop="true" volume="3" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body width="5" radius="25" density="15" />
+    <Holdable pickkey="Select" slots="Any" attachable="true" canbepicked="true" />
+    <Wearable limbtype="Head" slots="Head" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Clown Diving Mask Wearable" texture="%ModDir:3020618603%/Items/WifiCam.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="421,529,80,70" origin="0.45,0.4" />
+      <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
+      <StatusEffect type="OnWearing" target="Contained,Character" targetslot="0" OxygenAvailable="1000.0" Condition="-0.5" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygensource" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" targetslot="0" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" targetslot="0" targetlimbs="Torso" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="3.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+    </Wearable>
+    <!-- ConnectionPanel which is required to exist inside the item for the WifiComponent to function, but is set to be inaccessable since it's not supposed to be used by the player -->
+    <ConnectionPanel selectkey="Action" canbeselected="false" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Camera Diving Mask" identifier="wificamdivingmask" category="Equipment,Diving" Tags="smallitem,signal,camera,diving,lightdiving" focusonselected="true" offsetonselected="500" maxstacksize="1" cargocontaineridentifier="metalcrate" description="Prevents you from drowning and broadcasts your view to the configured wifi channel. Requires a battery." scale="0.325" impactsoundtag="impact_metal_heavy" isshootable="false">
+    <PreferredContainer primary="divingcab" secondary="supplycab" />
+    <Deconstruct time="5">
+      <Item identifier="divingmask" />
+      <Item identifier="wificam" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="divingmask" />
+      <RequiredItem identifier="wificam" />
+    </Fabricate>
+    <Sprite name="Camera Diving Mask" texture="%ModDir:3020618603%/Items/WifiCam.png" sourcerect="226,326,69,68" depth="0.6" origin="0.5,0.5" />
+    <!-- WifiComponent to transmit the signal to another wifi component with the same channel configured -->
+    <WifiComponent canbeselected="false" MinChatMessageInterval="0.0" range="35000.0" DiscardDuplicateChatMessages="true" linktochat="false" channel="1" drawhudwhenequipped="false" allowingameediting="false" />
+    <!-- LightComponent that doesn't provide any light. Used to activate/deactivate the camera -->
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" alphablend="true" powerconsumption="1" allowingameediting="false" IsOn="false">
+      <!-- Drain batteries by decreasing their condition by 0.05 each second. ~33 min duration with regular battery cell -->
+      <StatusEffect type="OnActive" targettype="Contained" targetslot="1" Condition="-0.05" interval="1" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- Activate the camera by setting linktochat="true" if it receives power from a battery and the LightComponent is on. linktochat="true" is what allows the camera to transmit the view -->
+      <StatusEffect type="OnActive" target="This" linktochat="true" setvalue="true" comparison="and" interval="0.5">
+        <Conditional IsOn="true" />
+        <Conditional voltage="gte 0.5" />
+      </StatusEffect>
+      <!-- Deactivate the camera by setting linktochat="false" if the battery doesn't provide power or the LightComponent is off -->
+      <StatusEffect type="Always" target="This" linktochat="false" setvalue="true" comparison="or" interval="0.5">
+        <Conditional IsOn="false" />
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+    </LightComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery" autoinject="true">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="oxygensource,weldingtoolfuel" excludeditems="oxygenitetank" />
+      <Containable items="oxygenitetank">
+        <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true" targetslot="0">
+          <Conditional IsDead="false" />
+        </StatusEffect>
+      </Containable>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mobilebattery">
+          <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+        </Containable>
+      </SubContainer>
+    </ItemContainer>
+    <!-- Tickbox interface to toggle the camera on and off -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="-50,0" anchor="BottomCenter" relativesize="0.07,0.08" />
+      <TickBox text="ON/OFF">
+        <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="false" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraBeep.ogg" range="200" loop="false" volume="3" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" duration="1" targetitemcomponent="LightComponent" setvalue="true" comparison="And">
+          <Conditional IsOn="true" targetitemcomponent="LightComponent" />
+          <Conditional voltage="gt 0.5" />
+          <Sound file="%ModDir:3020618603%/Sounds/CameraTurnOff.ogg" range="200" loop="true" volume="3" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <!-- Textbox interface to type and set the desired channel to broadcast in -->
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Set Channel" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Body width="40" height="35" density="15" />
+    <Holdable pickkey="Select" slots="Any" attachable="true" canbepicked="true" />
+    <Wearable limbtype="Head" slots="Head" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Camera Diving Mask Wearable" texture="%ModDir:3020618603%/Items/WifiCam.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" hideotherwearables="false" sourcerect="226,326,69,68" origin="0.4,0.3" hidewearablesoftype="moustache,beard" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true" />
+      <StatusEffect type="OnWearing" target="Contained,Character" targetslot="0" OxygenAvailable="1000.0" Condition="-0.5" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygensource" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" targetslot="0" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" targetslot="0" targetlimbs="Torso" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="3.0" />
+      </StatusEffect>
+    </Wearable>
+    <!-- ConnectionPanel which is required to exist inside the item for the WifiComponent to function, but is set to be inaccessable since it's not supposed to be used by the player -->
+    <ConnectionPanel selectkey="Action" canbeselected="false" allowingameediting="false" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="signal_in" displayname="connection.signalin" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <input name="set_channel" displayname="connection.setchannel" />
+    </ConnectionPanel>
+  </Item>
+</Items>

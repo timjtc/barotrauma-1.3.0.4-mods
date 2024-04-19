@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <entityname.cammonitor>Camera Monitor</entityname.cammonitor>
+  <entityname.wificam>Wifi Camera</entityname.wificam>
+  <entityname.wificampiratehelmet>Separatist Camera Helmet</entityname.wificampiratehelmet>
+  <entityname.wificamballistichelmet1>Ballistic Camera Helmet</entityname.wificamballistichelmet1>
+  <entityname.wificamballistichelmet2>Gunner's Camera Helmet</entityname.wificamballistichelmet2>
+  <entityname.wificamballistichelmet3>Riot Camera Helmet</entityname.wificamballistichelmet3>
+  <entityname.wificamchitinhelmet>Chitin Camera Helmet</entityname.wificamchitinhelmet>
+  <entityname.wificamironhelmet>Iron Camera Helmet</entityname.wificamironhelmet>
+  <entityname.wificamclownmask>Clown Camera Mask</entityname.wificamclownmask>
+  <entityname.wificamclownmaskunique>Mother's Countenance with Camera</entityname.wificamclownmaskunique>
+  <entityname.wificamclowndivingmask>Clown Camera Diving Mask</entityname.wificamclowndivingmask>
+  <entityname.wificamdivingmask>Camera Diving Mask</entityname.wificamdivingmask>
+  <entityname.monitorwiringdiagram>Camera Monitor Wiring Diagram</entityname.monitorwiringdiagram>
+  <entityname.surveillancecamera>Wifi Surveillance Camera</entityname.surveillancecamera>
+  <entitydescription.cammonitor>A monitor to watch the wifi camera broadcasts. Needs to be connected to a wifi component.</entitydescription.cammonitor>
+  <entitydescription.wificam>Broadcasts your view to the configured wifi channel. Requires a battery.</entitydescription.wificam>
+  <entitydescription.wificampiratehelmet>Protects your head and broadcasts your view to the configured wifi channel. Requires a battery.</entitydescription.wificampiratehelmet>
+  <entitydescription.wificamballistichelmet1>Protects your head and broadcasts your view to the configured wifi channel. Requires a battery.</entitydescription.wificamballistichelmet1>
+  <entitydescription.wificamballistichelmet2>Protects your head and broadcasts your view to the configured wifi channel. Requires a battery.</entitydescription.wificamballistichelmet2>
+  <entitydescription.wificamballistichelmet3>Protects your head and broadcasts your view to the configured wifi channel. Requires a battery.</entitydescription.wificamballistichelmet3>
+  <entitydescription.wificamchitinhelmet>Protects your head and broadcasts your view to the configured wifi channel. Requires a battery.</entitydescription.wificamchitinhelmet>
+  <entitydescription.wificamironhelmet>Protects your head and broadcasts your view to the configured wifi channel. Requires a battery.</entitydescription.wificamironhelmet>
+  <entitydescription.wificamclownmask>Be a clown and broadcast your performance to the configured wifi channel. Requires a battery.</entitydescription.wificamclownmask>
+  <entitydescription.wificamclownmaskunique>Broadcast the actions of Honkmother to the configured wifi channel. Requires a battery.</entitydescription.wificamclownmaskunique>
+  <entitydescription.wificamclowndivingmask>Be a clown and broadcast your underwater performance to the configured wifi channel. Requires a battery.</entitydescription.wificamclowndivingmask>
+  <entitydescription.wificamdivingmask>Prevents you from drowning and broadcasts your view to the configured wifi channel. Requires a battery.</entitydescription.wificamdivingmask>
+  <entityname.monitorwiringdiagram>Displays the intended wiring setup for the camera monitor when equipped.</entityname.monitorwiringdiagram>
+  <entityname.surveillancecamera>Broadcasts the view to the configured wifi channel when wired to a power source. Can be attached anywhere on the inside and on fins and beams on the outside of your submarine.</entityname.surveillancecamera>
+  <!-- UNUSED ASSETS -->
+  <entityname.wificamheadset>Wifi Camera-Headset</entityname.wificamheadset>
+  <entityname.wificaminjectorheadset>Wifi Auto-Injector Camera-Headset</entityname.wificaminjectorheadset>
+  <entitydescription.wificamheadset>A heaset with a built-on camera. Broadcasts your view to the configured wifi channel. Requires a battery.</entitydescription.wificamheadset>
+  <entitydescription.wificaminjectorheadset>A heaset with a built-on camera. Broadcasts your view to the configured wifi channel. Requires a battery.</entitydescription.wificaminjectorheadset>
+</infotexts>

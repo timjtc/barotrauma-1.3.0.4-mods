@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Explorer" modversion="1.0.64" corepackage="False" steamworkshopid="1972333145" gameversion="1.0.21.0" expectedhash="A693AC013C71DC7C6CDD82DAA3BFE589">
+  <Wreck file="%ModDir%/Explorer_Wrecked.sub" />
+  <Submarine file="%ModDir%/ExplorerDrone.sub" />
+  <Submarine file="%ModDir%/Explorer I.sub" />
+  <EnemySubmarine file="%ModDir%/ExplorerPirate.sub" />
+  <Submarine file="%ModDir%/Explorer II.sub" />
+</contentpackage>

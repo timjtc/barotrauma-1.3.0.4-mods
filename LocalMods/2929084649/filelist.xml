@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="NEEDS" modversion="1.2.8" corepackage="False" steamworkshopid="2929084649" gameversion="1.1.18.1" expectedhash="2EC280D733241FD753A71EDE2C700C41">
+  <Afflictions file="%ModDir%/Afflictions.xml" />
+  <Character file="%ModDir%/Overrides/Human.xml" />
+  <Item file="%ModDir%/Overrides/Beds.xml" />
+  <Item file="%ModDir%/Overrides/Chairs.xml" />
+  <Text file="%ModDir%/Localization/English.xml" />
+  <Text file="%ModDir%/Localization/French.xml" />
+  <Text file="%ModDir%/Localization/LatinAmericanSpanish.xml" />
+  <Text file="%ModDir%/Localization/Russian.xml" />
+  <Text file="%ModDir%/Localization/Simplified Chinese.xml" />
+  <Text file="%ModDir%/Localization/Turkish.xml" />
+  <Item file="%ModDir%/Items/BoomBox/BoomBox.xml" />
+  <Item file="%ModDir%/Items/BoomBox/Mixtapes/Mixtapes.xml" />
+  <Item file="%ModDir%/Items/Hydroponics/Hydroponic Tank.xml" />
+  <Item file="%ModDir%/Items/Hydroponics/Plants.xml" />
+  <Item file="%ModDir%/Items/Things/ninjutsucrate.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/DairyProducts.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Food_Crawler.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Food_Endworm.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Food_Hammerhead.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Food_Human.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Food_Husk.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Food_Misc.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Food_Moloch.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Food_Mudraptor.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Food_Spineling.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Food_Thresher.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Food_Watcher.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Drinks.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Food/Ingredients.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Tools/Research.xml" />
+  <Item file="%ModDir%/HUNGRY EUROPANS/Items/Gardening/PlantProducts.xml" />
+  <Text file="%ModDir%/HUNGRY EUROPANS/Texts/French/French.xml" />
+  <Item file="%ModDir%/Overrides/Guitar/Guitar.xml" />
+  <Item file="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet Musics.xml" />
+  <Item file="%ModDir%/Overrides/Accordion/Accordion.xml" />
+  <Item file="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet Musics.xml" />
+  <Item file="%ModDir%/Overrides/Harmonica/Harmonica.xml" />
+  <Item file="%ModDir%/Overrides/Harmonica/Harmonica Sheet Musics/Harmonica Sheet Musics.xml" />
+</contentpackage>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <Items>
+    <Item name="" identifier="op_cafeteriachair" tags="chair" width="152" height="240" scale="0.5" noninteractable="false" category="Decorative" cargocontaineridentifier="ninjutsucrate" canflipy="false">
+      <Price baseprice="200" minavailable="1">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" />
+        <Price storeidentifier="merchantresearch" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantmine" />
+        <Price storeidentifier="merchantengineering" multiplier="0.9" />
+      </Price>
+      <Fabricate suitablefabricators="fabricator" requiredtime="60">
+        <RequiredSkill identifier="mechanical" level="25" />
+        <RequiredItem identifier="steel" amount="1" />
+        <RequiredItem identifier="plastic" amount="1" />
+        <RequiredItem identifier="aluminium" amount="2" />
+      </Fabricate>
+      <Deconstruct time="30">
+        <Item identifier="steel" amount="1" />
+        <Item identifier="plastic" amount="1" />
+        <Item identifier="aluminium" amount="2" />
+      </Deconstruct>
+      <sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="197,778,152,240" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+      <Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true" issecondaryitem="true" drawuserbehind="true">
+        <limbposition limb="Head" position="45,40" />
+        <limbposition limb="Torso" position="50,-30" />
+        <limbposition limb="Waist" position="50,-80" />
+        <limbposition limb="RightLeg" position="165,-140" />
+        <limbposition limb="LeftLeg" position="165,-140" />
+        <limbposition limb="RightHand" position="120,-80" allowusinglimb="true" />
+        <limbposition limb="LeftHand" position="120,-80" allowusinglimb="true" />
+        <StatusEffect type="OnActive" target="Character">
+          <reduceaffliction identifier="sleepaffliction" strength="0.002" />
+          <reduceaffliction identifier="mood" strength="0.45" />
+        </StatusEffect>
+      </Controller>
+      <Body width="152" height="240" density="100" />
+      <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" controlpose="true" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimpos="55,-70" holdangle="1" msg="ItemMsgDetachWrench" PickingTime="30.0" attachable="true" attachedbydefault="true" aimable="true">
+        <requireditem identifier="wrench" type="Equipped" />
+        <StatusEffect type="Always" target="Character" SpeedMultiplier="0.2" setvalue="true" />
+      </Holdable>
+    </Item>
+    <Item name="" identifier="opdeco_wheelchair2" nameidentifier="opdeco_wheelchair1" tags="chair" allowattachitems="false" texturescale="1.0,1.0" scale="0.5" category="Decorative" canflipy="false">
+      <Price baseprice="200" minavailable="1">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" />
+        <Price storeidentifier="merchantresearch" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantmine" />
+        <Price storeidentifier="merchantengineering" multiplier="0.9" />
+      </Price>
+      <Fabricate suitablefabricators="fabricator" requiredtime="60">
+        <RequiredSkill identifier="mechanical" level="25" />
+        <RequiredItem identifier="steel" amount="1" />
+        <RequiredItem identifier="plastic" amount="1" />
+        <RequiredItem identifier="aluminium" amount="2" />
+      </Fabricate>
+      <Deconstruct time="30">
+        <Item identifier="steel" amount="1" />
+        <Item identifier="plastic" amount="1" />
+        <Item identifier="aluminium" amount="2" />
+      </Deconstruct>
+      <sprite texture="Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="452,781,249,225" depth="0.55" premultiplyalpha="false" origin="0.5,0.5" />
+      <Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true" issecondaryitem="true" drawuserbehind="true">
+        <limbposition limb="Head" position="70,45" />
+        <limbposition limb="Torso" position="90,-30" />
+        <limbposition limb="Waist" position="95,-85" />
+        <limbposition limb="RightFoot" position="180,-220" />
+        <limbposition limb="LeftFoot" position="180,-220" />
+        <limbposition limb="RightHand" position="130,-100" allowusinglimb="true" />
+        <limbposition limb="LeftHand" position="130,-100" allowusinglimb="true" />
+        <StatusEffect type="OnActive" target="Character">
+          <reduceaffliction identifier="sleepaffliction" strength="0.002" />
+          <reduceaffliction identifier="mood" strength="0.45" />
+        </StatusEffect>
+      </Controller>
+      <Body width="249" height="225" density="100" />
+      <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" controlpose="true" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimpos="55,-70" holdangle="1" msg="ItemMsgDetachWrench" PickingTime="30.0" attachable="true" attachedbydefault="true" aimable="true">
+        <requireditem identifier="wrench" type="Equipped" />
+        <StatusEffect type="Always" target="Character" SpeedMultiplier="0.2" setvalue="true" />
+      </Holdable>
+    </Item>
+    <Item name="" identifier="opdeco_officechair" tags="chair" allowattachitems="false" texturescale="1.0,1.0" scale="0.45" category="Decorative" cargocontaineridentifier="ninjutsucrate" canflipy="false">
+      <Price baseprice="200" minavailable="1">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" />
+        <Price storeidentifier="merchantresearch" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantmine" />
+        <Price storeidentifier="merchantengineering" multiplier="0.9" />
+      </Price>
+      <Fabricate suitablefabricators="fabricator" requiredtime="60">
+        <RequiredSkill identifier="mechanical" level="25" />
+        <RequiredItem identifier="steel" amount="1" />
+        <RequiredItem identifier="plastic" amount="1" />
+        <RequiredItem identifier="aluminium" amount="2" />
+      </Fabricate>
+      <Deconstruct time="30">
+        <Item identifier="steel" amount="1" />
+        <Item identifier="plastic" amount="1" />
+        <Item identifier="aluminium" amount="2" />
+      </Deconstruct>
+      <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="570,341,180,267" depth="0.55" premultiplyalpha="false" origin="0.5,0.5" />
+      <Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true" issecondaryitem="true" drawuserbehind="true">
+        <limbposition limb="Head" position="90,15" />
+        <limbposition limb="Torso" position="85,-60" />
+        <limbposition limb="Waist" position="90,-130" />
+        <limbposition limb="RightFoot" position="140,-250" />
+        <limbposition limb="LeftFoot" position="140,-250" />
+        <limbposition limb="RightHand" position="140,-105" allowusinglimb="true" />
+        <limbposition limb="LeftHand" position="140,-105" allowusinglimb="true" />
+        <StatusEffect type="OnActive" target="Character">
+          <reduceaffliction identifier="sleepaffliction" strength="0.002" />
+          <reduceaffliction identifier="mood" strength="0.45" />
+        </StatusEffect>
+      </Controller>
+      <Body width="180" height="267" density="100" />
+      <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" controlpose="true" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimpos="55,-70" holdangle="1" msg="ItemMsgDetachWrench" PickingTime="30.0" attachable="true" attachedbydefault="true" aimable="true">
+        <requireditem identifier="wrench" type="Equipped" />
+        <StatusEffect type="Always" target="Character" SpeedMultiplier="0.2" setvalue="true" />
+      </Holdable>
+    </Item>
+    <Item name="" identifier="opdeco_chair1" nameidentifier="opdeco_officechair" tags="chair" allowattachitems="true" texturescale="1.0,1.0" scale="0.5" category="Decorative" cargocontaineridentifier="ninjutsucrate" canflipy="false">
+      <Price baseprice="200" minavailable="1">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" />
+        <Price storeidentifier="merchantresearch" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantmine" />
+        <Price storeidentifier="merchantengineering" multiplier="0.9" />
+      </Price>
+      <Fabricate suitablefabricators="fabricator" requiredtime="60">
+        <RequiredSkill identifier="mechanical" level="25" />
+        <RequiredItem identifier="steel" amount="1" />
+        <RequiredItem identifier="plastic" amount="1" />
+        <RequiredItem identifier="aluminium" amount="2" />
+      </Fabricate>
+      <Deconstruct time="30">
+        <Item identifier="steel" amount="1" />
+        <Item identifier="plastic" amount="1" />
+        <Item identifier="aluminium" amount="2" />
+      </Deconstruct>
+      <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1233,31,144,240" depth="0.55" premultiplyalpha="false" origin="0.5,0.5" />
+      <Controller UserPos="-10,30" direction="Left" hidehud="false" canbeselected="true" issecondaryitem="true" drawuserbehind="true">
+        <limbposition limb="Head" position="82,18" />
+        <limbposition limb="Torso" position="80,-52" />
+        <limbposition limb="Waist" position="73,-105" />
+        <limbposition limb="RightFoot" position="-10,-230" />
+        <limbposition limb="LeftFoot" position="-10,-230" />
+        <limbposition limb="RightHand" position="40,-120" allowusinglimb="true" />
+        <limbposition limb="LeftHand" position="40,-120" allowusinglimb="true" />
+        <StatusEffect type="OnActive" target="Character">
+          <reduceaffliction identifier="sleepaffliction" strength="0.002" />
+          <reduceaffliction identifier="mood" strength="0.45" />
+        </StatusEffect>
+      </Controller>
+      <Body width="144" height="240" density="100" />
+      <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" controlpose="true" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimpos="55,-70" holdangle="1" msg="ItemMsgDetachWrench" PickingTime="30.0" attachable="true" attachedbydefault="true" aimable="true">
+        <requireditem identifier="wrench" type="Equipped" />
+        <StatusEffect type="Always" target="Character" SpeedMultiplier="0.2" setvalue="true" />
+      </Holdable>
+    </Item>
+    <Item name="" identifier="opdeco_chair2" nameidentifier="opdeco_officechair" tags="chair" allowattachitems="true" texturescale="1.0,1.0" scale="0.5" category="Decorative" cargocontaineridentifier="ninjutsucrate" canflipy="false">
+      <Price baseprice="200" minavailable="1">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" />
+        <Price storeidentifier="merchantresearch" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantmine" />
+        <Price storeidentifier="merchantengineering" multiplier="0.9" />
+      </Price>
+      <Fabricate suitablefabricators="fabricator" requiredtime="60">
+        <RequiredSkill identifier="mechanical" level="25" />
+        <RequiredItem identifier="steel" amount="1" />
+        <RequiredItem identifier="plastic" amount="1" />
+        <RequiredItem identifier="aluminium" amount="2" />
+      </Fabricate>
+      <Deconstruct time="30">
+        <Item identifier="steel" amount="1" />
+        <Item identifier="plastic" amount="1" />
+        <Item identifier="aluminium" amount="2" />
+      </Deconstruct>
+      <sprite texture="Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="744,784,144,240" depth="0.55" premultiplyalpha="false" origin="0.5,0.5" />
+      <Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true" issecondaryitem="true" drawuserbehind="true">
+        <limbposition limb="Head" position="40,15" />
+        <limbposition limb="Torso" position="55,-60" />
+        <limbposition limb="Waist" position="60,-130" />
+        <limbposition limb="RightFoot" position="100,-230" />
+        <limbposition limb="LeftFoot" position="100,-230" />
+        <limbposition limb="RightHand" position="100,-100" allowusinglimb="true" />
+        <limbposition limb="LeftHand" position="100,-100" allowusinglimb="true" />
+        <StatusEffect type="OnActive" target="Character">
+          <reduceaffliction identifier="sleepaffliction" strength="0.002" />
+          <reduceaffliction identifier="mood" strength="0.45" />
+        </StatusEffect>
+      </Controller>
+      <Body width="144" height="240" density="100" />
+      <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" controlpose="true" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimpos="55,-70" holdangle="1" msg="ItemMsgDetachWrench" PickingTime="30.0" attachable="true" attachedbydefault="true" aimable="true">
+        <requireditem identifier="wrench" type="Equipped" />
+        <StatusEffect type="Always" target="Character" SpeedMultiplier="0.2" setvalue="true" />
+      </Holdable>
+    </Item>
+  </Items>
+</Override>

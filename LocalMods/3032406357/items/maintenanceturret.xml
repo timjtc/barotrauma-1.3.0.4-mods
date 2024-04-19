@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- Maintenance Turret -->
+  <Item name="Maintenance Turret" description="" identifier="maintenanceturret" Tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="maintenanceturretequipment">
+    <Sprite texture="%ModDir%/items/maintenanceturret.png" depth="0.01" sourcerect="0,0,248,248" canflipy="false" />
+    <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
+    <SwappableItem price="3000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+      <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="256,0,256,389" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="maintenanceloader" />
+    </SwappableItem>
+    <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret launchimpulse="2.0" canbeselected="false" characterusable="false" linkable="true" spread="5" barrelpos="126,82" firingoffset="0,-190" rotationlimits="180,360" powerconsumption="400.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="2" reload="0.1" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <sound file="Content/Items/Weapons/FlameThrowerLoop.ogg" range="7500" type="OnUse" />
+      <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
+      <RailSprite texture="%ModDir%/items/maintenanceturret.png" depth="0.011" sourcerect="420,0,144,287" origin="0.46, 0.705" />
+      <BarrelSprite texture="%ModDir%/items/maintenanceturret.png" depth="0.012" sourcerect="295,0,125,333" origin="0.5, 0.8" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+    </Turret>
+    <aitarget maxsightrange="1000" maxsoundrange="1000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <SkillRequirementHint identifier="mechanical" level="50" />
+  </Item>
+  <!-- Maintenance Loader -->
+  <Item name="Maintenance Loader" identifier="maintenanceloader" tags="maintenanceturretequipment,maintenanceturretammosource,turretammosource,maintenanceloader" category="Machine,Weapon" linkable="true" allowedlinks="maintenanceturret" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <Upgrade gameversion="0.14.7.0" rectwidth="82" rectheight="176" itempos="82,-270" />
+    <SwappableItem canbebought="false" origin="82,352" spawnwithid="weldingammobox" />
+    <UpgradePreviewSprite texture="Content/UI/WeaponUI.png" sourcerect="208,968,32,46" origin="0.5,0.5" />
+    <Sprite name="Coilgun Loader Front" texture="Content/Items/Weapons/Loaders.png" depth="0.78" sourcerect="855,10,165,352" origin="0.5,0.5" />
+    <DecorativeSprite name="Coilgun Loader Frame Front" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="10" mindeteriorationdelay="60" maxdeteriorationdelay="300" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <StatusEffect type="InWater" target="This" condition="-0.25" />
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="-0.1,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="82,-270" iteminterval="0,0" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.18,0.23" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="maintenanceammobox" />
+      <StatusEffect type="OnUse" target="Contained">
+        <RequiredItem items="maintenanceammobox" type="Contained" />
+        <Use />
+      </StatusEffect>
+    </ItemContainer>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+  </Item>
+  <!---->
+  <!-- Ammunition -->
+  <!---->
+  <!-- Plasma Cutter Projectile -->
+  <Item name="plasmacutterbolt" identifier="plasmacutterbolt" tags="cuttingequipment" category="Weapon" scale="0.5" sonarsize="0" hideinmenus="true">
+    <!--Debug Line <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55"/>  -->
+    <!--Debug Line <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55"/>  -->
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" />
+    <Body width="160" height="10" density="10" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="25" damagedoors="false">
+      <StatusEffect type="OnActive" target="This" Interval="10000000" stackable="false" lifetime="2">
+        <ParticleEmitter particle="plasma" particlespersecond="1" particleamount="1" distancemin="100" distancemax="100" scalemin="3.8" scalemax="4" copyentityangle="true" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" delay="0.28" condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnImpact" target="NearbyItems" targettags="ore" range="150.0" stackable="false" DeattachTimer="0.1" />
+      <StatusEffect type="OnImpact" target="This" condition="-100.0">
+        <ParticleEmitter particle="plasmaspark" copyentityangle="true" particlespersecond="200" anglemin="150" anglemax="210" velocitymin="200" velocitymax="800" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="100" force="0.0" camerashake="0" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" structuredamage="40">
+          <Affliction identifier="burn" strength="2" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+  </Item>
+  <!-- Plasma Cutter Ammobox -->
+  <Item name="Liquid Oxygen Barrel" identifier="plasmacutterammobox" scale="0.5" tags="maintenanceammobox,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="maintenanceloader,ammoboxcontainer" mincondition="1" />
+    <Price baseprice="350" sold="false" displaynonempty="true" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" maxavailable="2" minleveldifficulty="5" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" />
+      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" maxavailable="2" minleveldifficulty="5" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="liquidoxygenite" mincondition="0.95" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredItem identifier="liquidoxygenite" />
+      <RequiredItem identifier="liquidoxygenite" />
+      <RequiredItem identifier="aluminium" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="15">
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="liquidoxygenite" />
+      <RequiredItem identifier="liquidoxygenite" />
+      <RequiredItem identifier="plasmacutterammobox" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+    </Fabricate>
+    <Sprite texture="%ModDir%/items/maintenanceturret.png" depth="0.54" sourcerect="0,248,96,120" origin="0.5,0.5" />
+    <Body width="96" height="120" density="25" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="2" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="tank">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="plasmacutterbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-0.2" disabledeltatime="true">
+        <RequiredItem items="plasmacutterbolt" type="Contained" />
+      </StatusEffect>
+      <Containable items="plasmacutterbolt" />
+    </ItemContainer>
+  </Item>
+  <!---->
+  <!-- Welding Projectile -->
+  <Item name="weldingbolt" identifier="weldingbolt" category="Weapon" scale="0.5" sonarsize="0" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" />
+    <Body width="160" height="10" density="10" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="25" damagedoors="false">
+      <StatusEffect type="OnActive" target="This" Interval="10000000" stackable="false" lifetime="2">
+        <ParticleEmitter particle="weld" particlespersecond="1" particleamount="1" distancemin="50" distancemax="50" scalemin="3.8" scalemax="4" copyentityangle="true" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" delay="0.2" condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnImpact" target="This" condition="-100.0">
+        <ParticleEmitter particle="weldspark" copyentityangle="true" particlespersecond="200" anglemin="150" anglemax="210" velocitymin="200" velocitymax="800" />
+        <ParticleEmitter particle="GlowDot" copyentityangle="true" particlespersecond="60" emitinterval="0.7" particleamount="10" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="10" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="100" force="0.0" camerashake="0" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" structuredamage="-20">
+          <Affliction identifier="burn" strength="2" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+  </Item>
+  <!-- Welding Ammobox -->
+  <Item name="Welding Fuel Barrel" identifier="weldingammobox" scale="0.5" tags="maintenanceammobox,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="maintenanceloader,ammoboxcontainer" mincondition="1" />
+    <Price baseprice="350" sold="false" displaynonempty="true" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" maxavailable="2" minleveldifficulty="5" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" />
+      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" maxavailable="2" minleveldifficulty="5" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ethanol" mincondition="0.95" />
+      <Item identifier="ethanol" mincondition="0.95" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredItem identifier="ethanol" />
+      <RequiredItem identifier="ethanol" />
+      <RequiredItem identifier="ethanol" />
+      <RequiredItem identifier="aluminium" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="15">
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="ethanol" />
+      <RequiredItem identifier="ethanol" />
+      <RequiredItem identifier="ethanol" />
+      <RequiredItem identifier="weldingammobox" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+    </Fabricate>
+    <Sprite texture="%ModDir%/items/maintenanceturret.png" depth="0.54" sourcerect="96,248,96,120" origin="0.5,0.5" />
+    <Body width="96" height="120" density="25" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="2" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="tank">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="weldingbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-0.2" disabledeltatime="true">
+        <RequiredItem items="weldingbolt" type="Contained" />
+      </StatusEffect>
+      <Containable items="weldingbolt" />
+    </ItemContainer>
+  </Item>
+  <!---->
+  <!-- Fixfoam Projectile -->
+  <Item name="fixfoambolt" identifier="fixfoambolt" category="Weapon" scale="0.5" sonarsize="0" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" />
+    <Body width="160" height="10" density="10" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="8" damagedoors="false">
+      <StatusEffect type="OnActive" target="This" Interval="10000000" stackable="false" lifetime="2">
+        <ParticleEmitter particle="fixfoam" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="1" velocitymin="5000" velocitymax="5000" scalemin="0.4" scalemax="0.8" />
+        <ParticleEmitter particle="fixfoam" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="2" velocitymin="3000" velocitymax="4000" scalemin="0.4" scalemax="0.8" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="0.8" condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnImpact" target="This" condition="-100.0" />
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="200" force="0.0" camerashake="0" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" structuredamage="-50" />
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+  </Item>
+  <!-- Fixfoam Ammobox -->
+  <Item name="Fixfoam Barrel" identifier="fixfoamammobox" scale="0.5" tags="maintenanceammobox,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="maintenanceloader,ammoboxcontainer" mincondition="1" />
+    <Price baseprice="350" sold="false" displaynonempty="true" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" maxavailable="2" minleveldifficulty="5" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" />
+      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" maxavailable="2" minleveldifficulty="5" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="phosphorus" mincondition="0.95" />
+      <Item identifier="sodium" mincondition="0.95" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredItem identifier="sodium" />
+      <RequiredItem identifier="sodium" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="aluminium" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="15">
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="sodium" />
+      <RequiredItem identifier="sodium" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="fixfoamammobox" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+    </Fabricate>
+    <Sprite texture="%ModDir%/items/maintenanceturret.png" depth="0.54" sourcerect="192,248,96,120" origin="0.5,0.5" />
+    <Body width="96" height="120" density="25" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="2" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="tank">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="fixfoambolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-0.6" disabledeltatime="true">
+        <RequiredItem items="fixfoambolt" type="Contained" />
+      </StatusEffect>
+      <Containable items="fixfoambolt" />
+    </ItemContainer>
+  </Item>
+</Items>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Lua For Barotrauma" modversion="1.0.87" corepackage="False" steamworkshopid="2559634234" gameversion="1.3.0.4" expectedhash="F46D8FD57C66837A95944A67A0F76D2D">
+  <ServerExecutable file="%ModDir%/Binary/DedicatedServer.exe" />
+  <Item file="%ModDir%/dummyitem.xml" />
+</contentpackage>

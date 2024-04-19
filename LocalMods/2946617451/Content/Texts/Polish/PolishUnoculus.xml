@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Polish" nowhitespace="false" translatedname="Polski">
+  <submarine.name.unoculus>Unookulus</submarine.name.unoculus>
+  <submarine.description.unoculus>Unoculus to unikatowy okręt podwodny, wyposażony w duży, sferyczny obserwatorium z przodu, zaawansowaną sztuczną inteligencję oraz najnowocześniejsze technologie w zakresie nawigacji i monitorowania, pozwalające na wczesne wykrywanie potencjalnych zagrożeń. Oparty na konstrukcji firmy Alterra Corporation © Cyclops, Unoculus spełni wszystkie Twoje oczekiwania, pod warunkiem, że będzie utrzymywany w dobrym stanie technicznym.</submarine.description.unoculus>
+  <entityname.Aheadslowbutton>Wolno do przodu</entityname.Aheadslowbutton>
+  <entityname.AheadStandardbutton>Prędkość standardowa do przodu</entityname.AheadStandardbutton>
+  <entityname.AheadFlankbutton>Pełna prędkość do przodu</entityname.AheadFlankbutton>
+  <entityname.Enginebutton>Moc silnika</entityname.Enginebutton>
+  <entityname.Silentbutton>Tryb cichy</entityname.Silentbutton>
+  <entityname.musiccontrol>Muzyka</entityname.musiccontrol>
+  <entityname.msgRadioChannel>Ten terminal jest przeznaczony dla systemu napisów, który jeszcze nie jest obowiązujący. W rzeczywistości wszystko jest gotowe, ale z powodu błędu nie jest to jeszcze możliwe (przynajmniej we wszystkich językach). Błąd został zgłoszony, więc trzeba poczekać na następną aktualizację Barotrauma. Dziękujemy za użycie Unookulus.</entityname.msgRadioChannel>
+  <!-- <entityname.msgRadioChannel>Witamy w systemie napisów. Proszę podać kanał radia, na którym napisy mogą być transmitowane. Domyślny kanał: 2.</entityname.msgRadioChannel>-->
+  <!-- Subtitles section -->
+  <label.AheadFlank>Cało naprzód.</label.AheadFlank>
+  <label.AheadSlow>Wolno naprzód.</label.AheadSlow>
+  <label.AheadStandard>Pół naprzód.</label.AheadStandard>
+  <label.HullIntegrityLow>Ostrzeżenie, integralność kadłuba: Niska.</label.HullIntegrityLow>
+  <label.Decoy>Upuszczenie przynęty.</label.Decoy>
+  <label.EmergencyPower>Tylko zasilanie awaryjne. Produkcja tlenu: Wyłancona.</label.EmergencyPower>
+  <label.SystemFailure>Ostrzeżenie, awaria systemu.</label.SystemFailure>
+  <label.EngineUp>Uruchomienie silnika.</label.EngineUp>
+  <label.EngineDown>Wyłączenie silnika.</label.EngineDown>
+  <label.ExternalHullDamage>Wykryto zewnętrzne uszkodzenia kadłuba.</label.ExternalHullDamage>
+  <label.FireExtinguished>Ogień ugaszony, włączone płuczki powietrza.</label.FireExtinguished>
+  <label.FireNeutralization>System przeciwpożarowy: Włączony.</label.FireNeutralization>
+  <label.PowerLow>Niski poziom energii.</label.PowerLow>
+  <label.SilentRunning>Cichy naprzód.</label.SilentRunning>
+  <label.SystemAttention>Niektóre systemy potrzebuje obsługiwania.</label.SystemAttention>
+  <label.EngineCritical>Ostrzeżenie, temperatura silnika krytyczna.</label.EngineCritical>
+  <label.EngineOverheat>Ostrzeżenie, przegrzany silnik.</label.EngineOverheat>
+  <label.FireDetected>Ostrzeżenie, wykryto ogień.</label.FireDetected>
+  <label.HullBreach>Ostrzeżenie, wykryto naruszenie kadłuba.</label.HullBreach>
+  <label.HullIntegrityCritical>Ostrzeżenie, integralność kadłuba krytyczna.</label.HullIntegrityCritical>
+  <label.MaximumDepth>Ostrzeżenie, osiągnięto maksymalną głębokość. Nieuniknione uszkodzenie kadłuba.</label.MaximumDepth>
+  <label.CreatureAttack>Ostrzeżenie, atak istoty.</label.CreatureAttack>
+  <label.BestCaptain>Jesteś najlepszym kapitanem na tej planecie, ja nawet nie żartuję.</label.BestCaptain>
+</infotexts>

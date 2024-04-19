@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Happy Birthday Unoculus !" identifier="HappyBirthdayUnoculus" width="256" height="192" scale="0.15" noninteractable="true" category="Decorative">
+    <sprite texture="%ModDir%/Content/Items/HappyBirthday.png" sourcerect="0,0,255,192" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <ItemContainer capacity="0" slotsperrow="0" canbeselected="true" hideitems="true" msg="Click me :0">
+      <RequiredItem items="dontuseme" type="Picked" msg="Thank you everyone for your support and attention given to this sub! ♥" ignoreineditor="true" />
+    </ItemContainer>
+  </Item>
+</Items>

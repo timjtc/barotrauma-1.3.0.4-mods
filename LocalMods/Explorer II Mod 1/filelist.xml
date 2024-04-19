@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Explorer II Mod 1" modversion="1.0.14" corepackage="False" steamworkshopid="3071456202" gameversion="1.1.19.3">
+  <Submarine file="%ModDir%/Explorer II Mod 1.sub" />
+</contentpackage>

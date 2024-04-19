@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Turkish" nowhitespace="false" translatedname="Türkçe">
+  <!--Items-->
+  <entityname.watercanteen>Su Matarası</entityname.watercanteen>
+  <entitydescription.watercanteen>Değerli arıtılmış suyunu tutması için bir su matarası.</entitydescription.watercanteen>
+  <entityname.ledouxenergydrink>Enerji İçeceği</entityname.ledouxenergydrink>
+  <entitydescription.ledouxenergydrink>Yorgunluğunla savaşman için lezzetli bir içecek.</entitydescription.ledouxenergydrink>
+  <!--Meat-->
+  <entityname.rottedmeat>Çürük et</entityname.rottedmeat>
+  <entitydescription.rottedmeat>Onu yemeyi aklından bile geçirme!</entitydescription.rottedmeat>
+  <entityname.crawlermeat>Böcek Eti</entityname.crawlermeat>
+  <entitydescription.crawlermeat>Bu et diğerlerine göre daha yumuşak, yine de iğrenç.</entitydescription.crawlermeat>
+  <entityname.hammerheadmeat>Çekiçkafa Eti</entityname.hammerheadmeat>
+  <entitydescription.hammerheadmeat>Güçlü ve sert bir parça et, dövülürse daha iyi olur.</entitydescription.hammerheadmeat>
+  <entityname.humanmeat>İnsan Eti</entityname.humanmeat>
+  <entitydescription.humanmeat>Ölüleri yemek, sebeplendirilebilir mi ?</entitydescription.humanmeat>
+  <entityname.huskedmeat>Kabuk Eti</entityname.huskedmeat>
+  <entitydescription.huskedmeat>Hala hareket ediyor...</entitydescription.huskedmeat>
+  <entityname.molochmeat>Molek Eti</entityname.molochmeat>
+  <entitydescription.molochmeat>Dışı çıtır, içi yumuşak.</entitydescription.molochmeat>
+  <entityname.spinelingmeat>Spineling Eti</entityname.spinelingmeat>
+  <entitydescription.spinelingmeat>Midende sivriler büyümemesi için dua et...</entitydescription.spinelingmeat>
+  <entityname.mudraptormeat>Çamur raptoru Eti</entityname.mudraptormeat>
+  <entitydescription.mudraptormeat>İnsanlar tadının bir tür tavuk gibi olduğunu söylüyor, üzücü ki bir tavuğun ne olduğunu bilmiyorsun...</entitydescription.mudraptormeat>
+  <entityname.threshermeat>Harmancı Eti</entityname.threshermeat>
+  <entitydescription.threshermeat>Her tarafında damarlar var!</entitydescription.threshermeat>
+  <!-- Canned Foods -->
+  <entityname.cannedfood>Konserve Yemek</entityname.cannedfood>
+  <entitydescription.cannedfood>En iyi yiyecek değil, ama mideni dolduruyor. İyi tarafından bak, çürüyormuşa benzemiyor. Ama nasıl yapıldığını sorma...</entitydescription.cannedfood>
+  <entityname.cannedcrawlermeat>Konserve Böcek Eti</entityname.cannedcrawlermeat>
+  <entitydescription.cannedcrawlermeat>En azından tuz tadını bastırır.</entitydescription.cannedcrawlermeat>
+  <entityname.cannedhammerheadmeat>Konserve Çekiçkafa Eti</entityname.cannedhammerheadmeat>
+  <entitydescription.cannedhammerheadmeat>Zor kısım çiğnemek olmalıydı. Oysaki kutudan çıkarmak daha zor.</entitydescription.cannedhammerheadmeat>
+  <entityname.cannedhumanmeat>Konserve İnsan Eti</entityname.cannedhumanmeat>
+  <entitydescription.cannedhumanmeat>"Ölümde bile servis ediliyorum"</entitydescription.cannedhumanmeat>
+  <entityname.cannedhuskedmeat>Konserve Kabuk Eti</entityname.cannedhuskedmeat>
+  <entitydescription.cannedhuskedmeat>İlginç olan besleyici ve lezzetli olması, ama bu boğazında bir şey hissetmene neden oluyor...</entitydescription.cannedhuskedmeat>
+  <entityname.cannedmolochmeat>Konserve Molek Eti</entityname.cannedmolochmeat>
+  <entitydescription.cannedmolochmeat>Herkese tuzlu gri madde !</entitydescription.cannedmolochmeat>
+  <entityname.cannedmudraptormeat>Konserve Çamur Raptoru Eti</entityname.cannedmudraptormeat>
+  <entitydescription.cannedmudraptormeat>Belki tavuk tadını çok şey yediği için alıyordur ?</entitydescription.cannedmudraptormeat>
+  <entityname.cannedspinelingmeat>Konserve Spineling Eti</entityname.cannedspinelingmeat>
+  <entitydescription.cannedspinelingmeat>Yerken dikkatli ol : Isırığında kemik memik çıkabilir.</entitydescription.cannedspinelingmeat>
+  <entityname.cannedthreshermeat>Konserve Harmancı Eti</entityname.cannedthreshermeat>
+  <entitydescription.cannedthreshermeat>Çok kez karıştırıldığı ve kesildiği için çorbamsı bir kıvama gelmiş.</entitydescription.cannedthreshermeat>
+  <!--Afflictions-->
+  <afflictionname.hungeraffliction>Açlık</afflictionname.hungeraffliction>
+  <afflictiondescription.hungeraffliction>Açlığını Düşük Tut : Eğer %50'ye ulaşırsa negatif etkilerini görmeye başlarsın ve vücudun bunları kaldıramayabilir...</afflictiondescription.hungeraffliction>
+  <afflictioncauseofdeath.hungeraffliction>Açlıktan Ölmüş</afflictioncauseofdeath.hungeraffliction>
+  <afflictioncauseofdeathself.hungeraffliction>Açlık dayanılamayacak kadar fazla...</afflictioncauseofdeathself.hungeraffliction>
+  <afflictionname.thirstaffliction>Susuzluk</afflictionname.thirstaffliction>
+  <afflictiondescription.thirstaffliction>Susuzluğunu Düşük Tut: Eğer 50%'ye ulaşırsa negatif etkilerini görmeye başlarsın ve vücudun bunları kaldıramayabilir...</afflictiondescription.thirstaffliction>
+  <afflictioncauseofdeath.thirstaffliction>Susuzluktan Ölmüş</afflictioncauseofdeath.thirstaffliction>
+  <afflictioncauseofdeathself.thirstaffliction>Etrafa çokca su olsa bile, susuz...</afflictioncauseofdeathself.thirstaffliction>
+  <afflictionname.sleepaffliction>Uyku Durumu</afflictionname.sleepaffliction>
+  <afflictiondescription.sleepaffliction>Uykusuzluğunu Düşük Tut: Eğer 50%'ye ulaşırsa negatif etkilerini görmeye başlarsın ve vücudun bunları kaldıramayabilir...</afflictiondescription.sleepaffliction>
+  <afflictioncauseofdeath.sleepaffliction>Uyku Eksikliğinden Ölmüş</afflictioncauseofdeath.sleepaffliction>
+  <afflictioncauseofdeathself.sleepaffliction>Şimdi dinlenebilirsin, sonsuza dek...</afflictioncauseofdeathself.sleepaffliction>
+  <afflictionname.social>Sosyal</afflictionname.social>
+  <afflictiondescription.social>Bu ihtiyacı göz önünde bulundur : Eğer %50'ye ulaşırsa becerilerin üzerinde negatif etkiler görmeye başlayacaksın, Biraz toplumun arasına çık, sosyalleş !</afflictiondescription.social>
+  <afflictioncauseofdeath.social>Sakatlayıcı Depresyon</afflictioncauseofdeath.social>
+  <afflictioncauseofdeathself.social>Nasıl ????</afflictioncauseofdeathself.social>
+  <!--afflictionname.></afflictionname.>
+<afflictiondescription.></afflictiondescription.>
+<afflictioncauseofdeath.></afflictioncauseofdeath.>
+<afflictioncauseofdeathself.></afflictioncauseofdeathself.-->
+  <!--entityname.></entityname.>
+<entitydescription.></entitydescription.-->
+</infotexts>

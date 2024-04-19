@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <Item name="" identifier="energydrink" tags="smallitem,medical" category="Equipment,Medical" maxstacksize="1" useinhealthinterface="true" cargocontaineridentifier="metalcrate" scale="0.06" impactsoundtag="impact_metal_light" allowdroppingonswap="true" hideinmenus="true" allowasextracargo="false">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir%/Items/Energy Drink.png" sourcerect=",,," origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Energy Drink.png" depth="0.55" sourcerect=",,," origin="0.3,0.8" />
+    <!--ContainedSprite name="Water Canteen in Oxygen Generator" allowedcontainertags="oxygenerator" texture="%ModDir%/Items/Water Canteen.png" sourcerect="181,0,75,193" depth="0.55" origin="0.5,200.0" />
+	<ContainedSprite name="Water Canteen in Oxygen Generator (shuttle)" allowedcontainertags="shuttleoxygenerator" texture="%ModDir%/Items/Water Canteen.png" sourcerect="181,0,75,193" depth="0.55" origin="0.5,100.0" />
+	<ContainedSprite name="Water Canteen in Large Oxygen Locker" allowedcontainertags="oxygentankshelf" texture="%ModDir%/Items/Water Canteen.png" sourcerect="181,0,75,193" depth="0.55" origin="0.5,0.5" />
+	<ContainedSprite name="Water Canteen in Small Oxygen Locker" allowedcontainertags="oxygentankshelf2" texture="%ModDir%/Items/Water Canteen.png" sourcerect="181,0,75,193" depth="0.55" origin="0.5,0.5" /-->
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <StatusEffect type="Always" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Override>

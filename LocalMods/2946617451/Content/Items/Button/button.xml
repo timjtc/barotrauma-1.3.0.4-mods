@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Ahead Slow" identifier="Aheadslowbutton" category="Electrical" tags="smallitem,button" scale="0.5">
+    <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="78,155,125,75" origin="0.5,0.5" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+    </Controller>
+    <LightComponent range="0" lightcolor="255,255,255,255" powerconsumption="1" IsOn="true" castshadows="false" allowingameediting="false">
+      <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="78,155,125,75" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="set_color" displayname="connection.setcolor" />
+      <output name="signal_out" displayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Ahead Standard" identifier="AheadStandardbutton" category="Electrical" tags="smallitem,button" scale="0.5">
+    <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="205,155,125,75" origin="0.5,0.5" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+    </Controller>
+    <LightComponent range="0" lightcolor="255,255,255,255" powerconsumption="1" IsOn="true" castshadows="false" allowingameediting="false">
+      <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="205,155,125,75" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="set_color" displayname="connection.setcolor" />
+      <output name="signal_out" displayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Ahead Flank" identifier="AheadFlankbutton" category="Electrical" tags="smallitem,button" scale="0.5">
+    <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="332,155,125,75" origin="0.5,0.5" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+    </Controller>
+    <LightComponent range="0" lightcolor="255,255,255,255" powerconsumption="1" IsOn="true" castshadows="false" allowingameediting="false">
+      <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="332,155,125,75" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="set_color" displayname="connection.setcolor" />
+      <output name="signal_out" displayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Engine Power" identifier="Enginebutton" category="Electrical" tags="smallitem,button" scale="0.5">
+    <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="1,155,75,75" origin="0.5,0.5" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+    </Controller>
+    <LightComponent range="0" lightcolor="255,255,255,255" powerconsumption="1" IsOn="true" castshadows="false" allowingameediting="false">
+      <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="1,155,75,75" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="set_color" displayname="connection.setcolor" />
+      <output name="signal_out" displayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Silent Button" identifier="Silentbutton" category="Electrical" tags="smallitem,button" scale="0.5">
+    <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="459,155,125,75" origin="0.5,0.5" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+    </Controller>
+    <LightComponent range="0" lightcolor="255,255,255,255" powerconsumption="1" IsOn="true" castshadows="false" allowingameediting="false">
+      <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="459,155,125,75" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="set_color" displayname="connection.setcolor" />
+      <output name="signal_out" displayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <!--
+  <Item name="" identifier="Aheadslowlight" scale="0.5" category="Electrical">
+    <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="78,78,125,75" origin="0.5,0.5" />
+    <LightComponent range="0" lightcolor="255,255,255,255" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false">
+      <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="78,78,125,75" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="set_color" displayname="connection.setcolor" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="Aheadstandardlight" scale="0.5" category="Electrical">
+    <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="205,78,125,75" origin="0.5,0.5" />
+    <LightComponent range="0" lightcolor="255,255,255,255" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false">
+      <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="205,78,125,75" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="set_color" displayname="connection.setcolor" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="Aheadflanklight" scale="0.5" category="Electrical">
+    <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="332,78,125,75" origin="0.5,0.5" />
+    <LightComponent range="0" lightcolor="255,255,255,255" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false">
+      <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="332,78,125,75" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="set_color" displayname="connection.setcolor" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="Enginelight" scale="0.5" category="Electrical">
+    <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="1,78,75,75" origin="0.5,0.5" />
+    <LightComponent range="0" lightcolor="255,255,255,255" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false">
+      <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="1,78,75,75" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="set_color" displayname="connection.setcolor" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="Silentlight" scale="0.5" category="Electrical">
+    <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="459,78,125,75" origin="0.5,0.5" />
+    <LightComponent range="0" lightcolor="255,255,255,255" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false">
+      <Sprite texture="%ModDir%/Content/Items/Button/Ahead-buttons.png" depth="0.8" sourcerect="459,78,125,75" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="set_color" displayname="connection.setcolor" />
+    </ConnectionPanel>
+  </Item>-->
+</Items>

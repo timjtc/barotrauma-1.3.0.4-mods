@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Guitar Sheet : Back In Black" identifier="Back In Black" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Guitar/Back In Black.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Guitar Sheet : Beat It" identifier="Beat It" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Guitar/Beat It.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Guitar Sheet : Canion Del Mariachi" identifier="Canion Del Mariachi" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Guitar/Canion Del Mariachi.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Guitar Sheet : Cheeki Breeki" identifier="Cheeki Breeki" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Guitar/Cheeki Breeki.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Guitar Sheet : Gansta Paradise" identifier="Gansta Paradise" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Guitar/Gansta Paradise.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Guitar Sheet : Gerudo Valley" identifier="Gerudo Valley" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Guitar/Gerudo Valley.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Guitar Sheet : My Heart Will Go On" identifier="My Heart Will Go On guitar" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Guitar/My Heart Will Go On.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Guitar Sheet Old Town Road: " identifier="Old Town Road" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Guitar/Old Town Road.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Guitar Sheet : Roundabout" identifier="Roundabout" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Guitar/Roundabout.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Guitar Sheet : Somebody I Used To Know" identifier="Somebody I Used To Know" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Guitar/Somebody I Used To Know.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Guitar Sheet : The Peaceful Ending" identifier="The Peaceful Ending" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Guitar/The Peaceful Ending.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!--Item name="Guitar Sheet : " identifier="" tags="smallitem,guitarsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true" >
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+	
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+	
+    <Fabricate suitablefabricators="fabricator" >
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+	
+    <InventoryIcon texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+
+    <Sprite texture="%ModDir%/Overrides/Guitar/Guitar Sheet Musics/Guitar Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+	
+    <Body width="311" height="340" density="9" />
+	
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect"  >
+		<StatusEffect type="OnUse" target="Character" >
+			<Sound file="%ModDir%/Sounds/Guitar/.ogg" range="800" volume="1.0" loop="true" />
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="NearbyCharacters" range="800" >
+			<ReduceAffliction identifier="mood" amount="0.3" />
+		</StatusEffect>
+	</Holdable>
+  </Item-->
+</Items>

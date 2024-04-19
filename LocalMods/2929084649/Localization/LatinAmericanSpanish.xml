@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Latinamerican Spanish" nowhitespace="false" translatedname="Español Latinoamericano">
+  <!-- Date of translation 09-06-2023 (European Format) -->
+  <!--Habilidades y trabajos-->
+  <jobname.chef_needs>Chef</jobname.chef_needs>
+  <jobdescription.chef_needs>El Chef es un cocinero experto, capaz de mantener a toda la tripulación bien alimentada.</jobdescription.chef_needs>
+  <skillname.cooking>Cocina</skillname.cooking>
+  <skillname.gardening>Jardinería</skillname.gardening>
+  <!--Talentos-->
+  <talentname.gordoomramsay>GorDOOM Ramsay</talentname.gordoomramsay>
+  <talentdescription.gordoomramsay>Cuando tienes más del 50% de salud, aumenta el daño que infliges cuerpo a cuerpo un 50%. Cuando tienes menos del 50%, obtienes un 50% de resistencia al daño.</talentdescription.gordoomramsay>
+  <talentname.iamacookbut>Soy un cocinero, pero...</talentname.iamacookbut>
+  <talentdescription.iamacookbut>Cuando tienes un arma de largo alcance, aumenta un 25% el daño a distancia.</talentdescription.iamacookbut>
+  <talentname.gourmet>Gourmet</talentname.gourmet>
+  <talentdescription.gourmet>Cuando estás bien alimentado, aumenta un 30% tu salud máxima.</talentdescription.gourmet>
+  <talentname.powerfromwater>Poder del agua</talentname.powerfromwater>
+  <talentdescription.powerfromwater>Cuando estás bien hidratado, aumenta un 30% la velocidad de nado y un 15% la velocidad de movimiento.</talentdescription.powerfromwater>
+  <talentname.hydroponics>Hidroponía</talentname.hydroponics>
+  <talentdescription.hydroponics>Desbloquea la capacidad de fabricar Tanques Hidropónicos en un fabricador.</talentdescription.hydroponics>
+  <talentname.advancedhydroponics>Hidroponía avanzada</talentname.advancedhydroponics>
+  <talentdescription.advancedhydroponics>Desbloquea la capacidad de cultivar plantas alienígenas en un Tanque Hidropónico.</talentdescription.advancedhydroponics>
+  <!--Objetos-->
+  <entityname.watercanteen>Cantimplora de agua</entityname.watercanteen>
+  <entitydescription.watercanteen>Una cantimplora resistente para guardar tu preciada agua purificada.</entitydescription.watercanteen>
+  <entityname.watercanteenempty>Cantimplora de agua (vacía)</entityname.watercanteenempty>
+  <entitydescription.watercanteenempty>Una cantimplora resistente para guardar tu preciada agua purificada, pero está vacía.</entitydescription.watercanteenempty>
+  <entityname.ledouxenergydrink>Bebida energética</entityname.ledouxenergydrink>
+  <entitydescription.ledouxenergydrink>Una bebida sabrosa que te ayuda a combatir el sueño.</entitydescription.ledouxenergydrink>
+  <entityname.cookingstation_needs>Estación de cocina</entityname.cookingstation_needs>
+  <entitydescription.cookingstation_needs>Un electrodoméstico de cocina versátil que te permite cocinar una gran variedad de comidas. Suficientemente ligero para ser movido a otro lugar.</entitydescription.cookingstation_needs>
+  <entityname.portablestove>Hornillo portátil</entityname.portablestove>
+  <entitydescription.portablestove>Un pequeño electrodoméstico de cocina utilizado para cocinar recetas simples.</entitydescription.portablestove>
+  <entityname.refrigerator_needs>Refrigerador</entityname.refrigerator_needs>
+  <entitydescription.refrigerator_needs>Un lugar para almacenar carnes y bebidas y evitar que se echen a perder.</entitydescription.refrigerator_needs>
+  <entityname.boombox_needs>BoomBox</entityname.boombox_needs>
+  <entitydescription.boombox_needs>Un reproductor de música completamente resistente al agua y sin cables, equipado con imanes fuertes que te permiten escuchar cualquier canción en cualquier lugar.</entitydescription.boombox_needs>
+  <entityname.chefcap>Gorro de chef</entityname.chefcap>
+  <entitydescription.chefcap>¡Para mostrarle a todos quién es el Chef!</entitydescription.chefcap>
+  <entityname.chefuniform>Uniforme de chef</entityname.chefuniform>
+  <entitydescription.chefuniform>Un uniforme cómodo y resistente al fuego utilizado por muchos cocineros en Europa.</entitydescription.chefuniform>
+  <entityname.fryingpan_needs>Sartén</entityname.fryingpan_needs>
+  <entitydescription.fryingpan_needs>Una versión robusta de dos manos de la clásica sartén utilizada para cocinar una multitud de platos.</entitydescription.fryingpan_needs>
+  <entityname.kitchenknife_needs>Cuchillo de cocina</entityname.kitchenknife_needs>
+  <entitydescription.kitchenknife_needs>La herramienta más utilizada en una cocina, aunque bastante afilada.</entitydescription.kitchenknife_needs>
+  <entityname.meatcleaver_needs>Cuchillo de carnicero</entityname.meatcleaver_needs>
+  <entitydescription.meatcleaver_needs>Una hoja resistente utilizada para picar carne y huesos en pocos golpes. ¡Úsalo en un cadáver para despiezarlo!</entitydescription.meatcleaver_needs>
+  <entityname.cookingpot>Olla de cocina</entityname.cookingpot>
+  <entitydescription.cookingpot>Se utiliza en muchas recetas de cocina, ¡siempre ten una cerca!</entitydescription.cookingpot>
+  <entityname.handblender>Mezcladora de mano</entityname.handblender>
+  <entitydescription.handblender>Una pequeña herramienta de cocina utilizada para moler, mezclar y triturar muchos ingredientes.</entitydescription.handblender>
+  <entityname.hydroponictank>Tanque hidropónico</entityname.hydroponictank>
+  <entitydescription.hydroponictank>Un dispositivo de jardinería avanzado utilizado para el cultivo de múltiples vegetales.</entitydescription.hydroponictank>
+  <!--Ingredientes de cocina-->
+  <entityname.chocolate>Chocolate</entityname.chocolate>
+  <entitydescription.chocolate>¡Delicioso chocolate negro!</entitydescription.chocolate>
+  <entityname.flour>Harina</entityname.flour>
+  <entitydescription.flour>Se utiliza mucho en panadería.</entitydescription.flour>
+  <entityname.milk>Leche</entityname.milk>
+  <entitydescription.milk>No es realmente de vaca, sino más bien de soja.</entitydescription.milk>
+  <entityname.salt>Sal</entityname.salt>
+  <entitydescription.salt>Es salada.</entitydescription.salt>
+  <entityname.spice>Especia</entityname.spice>
+  <entitydescription.spice>Es picante.</entitydescription.spice>
+  <entityname.wine>Vino</entityname.wine>
+  <entitydescription.wine>¡Los franceses lo hacen mejor!</entitydescription.wine>
+  <!--Productos de semillas-->
+  <entityname.apple>Manzana</entityname.apple>
+  <entitydescription.apple>La fruta que lo inició todo.</entitydescription.apple>
+  <entityname.cacao>Cacao</entityname.cacao>
+  <entitydescription.cacao>¡Tritúralo y tendrás un delicioso chocolate!</entitydescription.cacao>
+  <entityname.carot>Zanahoria</entityname.carot>
+  <entitydescription.carot>No te confundas: es de color naranja pero no es una naranja.</entitydescription.carot>
+  <entityname.coffeebeen>Grano de café</entityname.coffeebeen>
+  <entitydescription.coffeebeen>¡Tritúralo y hiérvelo en una olla y voilà! Café caliente.</entitydescription.coffeebeen>
+  <entityname.grape>Uva</entityname.grape>
+  <entitydescription.grape>Una fruta maravillosa, dulce y ligeramente ácida.</entitydescription.grape>
+  <entityname.orange>Naranja</entityname.orange>
+  <entitydescription.orange>Es una naranja.</entitydescription.orange>
+  <entityname.potato>Patata</entityname.potato>
+  <entitydescription.potato>Genéticamente modificada para poder crecer en enredaderas y árboles, ¡la tecnología es impresionante!</entitydescription.potato>
+  <entityname.soja>Soja</entityname.soja>
+  <entitydescription.soja>Se puede extraer leche de ella.</entitydescription.soja>
+  <entityname.spicefruit>Fruta especiada</entityname.spicefruit>
+  <entitydescription.spicefruit>No intentes comerla así tal cual.</entitydescription.spicefruit>
+  <entityname.strawberry>Fresa</entityname.strawberry>
+  <entitydescription.strawberry>Una deliciosa fruta, mejor servida en un postre.</entitydescription.strawberry>
+  <entityname.tomato>Tomate</entityname.tomato>
+  <entitydescription.tomato>Muchas personas piensan que es extraño poner frutas en una pizza, ¡pero los tomates son frutas!</entitydescription.tomato>
+  <entityname.vanillaflower>Flor de vainilla</entityname.vanillaflower>
+  <entitydescription.vanillaflower>A pesar de ser vainilla, este ingrediente claramente es de un mod.</entitydescription.vanillaflower>
+  <entityname.weedleaf>Hoja de marihuana</entityname.weedleaf>
+  <entitydescription.weedleaf>Me pregunto por qué cultivas esta cosa.</entitydescription.weedleaf>
+  <entityname.wheat>Trigo</entityname.wheat>
+  <entitydescription.wheat>Incluso en el espacio tenemos trigo.</entitydescription.wheat>
+  <!--Semillas-->
+  <entityname.appleseed>Semilla de manzana</entityname.appleseed>
+  <entityname.cacaoseed>Semilla de cacao</entityname.cacaoseed>
+  <entityname.carotseed>Semilla de zanahoria</entityname.carotseed>
+  <entityname.coffeeseed>Semilla de café</entityname.coffeeseed>
+  <entityname.grapeseed>Semilla de uva</entityname.grapeseed>
+  <entityname.orangeseed>Semilla de naranja</entityname.orangeseed>
+  <entityname.potatoseed>Semilla de patata</entityname.potatoseed>
+  <entitydescription.potatoseed>¡Muy realista!</entitydescription.potatoseed>
+  <entityname.sojaseed>Semilla de soja</entityname.sojaseed>
+  <entityname.spiceseed>Semilla de especias</entityname.spiceseed>
+  <entityname.strawberryseed>Semilla de fresa</entityname.strawberryseed>
+  <entityname.tomatoseed>Semilla de tomate</entityname.tomatoseed>
+  <entityname.vanillaseed>Semilla de vainilla</entityname.vanillaseed>
+  <entityname.weedseed>Semilla de marihuana</entityname.weedseed>
+  <entityname.wheatseed>Semilla de trigo</entityname.wheatseed>
+  <!--Carne-->
+  <entityname.rottedmeat>Carne podrida</entityname.rottedmeat>
+  <entitydescription.rottedmeat>¡Ni siquiera pienses en comer eso!</entitydescription.rottedmeat>
+  <entityname.crawlermeat>Carne de Reptador</entityname.crawlermeat>
+  <entitydescription.crawlermeat>Esta carne es un poco blanda, pero sigue siendo repugnante.</entitydescription.crawlermeat>
+  <entityname.hammerheadmeat>Carne de Pez ariete</entityname.hammerheadmeat>
+  <entitydescription.hammerheadmeat>Un trozo duro de carne, es mejor ablandarlo.</entitydescription.hammerheadmeat>
+  <entityname.humanmeat>Carne humana</entityname.humanmeat>
+  <entitydescription.humanmeat>¿Comer a los muertos? ¿Es razonable?</entitydescription.humanmeat>
+  <entityname.huskedmeat>Carne desprovista de vaina</entityname.huskedmeat>
+  <entitydescription.huskedmeat>Aún se está moviendo...</entitydescription.huskedmeat>
+  <entityname.molochmeat>Carne de Moloch</entityname.molochmeat>
+  <entitydescription.molochmeat>Crujiente por fuera, suave por dentro.</entitydescription.molochmeat>
+  <entityname.spinelingmeat>Carne de Espinelante</entityname.spinelingmeat>
+  <entitydescription.spinelingmeat>Esperemos que no crezcan espinas en tu estómago...</entitydescription.spinelingmeat>
+  <entityname.mudraptormeat>Carne de Fangorraptor</entityname.mudraptormeat>
+  <entitydescription.mudraptormeat>La gente dice que sabe como una especie de pollo, es una lástima que no sepas lo que es un pollo...</entitydescription.mudraptormeat>
+  <entityname.threshermeat>Carne de Azotador</entityname.threshermeat>
+  <entitydescription.threshermeat>¡Hay nervios por todas partes!</entitydescription.threshermeat>
+  <!--Carne cocida-->
+  <entityname.cookedcrawlermeat>Carne de Reptador cocida</entityname.cookedcrawlermeat>
+  <entitydescription.cookedcrawlermeat>Huele mejor cuando está cocida, aunque el sabor...</entitydescription.cookedcrawlermeat>
+  <entityname.cookedhammerheadmeat>Carne de Pez ariete cocida</entityname.cookedhammerheadmeat>
+  <entitydescription.cookedhammerheadmeat>Definitivamente un buen filete.</entitydescription.cookedhammerheadmeat>
+  <entityname.cookedhumanmeat>Carne humana cocida</entityname.cookedhumanmeat>
+  <entitydescription.cookedhumanmeat>Cocinarla no la hace menos humana.</entitydescription.cookedhumanmeat>
+  <entityname.cookedhuskedmeat>Carne desprovista de vaina cocida</entityname.cookedhuskedmeat>
+  <entitydescription.cookedhuskedmeat>Al menos dejó de moverse por sí sola.</entitydescription.cookedhuskedmeat>
+  <entityname.cookedmolochmeat>Carne de Moloch cocida</entityname.cookedmolochmeat>
+  <entitydescription.cookedmolochmeat>Una textura sorprendentemente dulce, aunque el sabor no es tan bueno.</entitydescription.cookedmolochmeat>
+  <entityname.cookedspinelingmeat>Carne de Espinelante cocida</entityname.cookedspinelingmeat>
+  <entitydescription.cookedspinelingmeat>Muy tierna cuando quitas todas las espinas y la cocinas.</entitydescription.cookedspinelingmeat>
+  <entityname.cookedmudraptormeat>Carne de Fangorraptor cocida</entityname.cookedmudraptormeat>
+  <entitydescription.cookedmudraptormeat>¡Un magnífico pedazo de naturaleza que acabas de cocinar perfectamente!</entitydescription.cookedmudraptormeat>
+  <entityname.cookedthreshermeat>Carne de Azotador cocida</entityname.cookedthreshermeat>
+  <entitydescription.cookedthreshermeat>No, cocinarla no la hace más fácil de comer, pero mejora el sabor.</entitydescription.cookedthreshermeat>
+  <!--Alimentos enlatados-->
+  <entityname.tincan>Lata de Conservas</entityname.tincan>
+  <entitydescription.tincan>Se utiliza para conservar alimentos y comidas durante años, si no más.</entitydescription.tincan>
+  <entityname.cannedfood>Comida enlatada</entityname.cannedfood>
+  <entitydescription.cannedfood>No es realmente una gran comida, pero llena el estómago. Por otro lado, parece que no caduca, pero no preguntes cómo se hace...</entitydescription.cannedfood>
+  <entityname.cannedcrawlermeat>Carne de Reptador enlatada</entityname.cannedcrawlermeat>
+  <entitydescription.cannedcrawlermeat>Al menos la sal cubrirá el sabor.</entitydescription.cannedcrawlermeat>
+  <entityname.cannedhammerheadmeat>Carne de Pez ariete enlatada</entityname.cannedhammerheadmeat>
+  <entitydescription.cannedhammerheadmeat>La parte difícil es masticarla pero sacarla de la lata.</entitydescription.cannedhammerheadmeat>
+  <entityname.cannedhumanmeat>Carne de humano enlatada</entityname.cannedhumanmeat>
+  <entitydescription.cannedhumanmeat>"Incluso en la muerte, todavía soy servido".</entitydescription.cannedhumanmeat>
+  <entityname.cannedhuskedmeat>Carne de Envainado enlatada</entityname.cannedhuskedmeat>
+  <entitydescription.cannedhuskedmeat>Sorprendentemente nutritiva y sabrosa, pero deja un extraño sabor en la boca...</entitydescription.cannedhuskedmeat>
+  <entityname.cannedmolochmeat>Carne de Moloch enlatada</entityname.cannedmolochmeat>
+  <entitydescription.cannedmolochmeat>¡Materia gris salada para todos!</entitydescription.cannedmolochmeat>
+  <entityname.cannedmudraptormeat>Carne de Fangorraptor enlatada</entityname.cannedmudraptormeat>
+  <entitydescription.cannedmudraptormeat>¿Quizás adquirió su sabor a pollo porque esas criaturas comen mucha gente?</entitydescription.cannedmudraptormeat>
+  <entityname.cannedspinelingmeat>Carne de Espinelante enlatada</entityname.cannedspinelingmeat>
+  <entitydescription.cannedspinelingmeat>Ten cuidado al comer: puedes encontrarte con un hueso o veinte.</entitydescription.cannedspinelingmeat>
+  <entityname.cannedthreshermeat>Carne de Azotador enlatada</entityname.cannedthreshermeat>
+  <entitydescription.cannedthreshermeat>Más bien una sopa ahora, ya que ha pasado por la licuadora muchas veces.</entitydescription.cannedthreshermeat>
+  <!--Afecciones-->
+  <afflictionname.hungeraffliction>Hambre</afflictionname.hungeraffliction>
+  <afflictiondescription.hungeraffliction>Mantén tu hambre baja: si alcanza el 50%, comenzarás a tener efectos negativos y tu cuerpo puede no resistirlo...</afflictiondescription.hungeraffliction>
+  <afflictioncauseofdeath.hungeraffliction>Murió de inanición</afflictioncauseofdeath.hungeraffliction>
+  <afflictioncauseofdeathself.hungeraffliction>El hambre era demasiado para soportarlo...</afflictioncauseofdeathself.hungeraffliction>
+  <afflictionname.thirstaffliction>Sed</afflictionname.thirstaffliction>
+  <afflictiondescription.thirstaffliction>Mantén tu sed baja: si alcanza el 50%, comenzarás a tener efectos negativos y tu cuerpo puede no resistirlo...</afflictiondescription.thirstaffliction>
+  <afflictioncauseofdeath.thirstaffliction>Murió de deshidratación</afflictioncauseofdeath.thirstaffliction>
+  <afflictioncauseofdeathself.thirstaffliction>Tanta agua alrededor, pero tanta sed...</afflictioncauseofdeathself.thirstaffliction>
+  <afflictionname.sleepaffliction>Sueño</afflictionname.sleepaffliction>
+  <afflictiondescription.sleepaffliction>Mantén tu sueño bajo: si alcanza el 50%, comenzarás a tener efectos negativos y tu cuerpo puede no resistirlo...</afflictiondescription.sleepaffliction>
+  <afflictioncauseofdeath.sleepaffliction>Murió por privación de sueño</afflictioncauseofdeath.sleepaffliction>
+  <afflictioncauseofdeathself.sleepaffliction>Ahora puedes descansar, para siempre...</afflictioncauseofdeathself.sleepaffliction>
+  <afflictionname.mood>Estado de ánimo</afflictionname.mood>
+  <afflictiondescription.mood>Mantén esta necesidad bajo control: si alcanza el 50%, comenzarás a tener efectos negativos en tus habilidades, ¡así que disfruta de buenos momentos!</afflictiondescription.mood>
+  <afflictioncauseofdeath.mood>Depresión paralizante</afflictioncauseofdeath.mood>
+  <afflictioncauseofdeathself.mood>¿Cómo?...</afflictioncauseofdeathself.mood>
+  <afflictionname.wellfed>Bien alimentado</afflictionname.wellfed>
+  <afflictiondescription.wellfed>
+	+10% velocidad de nado
+	+10% velocidad de ataque cuerpo a cuerpo
+	+10% potencia de ataque cuerpo a cuerpo
+	
+	El hambre progresará un poco más lentamente
+  </afflictiondescription.wellfed>
+  <afflictionname.wellhydrated>Bien hidratado</afflictionname.wellhydrated>
+  <afflictiondescription.wellhydrated>
+	+10% velocidad de nado
+	+10% velocidad de ataque cuerpo a cuerpo
+	+10% potencia de ataque cuerpo a cuerpo
+	
+	La sed progresará un poco más lentamente
+  </afflictiondescription.wellhydrated>
+  <afflictionname.wellrested>Bien descansado</afflictionname.wellrested>
+  <afflictiondescription.wellrested>
+	+5% velocidad de nado
+	+5% velocidad de ataque cuerpo a cuerpo
+	+5% potencia de ataque cuerpo a cuerpo
+	
+	El sueño progresará un poco más lentamente
+  </afflictiondescription.wellrested>
+  <afflictionname.jovial>Alegre</afflictionname.jovial>
+  <afflictiondescription.jovial>
+    +5% en todas las habilidades
+  </afflictiondescription.jovial>
+  <!--afflictionname.></afflictionname.>
+  <afflictiondescription.></afflictiondescription.>
+  
+  <afflictioncauseofdeath.></afflictioncauseofdeath.>
+  <afflictioncauseofdeathself.></afflictioncauseofdeathself.-->
+  <!--entityname.></entityname.>
+  <entitydescription.></entitydescription.-->
+</infotexts>

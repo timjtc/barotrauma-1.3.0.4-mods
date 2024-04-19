@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Simplified Chinese" nowhitespace="true" translatedname="中文(简体)">
+  <!-- Submarine labels -->
+  <label.deepthcharge>深水炸弹</label.deepthcharge>
+  <label.dischargecoils>放电线圈</label.dischargecoils>
+  <label.emergency_dive>深潜模式</label.emergency_dive>
+  <label.break1>辅助制动:</label.break1>
+  <label.break2>辅助制动</label.break2>
+  <label.depot1>备用弹药室:</label.depot1>
+  <label.depot2>备用弹药室</label.depot2>
+  <label.depth>当前深度:</label.depth>
+  <label.fuel>剩余燃料:</label.fuel>
+  <!-- 反应堆与指挥室共用 -->
+  <label.overload>超载</label.overload>
+  <label.gridload>电网过载</label.gridload>
+  <label.lasaraus_cannon>蓄能炮</label.lasaraus_cannon>
+  <label.discharge_coil_charge>放电线圈充电率</label.discharge_coil_charge>
+  <label.jail_to_ballast>禁闭室转换为压舱</label.jail_to_ballast>
+  <label.invade>入侵</label.invade>
+  <label.mineral_scanner>探矿声纳</label.mineral_scanner>
+  <label.drone_control>目视控制</label.drone_control>
+  <label.drone_laser>激光炮</label.drone_laser>
+  <label.antithalamic_device>反丘脑装置保险</label.antithalamic_device>
+  <label.capacity>电网容量:</label.capacity>
+  <label.temp>反应温度:</label.temp>
+  <label.grid_load1>电网负载:</label.grid_load1>
+  <label.grid_load2>电网负载</label.grid_load2>
+  <label.door_override>紧急开门许可</label.door_override>
+  <label.ballastA_door_open>压舱A紧急开门</label.ballastA_door_open>
+  <label.celldoor>牢房门锁</label.celldoor>
+  <label.broadcast>接敌警报</label.broadcast>
+  <label.item_msg_elec>电源开关</label.item_msg_elec>
+  <label.item_msg_elec2>电量:</label.item_msg_elec2>
+  <!-- 无人机与小艇共用 -->
+  <!-- Item messages -->
+  <welcome_msg1>各位船员欢迎乘坐本舰!</welcome_msg1>
+  <welcome_msg2>提尔号已进入战斗模式，请各船员各就各位，准备战斗！</welcome_msg2>
+  <warning>警告！</warning>
+  <enemy_msg>检测到舰体附近有敌对生物！请尽快灭杀！</enemy_msg>
+  <safety>反丘脑装置保险已经打开！请尽快操作！</safety>
+  <fuel_msg>反应堆剩余燃料较少，请注意添加！</fuel_msg>
+  <batton_msg>备用电池已开启</batton_msg>
+  <battoff_msg>备用电池已关闭</battoff_msg>
+  <speed_msg1>前进速度:</speed_msg1>
+  <speed_msg2>后退速度:</speed_msg2>
+  <speed_msg3>上浮速度:</speed_msg3>
+  <speed_msg4>下潜速度:</speed_msg4>
+  <item_msg1>快来老船长妙妙屋一起玩</item_msg1>
+  <item_msg2>你猜潜艇烂没烂</item_msg2>
+  <item_msg3>咚！一炮就丫干躺下了</item_msg3>
+  <item_msg4>右边那个制氧机真丑</item_msg4>
+  <item_msg5>左边那个制氧机真丑</item_msg5>
+  <item_msg6>探矿声纳就是我</item_msg6>
+  <item_msg7>伺候不好我你就等死吧!</item_msg7>
+  <item_msg8>囚犯：你有事吗</item_msg8>
+  <item_msg9>后备能源开启！</item_msg9>
+  <item_msg10>把刹车踩到变速箱里</item_msg10>
+  <item_msg11>讲悄悄话</item_msg11>
+  <item_msg12>反丘脑装置保险</item_msg12>
+  <item_msg13>给你一鸟枪</item_msg13>
+  <item_msg14>好好看，好好学</item_msg14>
+  <item_msg15>A1压舱泵</item_msg15>
+  <item_msg16>A2压舱泵</item_msg16>
+  <item_msg17>B1压舱泵</item_msg17>
+  <item_msg18>遇到紧急情况请开此开关</item_msg18>
+  <item_msg19>已上锁</item_msg19>
+  <item_msg20>已解锁</item_msg20>
+  <item_msg21>我要出门</item_msg21>
+  <item_msg22>我要回家</item_msg22>
+  <item_msg23>A1压舱泵爆破</item_msg23>
+  <item_msg24>A2压舱泵爆破</item_msg24>
+  <item_msg25>B1压舱泵爆破</item_msg25>
+  <item_msg26>小王</item_msg26>
+  <item_msg27>小刚</item_msg27>
+  <item_msg28>小军</item_msg28>
+  <item_msg29>小红</item_msg29>
+  <item_msg30>什么叫木卫二五菱宏光啊(战术后仰)</item_msg30>
+  <item_msg31>意大利炮</item_msg31>
+  <item_msg32>注意爱车耐久(迫真)</item_msg32>
+  <item_msg33>令人窒息的操作</item_msg33>
+  <item_msg35>控制中</item_msg35>
+  <item_msg36>悬停中</item_msg36>
+</infotexts>

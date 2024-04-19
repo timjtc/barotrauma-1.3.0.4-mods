@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="SMX-25-A" modversion="1.0.0" corepackage="False" gameversion="0.18.15.0">
+  <Submarine file="%ModDir%/SMX-25-A.sub" />
+</contentpackage>

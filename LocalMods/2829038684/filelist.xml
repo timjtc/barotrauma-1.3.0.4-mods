@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="[ZS] Drone Collection Demo" modversion="1.0.21" corepackage="False" steamworkshopid="2829038684" gameversion="0.18.15.1" expectedhash="200C96AAE6CB277B3181D30A37FAB472">
+  <OutpostModule file="%ModDir%/[ZS] Drone Collection Demo.sub" />
+  <Submarine file="%ModDir%/[ZS]GlimmerDrone.sub" />
+  <Submarine file="%ModDir%/[ZS]LumenDrone.sub" />
+  <Submarine file="%ModDir%/[ZS]RadiantDrone.sub" />
+  <Submarine file="%ModDir%/[ZS]Enlighten Drone [WIP].sub" />
+</contentpackage>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Japanese" nowhitespace="true" translatedname="日本語">
+  <submarine.name.unoculus>ウノキュロス</submarine.name.unoculus>
+  <submarine.description.unoculus>ユノキュロスは、前方に大きな球状の観測所、洗練された人工知能、最新の航法および監視技術を備えた類まれな潜水艦で、潜在的な危険を警告することができます。アルテラ社のサイクロプスの構造をベースにした ユノキュロスは、良好な作動状態を維持すれば、あらゆる願望を満たすことができます。</submarine.description.unoculus>
+  <entityname.Aheadslowbutton>前方低速</entityname.Aheadslowbutton>
+  <entityname.AheadStandardbutton>前方標準速度</entityname.AheadStandardbutton>
+  <entityname.AheadFlankbutton>前方全速</entityname.AheadFlankbutton>
+  <entityname.Enginebutton>サイレントモード</entityname.Enginebutton>
+  <entityname.Silentbutton>エンジンパワー</entityname.Silentbutton>
+  <entityname.musiccontrol>音楽</entityname.musiccontrol>
+  <entityname.msgRadioChannel>この端末は、まだ有効ではない字幕システム用です。実際、すべての準備が整っていますが、バグのため、まだすべての言語で可能ではありません。バグが報告されているため、次のBarotraumaのアップデートを待つ必要があります。いつもウノキュラスをご利用いただき誠にありがとうございます</entityname.msgRadioChannel>
+  <!--<entityname.msgRadioChannel>字幕システムへようこそ。字幕を送信できるラジオチャンネルを入力してください。デフォルトチャンネル：2。</entityname.msgRadioChannel>-->
+  <!-- Subtitles section -->
+  <label.AheadFlank>前方フランク、緊急速度。</label.AheadFlank>
+  <label.AheadSlow>前進遅い。</label.AheadSlow>
+  <label.AheadStandard>前進標準。</label.AheadStandard>
+  <label.HullIntegrityLow>注意、船体強度：低い。</label.HullIntegrityLow>
+  <label.Decoy>デコイ展開。</label.Decoy>
+  <label.EmergencyPower>緊急時の電力のみ。酸素生産：オフライン。</label.EmergencyPower>
+  <label.SystemFailure>緊急、システム障害。</label.SystemFailure>
+  <label.EngineUp>エンジン：起動中。</label.EngineUp>
+  <label.EngineDown>エンジン：シャットダウン中。</label.EngineDown>
+  <label.ExternalHullDamage>外部船殻損傷を検出。</label.ExternalHullDamage>
+  <label.FireExtinguished>火災鎮火、空気ろ過装置開始。</label.FireExtinguished>
+  <label.FireNeutralization>消火システム：アクティブ。</label.FireNeutralization>
+  <label.PowerLow>電力低下。</label.PowerLow>
+  <label.SilentRunning>静粛航行に準備。</label.SilentRunning>
+  <label.SystemAttention>一部のシステムに注意が必要。</label.SystemAttention>
+  <label.EngineCritical>警告、エンジン熱が臨界値。</label.EngineCritical>
+  <label.EngineOverheat>警告、エンジン過熱。</label.EngineOverheat>
+  <label.FireDetected>警告、火災を検出。</label.FireDetected>
+  <label.HullBreach>警告、船殻に浜が検出。</label.HullBreach>
+  <label.HullIntegrityCritical>警告、船体強度が臨界値。</label.HullIntegrityCritical>
+  <label.MaximumDepth>警告、最大深度に到達。船殻損傷が迫る。</label.MaximumDepth>
+  <label.CreatureAttack>警告、生物の攻撃。</label.CreatureAttack>
+  <label.BestCaptain>あなたはこの惑星で最高の船長です。私は本気です。</label.BestCaptain>
+</infotexts>

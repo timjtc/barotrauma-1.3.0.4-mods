@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="FDF-Vortex" modversion="1.0.25" corepackage="False" steamworkshopid="2846538903" gameversion="1.2.8.0" expectedhash="5DFE71BFE905ED249491349C70119939">
+  <Submarine file="%ModDir%/FDF-Vortex.sub" />
+</contentpackage>

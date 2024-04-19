@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Unoculus Module Ahead Flank" identifier="CMAheadFlank" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/2Ahead_flank_Emergency_speed.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Ahead Slow" identifier="CMAheadSlow" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/3Ahead_slow.ogg" type="OnActive" range="5000.0" loop="false" volume="1.2" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Ahead Standard" identifier="CMAheadStandard" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/4Ahead_standard.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Hull low" identifier="CMHullLow" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/5Caution_Hull_integrity_low.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Creature Siren" identifier="CMCreatureSiren" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/7Creature_siren_loop.ogg" type="OnActive" range="5000.0" loop="false" volume="0.45" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Deploying Decoy" identifier="CMDeployingDecoy" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/8Deploying_decoy.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Emergency Power" identifier="CMEmergencyPower" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/10Emergency_power_only_Oxygen_production_offline.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module System Failure" identifier="CMSystemFailure" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/12Emergency_System_failure.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Engine OFF" identifier="CMEngineOFF" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/13Engine_powering_down.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Engine ON" identifier="CMEngineON" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/14Engine_powering_up.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Hull Damage Detected" identifier="CMHullDamage" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/15External_hull_damage_detected.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Fire Extinguished" identifier="CMFireExtinguished" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/16Fire_extinguished_Air_scubbers_initiated.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Fire Neutralization" identifier="CM" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/17Fire_neutralization_system_active.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Horn" identifier="CMHorn" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/18horn.ogg" type="OnActive" range="5000.0" loop="false" volume="1.5" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Power Low" identifier="CMPowerLow" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/20Power_low.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Silent Running" identifier="CMSilentRunning" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/21Rig_for_silent_running.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Siren" identifier="CMSiren" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/22siren.ogg" type="OnActive" range="5000.0" loop="false" volume="0.10" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module System Attention" identifier="CMSystemAttention" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/23Some_systems_need_attention.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Heat Critical" identifier="CMHeatCritical" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/27Warning_Engine_heat_critical.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Overheat" identifier="CMOverheat" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/28Warning_Engine_overheat.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Fire Detected" identifier="CMFireDetected" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/29Warning_Fire_detected.ogg" type="OnActive" range="5000.0" loop="false" volume="0.8" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Hull Breach" identifier="CMHullBreach" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/30Warning_Hull_breach_detected.ogg" type="OnActive" range="5000.0" loop="false" volume="1.2" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Hull Critical" identifier="CMHullCritical" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/31Warning_hull_integrity_critical.ogg" type="OnActive" range="5000.0" loop="false" volume="1.2" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Maximum Depth" identifier="CMMaximumDepth" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/32Warning_Maxium_depth_reached_Hull_damaged_imminent.ogg" type="OnActive" range="5000.0" loop="false" volume="0.6" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Creature Attack" identifier="CMCreatureAttack" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/34WarningCreatureattack.ogg" type="OnActive" range="5000.0" loop="false" volume="1.2" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Unoculus Module Pun" identifier="CMPun" category="Electrical" Tags="smallitem,sound,voicemodule,performancefix" scale="0.15">
+    <Sprite texture="%ModDir%/Content/Items/Alterra.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <LightComponent canbeselected="false" lightcolor="0,0,0,0" castshadows="false" range="0">
+      <sound file="%ModDir%/Content/Items/Audio/36You_are_the_best_capitain_on_the_planet.ogg" type="OnActive" range="5000.0" loop="false" volume="0.45" dontmuffle="true" />
+      <StatusEffect type="OnContained" target="This" IsActive="false" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+</Items>

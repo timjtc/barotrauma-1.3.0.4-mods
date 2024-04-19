@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="true" translatedname="English">
+  <!-- Submarine labels -->
+  <label.deepthcharge>Deepth Charge</label.deepthcharge>
+  <label.dischargecoils>Discharge Coils</label.dischargecoils>
+  <label.emergency_dive>Emergency Dive</label.emergency_dive>
+  <label.break1>Brake:</label.break1>
+  <label.break2>Brake</label.break2>
+  <label.depot1>Depot:</label.depot1>
+  <label.depot2>Depot</label.depot2>
+  <label.depth>Depth</label.depth>
+  <label.fuel>Fuel:</label.fuel>
+  <!-- 反应堆与指挥室共用 -->
+  <label.overload>OVERLOAD</label.overload>
+  <label.gridload>Grid Load</label.gridload>
+  <label.lasaraus_cannon>LASARAUS CANNON</label.lasaraus_cannon>
+  <label.discharge_coil_charge>Discharge Coil Charge</label.discharge_coil_charge>
+  <label.jail_to_ballast>Jail to Ballast</label.jail_to_ballast>
+  <label.invade>INVADE</label.invade>
+  <label.mineral_scanner>Mineral Scanner</label.mineral_scanner>
+  <label.drone_control>Drone Control</label.drone_control>
+  <label.drone_laser>Drone Laser</label.drone_laser>
+  <label.antithalamic_device>Antithalamic Device</label.antithalamic_device>
+  <label.capacity>Capacity:</label.capacity>
+  <label.temp>Temp:</label.temp>
+  <label.grid_load1>Grid Load:</label.grid_load1>
+  <label.grid_load2>Grid Load</label.grid_load2>
+  <label.door_override>Door Override</label.door_override>
+  <label.ballastA_door_open>BallastA Door Open</label.ballastA_door_open>
+  <label.celldoor>Cell Door</label.celldoor>
+  <label.broadcast>Broadcast</label.broadcast>
+  <label.item_msg_elec>Power Switch</label.item_msg_elec>
+  <label.item_msg_elec2>BAT:</label.item_msg_elec2>
+  <!-- 无人机与小艇共用 -->
+  <!-- Item messages -->
+  <welcome_msg1>All crew members welcome aboard the Týr!</welcome_msg1>
+  <welcome_msg2>The Týr has enetered War Mode, Man your battlestations!</welcome_msg2>
+  <warning>WARNING!</warning>
+  <enemy_msg>Hostile creatures detected near the hull! Engage weapon systems now!</enemy_msg>
+  <safety>Antithalamic device has been ARMED! Please clear the ballast as soon as possible!</safety>
+  <fuel_msg>Little fuel left in the reactor, please pay attention to add!</fuel_msg>
+  <batton_msg>Backup BAT On</batton_msg>
+  <battoff_msg>Backup BAT Off</battoff_msg>
+  <speed_msg1>Forward-spd:</speed_msg1>
+  <speed_msg2>Backwards-spd:</speed_msg2>
+  <speed_msg3>Ascent-spd:</speed_msg3>
+  <speed_msg4>Dive-spd:</speed_msg4>
+  <item_msg1>Come and play in the old captain's house</item_msg1>
+  <item_msg2>Guess the submarine is bad?</item_msg2>
+  <item_msg3>BOOM!!!One shot one down!</item_msg3>
+  <item_msg4>The oxygen concentrator on the right is ugly</item_msg4>
+  <item_msg5>The oxygen concentrator on the left is ugly</item_msg5>
+  <item_msg6>I'm the Mineral Scanner</item_msg6>
+  <item_msg7>If you don't serve me well, you will die!</item_msg7>
+  <item_msg8>PRISONER: Are you okay?</item_msg8>
+  <item_msg9>Backup energy!</item_msg9>
+  <item_msg10>Push the break into the gearbox</item_msg10>
+  <item_msg11>Speak in a whisper</item_msg11>
+  <item_msg12>Antithalamic Device Safety</item_msg12>
+  <item_msg13>Give you a shot</item_msg13>
+  <item_msg14>Look good, learn well</item_msg14>
+  <item_msg15>A1 Ballast Pump</item_msg15>
+  <item_msg16>A2 Ballast Pump</item_msg16>
+  <item_msg17>B1 Ballast Pump</item_msg17>
+  <item_msg18>In case of emergency, turn on this switch</item_msg18>
+  <item_msg19>Locked</item_msg19>
+  <item_msg20>Unocked</item_msg20>
+  <item_msg21>I'm going out!</item_msg21>
+  <item_msg22>I want to go home!</item_msg22>
+  <item_msg23>A1 Ballast Pump Blasting</item_msg23>
+  <item_msg24>A2 Ballast Pump Blasting</item_msg24>
+  <item_msg25>B1 Ballast Pump Blasting</item_msg25>
+  <item_msg26>Jack</item_msg26>
+  <item_msg27>Mike</item_msg27>
+  <item_msg28>Petter</item_msg28>
+  <item_msg29>Hi you!</item_msg29>
+  <item_msg30>Europa Minivan</item_msg30>
+  <item_msg31>Spaghetti Cannon</item_msg31>
+  <item_msg32>Pay attention to the durability of the shuttle (seriously)</item_msg32>
+  <item_msg33>Suffocating operation</item_msg33>
+  <item_msg35>IN CTRL</item_msg35>
+  <item_msg36>HOVER</item_msg36>
+</infotexts>

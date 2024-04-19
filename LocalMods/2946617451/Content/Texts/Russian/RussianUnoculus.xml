@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+  <submarine.name.unoculus>Унокулус</submarine.name.unoculus>
+  <submarine.description.unoculus>Унокулус это уникальный подводный корабль с большой сферической обсерваторией спереди, современным искусственным интеллектом и последними достижениями в области навигации и наблюдения, предупреждающий о всех потенциальных опасностях. Основанный на структуре Cyclops корпорации Alterra ©, Unoculus сможет удовлетворить все ваши желания, если вы будете поддерживать его в хорошем состоянии.</submarine.description.unoculus>
+  <entityname.Aheadslowbutton>Медленный ход вперёд</entityname.Aheadslowbutton>
+  <entityname.AheadStandardbutton>Стандартная скорость вперёд</entityname.AheadStandardbutton>
+  <entityname.AheadFlankbutton>На всю мощность вперёд</entityname.AheadFlankbutton>
+  <entityname.Enginebutton>Мощность двигателя</entityname.Enginebutton>
+  <entityname.Silentbutton>Тихий режим</entityname.Silentbutton>
+  <entityname.musiccontrol>музыка</entityname.musiccontrol>
+  <entityname.msgRadioChannel>Этот терминал предназначен для системы субтитров, которая еще не вступила в силу. Фактически, все готово, но из-за ошибки это пока не возможно (по крайней мере, во всех языках). Ошибка была сообщена, поэтому нужно ждать следующего обновления Barotrauma. Cпасибо использовать Унокулус.</entityname.msgRadioChannel>
+  <!-- <entityname.msgRadioChannel>Добро пожаловать в систему субтитров. Пожалуйста, введите радиоканал, на котором можно передавать субтитры. Канал по умолчанию: 2.</entityname.msgRadioChannel>-->
+  <!-- Subtitles section -->
+  <label.AheadFlank>Полный ход, аварийная скорость</label.AheadFlank>
+  <label.AheadSlow>Малый ход.</label.AheadSlow>
+  <label.AheadStandard>Нормальный ход.</label.AheadStandard>
+  <label.HullIntegrityLow>Внимание, целостность корпуса: Низкая.</label.HullIntegrityLow>
+  <label.Decoy>Сброс приманки.</label.Decoy>
+  <label.EmergencyPower>Только аварийное питание. Производство кислорода: Отключено.</label.EmergencyPower>
+  <label.SystemFailure>Авария, ошибка системы.</label.SystemFailure>
+  <label.EngineUp>Двигатель запущен.</label.EngineUp>
+  <label.EngineDown>Двигатель остановлен.</label.EngineDown>
+  <label.ExternalHullDamage>Обнаружено внешнее повреждение корпуса.</label.ExternalHullDamage>
+  <label.FireExtinguished>Огонь потушен, включена очистка воздуха.</label.FireExtinguished>
+  <label.FireNeutralization>Система пожаротушения: Включена.</label.FireNeutralization>
+  <label.PowerLow>Низкий заряд.</label.PowerLow>
+  <label.SilentRunning>Тихий ход.</label.SilentRunning>
+  <label.SystemAttention>Некоторые системы, требуют обслуживание.</label.SystemAttention>
+  <label.EngineCritical>Внимание, температура двигателя критическая.</label.EngineCritical>
+  <label.EngineOverheat>Внимание, перегрев двигателя.</label.EngineOverheat>
+  <label.FireDetected>Внимание, обнаружен пожар.</label.FireDetected>
+  <label.HullBreach>Внимание, обнаружено пробитие корпуса.</label.HullBreach>
+  <label.HullIntegrityCritical>Внимание, достигнута максимальная глубина. Повреждение корпуса неминуемо.</label.HullIntegrityCritical>
+  <label.MaximumDepth>Предупреждение, достигнута максимальная глубина. Повреждение корпуса неизбежно.</label.MaximumDepth>
+  <label.CreatureAttack>Внимание, нападение существа.</label.CreatureAttack>
+  <label.BestCaptain>Вы лучший капитан на планете. И я даже не шучу.</label.BestCaptain>
+</infotexts>

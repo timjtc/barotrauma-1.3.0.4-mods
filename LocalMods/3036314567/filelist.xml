@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="THG Armory - 'Vanilla' Turret pack" modversion="1.0.7" corepackage="False" steamworkshopid="3036314567" gameversion="1.1.13.0" expectedhash="739C70A7520296B0A6A4E13BD3FAF61B">
+  <Item file="%ModDir%/turrets_thog.xml" />
+  <Particles file="%ModDir%/turretparticles_thog.xml" />
+</contentpackage>

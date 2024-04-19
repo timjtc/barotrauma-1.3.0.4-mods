@@ -1,0 +1,1329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- 
+
+  <Item name="" identifier="" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true" >
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+	
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+	
+    <Fabricate suitablefabricators="fabricator" >
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+	
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+	
+    <Body width="58" height="64" density="12" />
+	
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect"  >
+		<StatusEffect type="OnUse" target="Character" >
+			<Sound file="%ModDir%/Sounds/Musics/.ogg" range="800" volume="20.5" loop="true" />
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="NearbyCharacters" range="800" >
+			<ReduceAffliction identifier="mood" amount="0.032" />
+		</StatusEffect>
+	</Holdable>
+  </Item>
+  
+ -->
+  <Item name="Mixtape : La Vie en Rose" identifier="lavienrose" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/La vie en rose.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Snake Eater" identifier="snakeeater" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Snake Eater.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Dream On" identifier="dreamon" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Dream On.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Ain't That A Kick In The Head" identifier="aintthatakickinthehead" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Ain't That A Kick In The Head.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Alexandrie Alexandra " identifier="alexandriealexandra" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Alexandrie Alexandra.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Another Bite The Dust" identifier="anotherbitethedust" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Another Bite The Dust.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Awaken" identifier="awaken" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Awaken.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Big Iron" identifier="bigiron" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Big Iron.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Bohemian Rapsody" identifier="bohemianrapsody" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Bohemian Rapsody.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Born To Be Wild" identifier="Born To Be Wild" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Born To Be Wild.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : California Dreamin" identifier="California Dreamin" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/California Dreamin.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Can't Help Falling In Love" identifier="Can't Help Falling In Love" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Can't Help Falling In Love.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Chanson Populaire" identifier="Chanson Populaire" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Chanson Populaire.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Astronomia" identifier="Astronomia" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Astronomia.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Danger Zone" identifier="Danger Zone" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Danger Zone.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Fortunate Son" identifier="Fortunate Son" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Fortunate Son.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Gangsta Paradies" identifier="Gangsta Paradies" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Gangsta Paradies.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Ghostbusters" identifier="Ghostbusters" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Ghostbusters.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Give Me The Night" identifier="Give Me The Night" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Give Me The Night.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Goode" identifier="Goode" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Goode.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Harlem Nocturne" identifier="Harlem Nocturne" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Harlem Nocturne.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Here She Come" identifier="Here She Come" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Here She Come.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Hit The Road Jack" identifier="Hit The Road Jack" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Hit The Road Jack.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Hotel California" identifier="Hotel California" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Hotel California.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : House Of The Rising Sun" identifier="House Of The Rising Sun" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/House Of The Rising Sun.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Hurt" identifier="Hurt" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Hurt.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : I Can't Get No Satisfaction" identifier="I Can't Get No Satisfaction" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/I Can't Get No Satisfaction.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : I Can't Go For That No Can Do" identifier="I Can't Go For That No Can Do" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/I Can't Go For That No Can Do.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : I Got You I Feel Good" identifier="I Got You I Feel Good" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/I Got You I Feel Good.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : I Wanna Rock" identifier="I Wanna Rock" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/I Wanna Rock.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : I Will Survive" identifier="I Will Survive" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/I Will Survive.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Just the Two of Us" identifier="Just the Two of Us" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Just the Two of Us.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Last Child" identifier="Last Child" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Last Child.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Murmaider" identifier="Murmaider" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Murmaider.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : My Heart Will Go On" identifier="My Heart Will Go On" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/My Heart Will Go On.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : My Way" identifier="My Way" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/My Way.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Need You Tonight" identifier="Need You Tonight" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Need You Tonight.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Never Gonna Give You Up" identifier="Never Gonna Give You Up" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Never Gonna Give You Up.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Nuclear" identifier="Nuclear" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Nuclear.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Owner Of A Lonely Heart" identifier="Owner Of A Lonely Heart" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Owner Of A Lonely Heart.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Paint It Black" identifier="Paint It Black" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Paint It Black.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Pirate of the Caribbean" identifier="Pirate of the Caribbean" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Pirate of the Caribbean.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Pursuit Of Happiness" identifier="Pursuit Of Happiness" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Pursuit Of Happiness.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Riders On The Storm" identifier="Riders On The Storm" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Riders On The Storm.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Rock'n'Roll" identifier="Rock'n'Roll" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Rock'n'Roll.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Stand By Me" identifier="Stand By Me" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Stand By Me.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Stranglehold" identifier="Stranglehold" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Stranglehold.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Sympathy For The Devil" identifier="Sympathy For The Devil" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Sympathy For The Devil.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Take My Breath Away" identifier="Take My Breath Away" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Take My Breath Away.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : The Man Come Around" identifier="The Man Come Around" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/The Man Come Around.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : The Man Who Sold The World" identifier="The Man Who Sold The World" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/The Man Who Sold The World.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : The Old Man Down The Road" identifier="The Old Man Down The Road" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/The Old Man Down The Road.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : The Power Of Love" identifier="The Power Of Love" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/The Power Of Love.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : The Sound Of Silence" identifier="The Sound Of Silence" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/The Sound Of Silence.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Tunak Tunak" identifier="Tunak Tunak" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Tunak Tunak.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : What Is Love" identifier="What Is Love" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/What Is Love.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- -->
+  <Item name="Mixtape : Why don't you do right" identifier="Why don't you do right" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Why don't you do right.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Mixtape : The Only Thing They Fear is You" identifier="The Only Thing They Fear is You" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/The Only Thing They Fear is You.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Mixtape : Men Behind The Gun" identifier="Men Behind The Gun" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Men Behind The Gun.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Mixtape : Welcome To The Circus" identifier="Welcome To The Circus" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/Welcome To The Circus.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Mixtape : The Drive" identifier="The Drive" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/The Drive.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Mixtape : In The House In A Heartbeat" identifier="In The House In A Heartbeat" tags="smallitem,mixtape" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.03" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" sourcerect="0,0,690,434" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/BoomBox/Mixtapes/Mixtape - Blank.png" depth="0.55" sourcerect="0,0,690,434" origin="0.5,0.8" />
+    <Body width="58" height="64" density="12" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Musics/In The House In A Heartbeat.ogg" range="800" volume="20.5" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.032" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>

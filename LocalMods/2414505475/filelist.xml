@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Defibrillator" modversion="1.6" corepackage="False" steamworkshopid="2414505475" gameversion="1.2.7.0" expectedhash="899831CE276A2730F6B661450AAF9E0D">
+  <Item file="%ModDir%/item/defib.xml" />
+  <Other file="%ModDir%/sounds/defib.ogg" />
+  <Other file="%ModDir%/item/AED_clean1.png" />
+  <Other file="%ModDir%/item/AED_clean2.png" />
+</contentpackage>

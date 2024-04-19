@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="R-278 «Dugong»" modversion="1.0.16" corepackage="False" steamworkshopid="2783973083" gameversion="0.19.11.0" expectedhash="55FF2683439B060BDB55FD8EDAAA0938">
+  <Submarine file="%ModDir%/R-278 «Dugong» [ENG].sub" />
+  <Submarine file="%ModDir%/R-278 «Dugong» [РУС].sub" />
+  <Submarine file="%ModDir%/RS-5 Rescue shuttle [ENG].sub" />
+  <Submarine file="%ModDir%/RS-5 Rescue shuttle [РУС].sub" />
+</contentpackage>

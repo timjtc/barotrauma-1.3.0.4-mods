@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="G7e Torpedo" modversion="1.0.4" corepackage="False" steamworkshopid="2647870156" gameversion="1.0.7.0" expectedhash="3C4A2A340416B0DFFB494DFBA65F2448">
+  <Submarine file="%ModDir%/Bubbles.sub" />
+  <Submarine file="%ModDir%/G7e Torpedo.sub" />
+</contentpackage>

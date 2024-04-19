@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated by Kato Yuki (Plasma) -->
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+  <entityname.cammonitor>Монитор для Видеонаблюдения</entityname.cammonitor>
+  <entityname.wificam>Wi-Fi камера</entityname.wificam>
+  <entityname.wificampiratehelmet>Шлем сепаратиста с камерой</entityname.wificampiratehelmet>
+  <entityname.wificamballistichelmet1>Баллистический шлем с камерой</entityname.wificamballistichelmet1>
+  <entityname.wificamballistichelmet2>Шлем стрелка с камерой</entityname.wificamballistichelmet2>
+  <entityname.wificamballistichelmet3>Полицейский шлем с камерой</entityname.wificamballistichelmet3>
+  <entityname.wificamchitinhelmet>Хитиновый шлем с камерой</entityname.wificamchitinhelmet>
+  <entityname.wificamironhelmet>Железный шлем с камерой</entityname.wificamironhelmet>
+  <entityname.wificamclownmask>Маска клоуна с камерой</entityname.wificamclownmask>
+  <entityname.wificamclownmaskunique>Материнский взгляд, теперь через Wi-Fi!</entityname.wificamclownmaskunique>
+  <entityname.wificamclowndivingmask>Подводная маска клоуна с камерой</entityname.wificamclowndivingmask>
+  <entityname.wificamdivingmask>Подводная маска с камерой</entityname.wificamdivingmask>
+  <entitydescription.cammonitor>Монитор видеонаблюдения для просмотра изображений со всех Wi-Fi камер. требуется подключение к Wi-Fi компоненту</entitydescription.cammonitor>
+  <entitydescription.wificam>Wi-Fi камера. Оденьте её или повесьте на стену, и вы сможете дистанционно просматривать изображение с камер через монитор видеонаблюдения! Для работы требуеться аккумулятор.</entitydescription.wificam>
+  <entitydescription.wificampiratehelmet>"Пусть всё смотрят как Коалиция сгинет!"</entitydescription.wificampiratehelmet>
+  <entitydescription.wificamballistichelmet1>Камера тоже пуленепробиваймая!</entitydescription.wificamballistichelmet1>
+  <entitydescription.wificamballistichelmet2>Увы, но перескоп через камеру не видно.</entitydescription.wificamballistichelmet2>
+  <entitydescription.wificamballistichelmet3>"Давай, попробуй нарушить закон, пусть всё сморят!"</entitydescription.wificamballistichelmet3>
+  <entitydescription.wificamchitinhelmet>Сила технологий и природы</entitydescription.wificamchitinhelmet>
+  <entitydescription.wificamironhelmet>"Тише, мы проводим реконструкцию боя Руди и раптора."</entitydescription.wificamironhelmet>
+  <entitydescription.wificamclownmask>Материнский взгляд у вас над ухом.</entitydescription.wificamclownmask>
+  <entitydescription.wificamclownmaskunique>Маме тоже нужен присмотр.</entitydescription.wificamclownmaskunique>
+  <entitydescription.wificamclowndivingmask>Материнский взгляд даже под водой</entitydescription.wificamclowndivingmask>
+  <entitydescription.wificamdivingmask>Полезай в балласт, а мы посмотрим.</entitydescription.wificamdivingmask>
+  <!-- UNUSED ASSETS -->
+  <entityname.wificamheadset>Наушники с камерой</entityname.wificamheadset>
+  <entityname.wificaminjectorheadset>Гарнитура с инжектором и камерой</entityname.wificaminjectorheadset>
+  <entitydescription.wificamheadset>Для связи и наблюдения. Два по цене одного!</entitydescription.wificamheadset>
+  <entitydescription.wificaminjectorheadset>Для связи, наблюдения, и лечения. Три по цене одного!</entitydescription.wificaminjectorheadset>
+</infotexts>

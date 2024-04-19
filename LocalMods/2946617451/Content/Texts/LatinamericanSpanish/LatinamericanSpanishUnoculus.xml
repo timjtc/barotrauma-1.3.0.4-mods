@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Latinamerican Spanish" nowhitespace="false" translatedname="Español Latinoamericano">
+  <submarine.name.unoculus>Unóculo</submarine.name.unoculus>
+  <submarine.description.unoculus>El Unoculus es un submarino único en su clase, equipado con un gran observatorio esférico en la parte delantera, una inteligencia artificial sofisticada y la última tecnología en navegación y vigilancia para advertir de todos los peligros potenciales. Basado en la estructura del Cyclops de Alterra Corporation ©, el Unoculus cumplirá con todos tus deseos siempre y cuando lo mantengas en buen estado de funcionamiento.</submarine.description.unoculus>
+  <entityname.Aheadslowbutton>Avante velocidad reducida</entityname.Aheadslowbutton>
+  <entityname.AheadStandardbutton>Avante velocidad estándar</entityname.AheadStandardbutton>
+  <entityname.AheadFlankbutton>Avante a toda máquina</entityname.AheadFlankbutton>
+  <entityname.Enginebutton>Potencia del motor</entityname.Enginebutton>
+  <entityname.Silentbutton>Modo silencioso</entityname.Silentbutton>
+  <entityname.musiccontrol>Música</entityname.musiccontrol>
+  <entityname.msgRadioChannel>Este terminal es para el sistema de subtítulos que aún no está en vigencia. En realidad, todo está listo, pero debido a un error, todavía no es posible (al menos en todos los idiomas). El error ha sido reportado, así que es necesario esperar la próxima actualización de Barotrauma. Gracias por usar el Unoculus.</entityname.msgRadioChannel>
+  <!-- <entityname.msgRadioChannel>Bienvenido al sistema de subtítulos. Por favor, ingresa el canal de radio donde se pueden transmitir los subtítulos. Canal predeterminado: 2.</entityname.msgRadioChannel>-->
+  <!-- Subtitles section -->
+  <label.AheadFlank>Adelante Flanco, velocidad de emergencia.</label.AheadFlank>
+  <label.AheadSlow>Adelante despacio.</label.AheadSlow>
+  <label.AheadStandard>Adelante estándar.</label.AheadStandard>
+  <label.HullIntegrityLow>Precaución, integridad del casco: Baja.</label.HullIntegrityLow>
+  <label.Decoy>Desplegando señuelo.</label.Decoy>
+  <label.EmergencyPower>Sólo energía de emergencia. Producción de oxígeno: Desactivada.</label.EmergencyPower>
+  <label.SystemFailure>Emergencia, fallo del sistema.</label.SystemFailure>
+  <label.EngineUp>Motor: encendiéndose.</label.EngineUp>
+  <label.EngineDown>Motor: apagándose.</label.EngineDown>
+  <label.ExternalHullDamage>Daño externo en el casco detectado.</label.ExternalHullDamage>
+  <label.FireExtinguished>Incendio extinguido, iniciando purificadores de aire.</label.FireExtinguished>
+  <label.FireNeutralization>Sistema de neutralización de incendios: Activo.</label.FireNeutralization>
+  <label.PowerLow>Energía baja.</label.PowerLow>
+  <label.SilentRunning>Prepararse para navegación silenciosa.</label.SilentRunning>
+  <label.SystemAttention>Algunos sistemas necesitan atención.</label.SystemAttention>
+  <label.EngineCritical>Advertencia, calor del motor crítico.</label.EngineCritical>
+  <label.EngineOverheat>Advertencia, sobrecalentamiento del motor.</label.EngineOverheat>
+  <label.FireDetected>Advertencia, incendio detectado.</label.FireDetected>
+  <label.HullBreach>Advertencia, casco encallado.</label.HullBreach>
+  <label.HullIntegrityCritical>Advertencia, integridad del casco crítica.</label.HullIntegrityCritical>
+  <label.MaximumDepth>Advertencia, profundidad máxima alcanzada. Daño en el casco inminente.</label.MaximumDepth>
+  <label.CreatureAttack>Advertencia, ataque de criatura.</label.CreatureAttack>
+  <label.BestCaptain>Eres el mejor capitán del planeta. Ni siquiera estoy bromeando.</label.BestCaptain>
+</infotexts>

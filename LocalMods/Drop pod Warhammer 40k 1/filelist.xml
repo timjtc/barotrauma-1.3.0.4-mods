@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Drop pod Warhammer 40k 1" modversion="1.0.2" corepackage="False" gameversion="0.19.11.0">
+  <Submarine file="%ModDir%/Drop pod Warhammer 40k 1.sub" />
+</contentpackage>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="FDF-Chopper Shuttle" modversion="1.0.8" corepackage="False" steamworkshopid="2811496241" gameversion="1.1.19.3" expectedhash="C61075E91B8CA8B827E3A78745287682">
+  <Submarine file="%ModDir%/FDF-Chopper A1.sub" />
+  <Submarine file="%ModDir%/FDF-Chopper B1.sub" />
+</contentpackage>

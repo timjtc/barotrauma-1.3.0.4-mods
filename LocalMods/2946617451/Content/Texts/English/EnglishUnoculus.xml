@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <submarine.name.unoculus>Unoculus</submarine.name.unoculus>
+  <submarine.description.unoculus>The Unoculus is a one-of-a-kind submarine, featuring a large spherical observatory at the front, sophisticated artificial intelligence, and the latest navigation and surveillance technology to warn of any potential dangers. Based on the structure of the Cyclops from Alterra Corporation ©, the Unoculus will fulfill all your desires as long as it is kept in good working order.</submarine.description.unoculus>
+  <entityname.Aheadslowbutton>Ahead slow</entityname.Aheadslowbutton>
+  <entityname.AheadStandardbutton>Ahead standard</entityname.AheadStandardbutton>
+  <entityname.AheadFlankbutton>Ahead flank</entityname.AheadFlankbutton>
+  <entityname.Enginebutton>Engine power</entityname.Enginebutton>
+  <entityname.Silentbutton>Silent mode</entityname.Silentbutton>
+  <entityname.musiccontrol>Music</entityname.musiccontrol>
+  <entityname.msgRadioChannel>This terminal is for the subtitle system that is not yet in effect. In fact, everything is ready, but due to a bug, it is not yet possible (at least in all languages). The bug has been reported, so we need to wait for the next Barotrauma update. Thanks to use the Unoculus.</entityname.msgRadioChannel>
+  <!-- <entityname.msgRadioChannel>Welcome to the subtitle system. Please enter the radio channel where the subtitles can be transmitted. Default channel: 2.</entityname.msgRadioChannel>-->
+  <!-- Subtitles section -->
+  <label.AheadFlank>Ahead Flank, emergency speed.</label.AheadFlank>
+  <label.AheadSlow>Ahead slow.</label.AheadSlow>
+  <label.AheadStandard>Ahead standard.</label.AheadStandard>
+  <label.HullIntegrityLow>Caution, hull integrity: Low.</label.HullIntegrityLow>
+  <label.Decoy>Deploying decoy.</label.Decoy>
+  <label.EmergencyPower>Emergency power only. Oxygen production: Offline.</label.EmergencyPower>
+  <label.SystemFailure>Emergency, system failure.</label.SystemFailure>
+  <label.EngineUp>Engine: powering up.</label.EngineUp>
+  <label.EngineDown>Engine: powering down.</label.EngineDown>
+  <label.ExternalHullDamage>External hull damage detected.</label.ExternalHullDamage>
+  <label.FireExtinguished>Fire extinguished, air scrubbers initiated.</label.FireExtinguished>
+  <label.FireNeutralization>Fire neutralization system: Active.</label.FireNeutralization>
+  <label.PowerLow>Power low.</label.PowerLow>
+  <label.SilentRunning>Rig for silent running.</label.SilentRunning>
+  <label.SystemAttention>Some systems need attention.</label.SystemAttention>
+  <label.EngineCritical>Warning, engine heat critical.</label.EngineCritical>
+  <label.EngineOverheat>Warning, engine overheat.</label.EngineOverheat>
+  <label.FireDetected>Warning, fire detected.</label.FireDetected>
+  <label.HullBreach>Warning, hull beach detected.</label.HullBreach>
+  <label.HullIntegrityCritical>Warning, hull integrity critical.</label.HullIntegrityCritical>
+  <label.MaximumDepth>Warning, maximum depth reached. Hull damage imminent.</label.MaximumDepth>
+  <label.CreatureAttack>Warning, creature attack.</label.CreatureAttack>
+  <label.BestCaptain>You are the best captain on the planet. I'm not even squidding.</label.BestCaptain>
+</infotexts>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefabs>
+  <FrontF1p3 identifier="subfrontf1p3nobody" nameidentifier="subfrontd" scale="1.5" body="false" castshadow="false" health="400">
+    <sprite texture="Content/Map/SubRearBow3.png" sourcerect="0,432,359,159" depth="0.01" origin="0.5,0.5" />
+    <backgroundsprite texture="Content/Map/SubRearBow3.png" sourcerect="0,432,359,159" color="60,60,60,255" depth="0.9" origin="0.5,0.5" />
+  </FrontF1p3>
+  <label name="Seafly Icon" identifier="labeliconseafly" descriptionidentifier="decorativelabel" scale="0.25" category="Decorative" subcategory="labels">
+    <sprite texture="%ModDir%/Content/Map/LabelIconsUno.png" sourcerect="0,0,256,144" depth="0.85" origin="0.5,0.5" />
+  </label>
+  <label name="Unoculus Icon" identifier="labeliconUnoculus" descriptionidentifier="decorativelabel" scale="0.25" category="Decorative" subcategory="labels">
+    <sprite texture="%ModDir%/Content/Map/LabelUnoculus.png" sourcerect="0,0,240,240" depth="0.85" origin="0.5,0.5" />
+  </label>
+</prefabs>

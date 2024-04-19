@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="THG Armory - 'Vanilla' Utility Pack" modversion="1.0.6" corepackage="False" steamworkshopid="2985822900" gameversion="1.1.11.0" expectedhash="808B60A37C9DAC5DDA9D3429D29FC294">
+  <Item file="%ModDir%/utility_thog.xml" />
+</contentpackage>

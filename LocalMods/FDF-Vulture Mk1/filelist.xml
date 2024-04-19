@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="FDF-Vulture Mk1" modversion="1.0.8" corepackage="False" steamworkshopid="3068540679" gameversion="1.2.8.0">
+  <Submarine file="%ModDir%/FDF-Vulture Mk1.sub" />
+</contentpackage>

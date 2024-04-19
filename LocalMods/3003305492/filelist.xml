@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Unoculus x Real Sonar Patch" modversion="1.1.2" corepackage="False" steamworkshopid="3003305492" gameversion="1.1.18.0" expectedhash="6C79C4257FDE85B38BD064EC82EBB2A0">
+  <Item file="%ModDir%/sonar.xml" />
+</contentpackage>

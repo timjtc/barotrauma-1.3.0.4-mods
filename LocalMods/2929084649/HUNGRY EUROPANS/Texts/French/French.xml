@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="French" nowhitespace="false" translatedname="English">
+  <!-- Display names -->
+  <displayname.humanfooditem>[itemname] (Human)</displayname.humanfooditem>
+  <displayname.crawlerfooditem>[itemname] (Rampeur)</displayname.crawlerfooditem>
+  <displayname.mudraptorfooditem>[itemname] (Raptor Fangeux)</displayname.mudraptorfooditem>
+  <displayname.hammerheadfooditem>[itemname] (Squale-Marteau)</displayname.hammerheadfooditem>
+  <displayname.thresherfooditem>[itemname] (Squale-tigre)</displayname.thresherfooditem>
+  <displayname.endwormfooditem>[itemname] (Titannélide)</displayname.endwormfooditem>
+  <!-- Food Items -->
+  <entityname.he-proteinbar1>Bar de Protéïnes</entityname.he-proteinbar1>
+  <entitydescription.he-proteinbar1>Un en-cas protéïné plus savoureux. Aide aussi à améliorer le processus de guérison naturel du corps.</entitydescription.he-proteinbar1>
+  <entityname.he-chips1>Sac de chips de grenade</entityname.he-chips1>
+  <entitydescription.he-chips1>De fine tranches séchées de grenade. Un en-cas populaire consommé majoritairement lors de l'évènement annuel "DUNWICE FACE-OFF".</entitydescription.he-chips1>
+  <entityname.he-chips2>Sac de chips de grenade mutée</entityname.he-chips2>
+  <entitydescription.he-chips2>De fine tranches séchées de grenade mutée. Un en-cas populaire. La rumeur veux qu'en manger appaise les brûlures.</entitydescription.he-chips2>
+  <entityname.he-bread>Pain</entityname.he-bread>
+  <entitydescription.he-bread>Du bon pain.</entitydescription.he-bread>
+  <entityname.he-burgerbun>Pain à hamburger</entityname.he-burgerbun>
+  <entitydescription.he-burgerbun>Utilisé dans la préparation d'hamburger.</entitydescription.he-burgerbun>
+  <entityname.he-hotdogbun>Pain à hotdog</entityname.he-hotdogbun>
+  <entitydescription.he-hotdogbun>Mettez-y une saucisse.</entitydescription.he-hotdogbun>
+  <!--crawler-->
+  <entityname.he-crawlerburger>Hamburger</entityname.he-crawlerburger>
+  <entitydescription.he-crawlerburger>Un hamburger plutôt savoureux.</entitydescription.he-crawlerburger>
+  <entityname.he-crawlerhotdog>Hotdog</entityname.he-crawlerhotdog>
+  <entitydescription.he-crawlerhotdog>Un hotdog plutôt savoureux.</entitydescription.he-crawlerhotdog>
+  <entityname.he-cookedcrawlerfilet>Filet cuisiné</entityname.he-cookedcrawlerfilet>
+  <entitydescription.he-cookedcrawlerfilet>Le goût est atroce, mais c'est plutôt chose courante sur Europa.</entitydescription.he-cookedcrawlerfilet>
+  <!--human-->
+  <entityname.he-cookedhumanfilet>Filet cuisiné</entityname.he-cookedhumanfilet>
+  <entitydescription.he-cookedhumanfilet>A un goût de porc, mais un peu plus fort et coriace.</entitydescription.he-cookedhumanfilet>
+  <entityname.he-humanburger>Hamburger</entityname.he-humanburger>
+  <entitydescription.he-humanburger>Celui-là semble plus coriace.</entitydescription.he-humanburger>
+  <entityname.he-humanhotdog>Hotdog</entityname.he-humanhotdog>
+  <entitydescription.he-humanhotdog>Celui-là semble plus coriace.</entitydescription.he-humanhotdog>
+  <!--mudraptor-->
+  <entityname.he-cookedmudraptorroast>Rôtie</entityname.he-cookedmudraptorroast>
+  <entitydescription.he-cookedmudraptorroast>Un gros morceau de rôtie.</entitydescription.he-cookedmudraptorroast>
+  <entityname.he-mudraptorburger>Hamburger</entityname.he-mudraptorburger>
+  <entitydescription.he-mudraptorburger>Possède un goût de poulet.</entitydescription.he-mudraptorburger>
+  <entityname.he-mudraptorhotdog>Hotdog</entityname.he-mudraptorhotdog>
+  <entitydescription.he-mudraptorhotdog>Possède un goût de poulet.</entitydescription.he-mudraptorhotdog>
+  <!--hammerhead-->
+  <entityname.he-cookedhammerheadroast>Rôtie</entityname.he-cookedhammerheadroast>
+  <entitydescription.he-cookedhammerheadroast>Un gros morceau de rôtie.</entitydescription.he-cookedhammerheadroast>
+  <entityname.he-cookedhammerheadspawnpickled>Rejeton squale-marteau mariné.</entityname.he-cookedhammerheadspawnpickled>
+  <entitydescription.he-cookedhammerheadspawnpickled>Un délice.</entitydescription.he-cookedhammerheadspawnpickled>
+  <entityname.he-cookedhammerheadspawnfried>Rejeton squale-marteau frit</entityname.he-cookedhammerheadspawnfried>
+  <entitydescription.he-cookedhammerheadspawnfried>Un cheat-meal très coûteux.</entitydescription.he-cookedhammerheadspawnfried>
+  <entityname.he-hammerheadburger>Hamburger</entityname.he-hammerheadburger>
+  <entitydescription.he-hammerheadburger>Tellement savoureux qu'on s'en éclaterai la tête !</entitydescription.he-hammerheadburger>
+  <entityname.he-hammerheadhotdog>Hotdog</entityname.he-hammerheadhotdog>
+  <entitydescription.he-hammerheadhotdog>Tellement savoureux qu'on s'en éclaterai la tête !</entitydescription.he-hammerheadhotdog>
+  <entityname.he-cookedhammerheadspareribs>Côtes levées</entityname.he-cookedhammerheadspareribs>
+  <entitydescription.he-cookedhammerheadspareribs>Un met savoureux au goût très prononcé.</entitydescription.he-cookedhammerheadspareribs>
+  <!--tresher-->
+  <entityname.he-cookedthresherfilet>Filet cuisiné</entityname.he-cookedthresherfilet>
+  <entitydescription.he-cookedthresherfilet>C'est flasque et visqueux.</entitydescription.he-cookedthresherfilet>
+  <entityname.he-thresherburger>Hamburger</entityname.he-thresherburger>
+  <entitydescription.he-thresherburger>La saveur va vous en couper le souffle.</entitydescription.he-thresherburger>
+  <entityname.he-thresherhotdog>Hotdog</entityname.he-thresherhotdog>
+  <entitydescription.he-thresherhotdog>La saveur va vous en couper le souffle.</entitydescription.he-thresherhotdog>
+  <!--endworm-->
+  <entityname.he-endwormhotdog>Hotdog</entityname.he-endwormhotdog>
+  <entitydescription.he-endwormhotdog>Une folle saveur !</entitydescription.he-endwormhotdog>
+  <entityname.he-endwormburger>Hamburger</entityname.he-endwormburger>
+  <entitydescription.he-endwormburger>Une folle saveur !</entitydescription.he-endwormburger>
+  <!-- Drinks -->
+  <entityname.he-energydrink1>Boisson énergisante</entityname.he-energydrink1>
+  <entitydescription.he-energydrink1>Une boisson énergisante très rafraichissante. Parfait pour les lendemain de soirée où quand il faut se sevrer un peu.</entitydescription.he-energydrink1>
+  <entityname.rum>Rhum</entityname.rum>
+  <entitydescription.rum>Une puissante boisson alcoolisée. |Boisson Alcoolisée |Réduit la Psychose |Réduit les hallucinations |Réduit l'infection d'envellope (si en dessous de 90%) |Soigne les traumas |Améliore la Résistance à la Psychose</entitydescription.rum>
+  <entityname.he-rum>Rhum Pirate</entityname.he-rum>
+  <entitydescription.he-rum>Un puissant Rhum relevé avec de l'uranium enrichi. |Boisson Alcoolisée |Réduit la Psychose |Réduit les hallucinations |Réduit l'infection d'envellope (si en dessous de 90%) |Propriété Curative |Améliore la Résistance à la Psychose |Augmente l'irradiation (légèrement)</entitydescription.he-rum>
+  <entityname.he-whiskey>Le Whiskey de Doc</entityname.he-whiskey>
+  <entitydescription.he-whiskey>Le whiskey original du Docteur Micheal. Apprové unanimement par le corps médical Européen. |Boisson Alcoolisée |Réduit les hallucinations |Réduit l'Halucinova |Améliore la Résistance à la Psychose</entitydescription.he-whiskey>
+  <entityname.he-halucinova>Halucinova</entityname.he-halucinova>
+  <entitydescription.he-halucinova>A garder hors de porté de "Sadashi Kira" à tout prix ! |Boisson Alcoolisée |Augmente les hallucinations | Légère Propriété Curative</entitydescription.he-halucinova>
+  <entityname.he-beer>Bière "Lager" Premium de la Coalition</entityname.he-beer>
+  <entitydescription.he-beer>Bière "Lager" Premium de la Coalition. |Boisson Alcoolisée |Réduit les hallucinations |Améliore la Résistance à la Psychose</entitydescription.he-beer>
+  <entityname.he-water>Eau</entityname.he-water>
+  <entitydescription.he-water>Eau Potable. Aide à la digestion ou quand vous êtes complétement bourré.</entitydescription.he-water>
+  <entityname.he-milk>Lait de Moloch</entityname.he-milk>
+  <entitydescription.he-milk>Une bouteille de lait de moloch avec une saveur plutôt amusante. Ne demandez surtout pas comment ils l'ont eu! Aide un peu quand vous êtes bourré ou que vous avez simplement faim.</entitydescription.he-milk>
+  <entityname.he-seawaterrum>Eau Impure</entityname.he-seawaterrum>
+  <entitydescription.he-seawaterrum>De l'eau de mer. Mieux que rien, mais vous ne devriez pas boire ça.</entitydescription.he-seawaterrum>
+  <entityname.he-seawaterwhiskey>Eau Impure</entityname.he-seawaterwhiskey>
+  <entitydescription.he-seawaterwhiskey>De l'eau de mer. Mieux que rien, mais vous ne devriez pas boire ça.</entitydescription.he-seawaterwhiskey>
+  <entityname.he-seawaterhalucinova>Eau Impure</entityname.he-seawaterhalucinova>
+  <entitydescription.he-seawaterhalucinova>De l'eau de mer. Mieux que rien, mais vous ne devriez pas boire ça.</entitydescription.he-seawaterhalucinova>
+  <entityname.he-seawater>Eau Impure</entityname.he-seawater>
+  <entitydescription.he-seawater>De l'eau de mer. Mieux que rien, mais vous ne devriez pas boire ça.</entitydescription.he-seawater>
+  <!-- Ingredients -->
+  <entityname.he-emptybottlerum>Bouteille de Rhum Vide</entityname.he-emptybottlerum>
+  <entitydescription.he-emptybottlerum>Une bouteille vide utilisez pour diverses recettes ou préparation. Peut être lancée ou utiliser dans de l'eau de mer afin d'en collecter.</entitydescription.he-emptybottlerum>
+  <entityname.he-emptybottlewhiskey>Bouteille de Whiskey Vide</entityname.he-emptybottlewhiskey>
+  <entitydescription.he-emptybottlewhiskey>Une bouteille vide utilisez pour diverses recettes ou préparation. Peut être lancée ou utiliser dans de l'eau de mer afin d'en collecter.</entitydescription.he-emptybottlewhiskey>
+  <entityname.he-emptybottlehalucinova>Bouteille d'Halucinova Vide</entityname.he-emptybottlehalucinova>
+  <entitydescription.he-emptybottlehalucinova>Une bouteille vide utilisez pour diverses recettes ou préparation. Peut être lancée ou utiliser dans de l'eau de mer afin d'en collecter.</entitydescription.he-emptybottlehalucinova>
+  <entityname.he-emptybottle>Bouteille Vide</entityname.he-emptybottle>
+  <entitydescription.he-emptybottle>Une bouteille vide utilisez pour diverses recettes ou préparation. Peut être lancée ou utiliser dans de l'eau de mer afin d'en collecter.</entitydescription.he-emptybottle>
+  <entityname.he-emptyjar>Jarre Vide</entityname.he-emptyjar>
+  <entitydescription.he-emptyjar>Une jarre vide, utile dans la conception de certaines recettes. Peut être lancé.</entitydescription.he-emptyjar>
+  <entityname.he-endwormmeatchunk>Morceau de Viande de Titannélide</entityname.he-endwormmeatchunk>
+  <entitydescription.he-endwormmeatchunk>Un gros morceau de viande de Titannélide. Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-endwormmeatchunk>
+  <entityname.he-rawendwormmeat>Viande de Titannélide Crue</entityname.he-rawendwormmeat>
+  <entitydescription.he-rawendwormmeat>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawendwormmeat>
+  <entityname.he-rawendwormsausage>Saucisses de Titannélide Crue</entityname.he-rawendwormsausage>
+  <entitydescription.he-rawendwormsausage>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawendwormsausage>
+  <entityname.he-rawendwormmeatpatty>Steak Haché de Titannélide Cru</entityname.he-rawendwormmeatpatty>
+  <entitydescription.he-rawendwormmeatpatty>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawendwormmeatpatty>
+  <entityname.he-humanmeatchunk>Viande Humaine</entityname.he-humanmeatchunk>
+  <entitydescription.he-humanmeatchunk>Parties d'être humain. Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-humanmeatchunk>
+  <entityname.he-rawhumanmeat>Viande Humaine Crue</entityname.he-rawhumanmeat>
+  <entitydescription.he-rawhumanmeat>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawhumanmeat>
+  <entityname.he-rawhumansausage>Saucisse d'humaine crue</entityname.he-rawhumansausage>
+  <entitydescription.he-rawhumansausage>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawhumansausage>
+  <entityname.he-rawhumanmeatpatty>Steak haché de Viande Humaine Crue</entityname.he-rawhumanmeatpatty>
+  <entitydescription.he-rawhumanmeatpatty>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawhumanmeatpatty>
+  <entityname.he-crawlermeatchunk>Moitié de Rampeur</entityname.he-crawlermeatchunk>
+  <entitydescription.he-crawlermeatchunk>Un Rampeur coupé en deux. Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-crawlermeatchunk>
+  <entityname.he-rawcrawlermeat>Viande de Rampeur Crue</entityname.he-rawcrawlermeat>
+  <entitydescription.he-rawcrawlermeat>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawcrawlermeat>
+  <entityname.he-rawcrawlersausage>Saucisse Rampeur Sausage</entityname.he-rawcrawlersausage>
+  <entitydescription.he-rawcrawlersausage>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawcrawlersausage>
+  <entityname.he-rawcrawlermeatpatty>Steak de Rampeur Meat Cru</entityname.he-rawcrawlermeatpatty>
+  <entitydescription.he-rawcrawlermeatpatty>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawcrawlermeatpatty>
+  <entityname.he-mudraptormeatchunk>Morceau de Viande de Raptor Fangeux</entityname.he-mudraptormeatchunk>
+  <entitydescription.he-mudraptormeatchunk>Un bon morceau de viande de Raptor Fangeux. Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-mudraptormeatchunk>
+  <entityname.he-rawmudraptormeat>Viande de Raptor Fangeux Crue</entityname.he-rawmudraptormeat>
+  <entitydescription.he-rawmudraptormeat>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawmudraptormeat>
+  <entityname.he-rawmudraptorsausage>Saucisse de Raptor Fangeux Crue</entityname.he-rawmudraptorsausage>
+  <entitydescription.he-rawmudraptorsausage>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawmudraptorsausage>
+  <entityname.he-rawmudraptormeatpatty>Steak Haché de Raptor Fangeux Cru</entityname.he-rawmudraptormeatpatty>
+  <entitydescription.he-rawmudraptormeatpatty>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawmudraptormeatpatty>
+  <entityname.he-rawmudraptorroast>Rôtie de Raptor Fangeux Cru</entityname.he-rawmudraptorroast>
+  <entitydescription.he-rawmudraptorroast>Plus qu'à le mettre dans le four ! Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawmudraptorroast>
+  <entityname.he-hammerheadmeatchunk>Morceau de Viande de Squale-Marteau Cru</entityname.he-hammerheadmeatchunk>
+  <entitydescription.he-hammerheadmeatchunk>Un gros morceau de viande de Squale-Marteau. Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-hammerheadmeatchunk>
+  <entityname.he-rawhammerheadmeat>Viande de Squale-Marteau Crue</entityname.he-rawhammerheadmeat>
+  <entitydescription.he-rawhammerheadmeat>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawhammerheadmeat>
+  <entityname.he-rawhammerheadsausage>Saucisse de Squale-Marteau Crue</entityname.he-rawhammerheadsausage>
+  <entitydescription.he-rawhammerheadsausage>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawhammerheadsausage>
+  <entityname.he-rawhammerheadmeatpatty>Steak de Squale-Marteau Cru</entityname.he-rawhammerheadmeatpatty>
+  <entitydescription.he-rawhammerheadmeatpatty>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawhammerheadmeatpatty>
+  <entityname.he-rawhammerheadspareribs>Côtes de Squale-Marteau Cru</entityname.he-rawhammerheadspareribs>
+  <entitydescription.he-rawhammerheadspareribs>Découpé depuis une cage thoracique gigantesque. Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawhammerheadspareribs>
+  <entityname.he-rawhammerheadroast>Rôtie de Squale-Marteau Cru</entityname.he-rawhammerheadroast>
+  <entitydescription.he-rawhammerheadroast>Plus qu'à le mettre dans le four ! Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawhammerheadroast>
+  <entityname.he-hammerheadspawnmeatchunk>Rejeton Squale-Marteau</entityname.he-hammerheadspawnmeatchunk>
+  <entitydescription.he-hammerheadspawnmeatchunk>Un bébé Squale-Marteau. Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-hammerheadspawnmeatchunk>
+  <entityname.he-threshermeatchunk>Morceau de Viande de Squale-tigre</entityname.he-threshermeatchunk>
+  <entitydescription.he-threshermeatchunk>Un morceau de viande découpé depuis la carcasse d'un Squale-tigre. Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-threshermeatchunk>
+  <entityname.he-rawthreshermeat>Viande Squale-tigre Crue</entityname.he-rawthreshermeat>
+  <entitydescription.he-rawthreshermeat>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawthreshermeat>
+  <entityname.he-rawthreshersausage>Saucisse de Squale-tigre Crue</entityname.he-rawthreshersausage>
+  <entitydescription.he-rawthreshersausage>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawthreshersausage>
+  <entityname.he-rawthreshermeatpatty>Steak Haché de Squale-tigre Cru</entityname.he-rawthreshermeatpatty>
+  <entitydescription.he-rawthreshermeatpatty>Se périme en dehors d'un conteneur réfrigéré.</entitydescription.he-rawthreshermeatpatty>
+  <entityname.he-salt>Sel</entityname.he-salt>
+  <entitydescription.he-salt>Allez ne soyez pas salé !</entitydescription.he-salt>
+  <entityname.he-pepper>Poivre Synthétique</entityname.he-pepper>
+  <entitydescription.he-pepper>Poivre assaisonner vos plat !</entitydescription.he-pepper>
+  <entityname.he-sugar>Sucre</entityname.he-sugar>
+  <entitydescription.he-sugar>Si sucré !</entitydescription.he-sugar>
+  <entityname.he-ketchup>Ketchup</entityname.he-ketchup>
+  <entitydescription.he-ketchup>Extrait depuis des grenades.</entitydescription.he-ketchup>
+  <entityname.he-vinegar>Vinaigre</entityname.he-vinegar>
+  <entitydescription.he-vinegar>Cette odeur...</entitydescription.he-vinegar>
+  <entityname.he-cookingoil>Huile de cuisson</entityname.he-cookingoil>
+  <entitydescription.he-cookingoil>Celle-là n'est pas pour les moteurs.</entitydescription.he-cookingoil>
+  <entityname.he-flour>Farine Synthétique</entityname.he-flour>
+  <entitydescription.he-flour>Farine synthétique originaire d'Europa</entitydescription.he-flour>
+  <!-- Tools -->
+  <entityname.he-cleaver>Hachoir</entityname.he-cleaver>
+  <entitydescription.he-cleaver>Allez c'est le moment ! Chop chop !\n\nPeux découper :\n-Rampeurs\n-Raptor Fangeuxs\n-Squale-tigres\n-Squale-Marteaus\n-Squale-Marteau Spawns\n-Titannélides\n-Humains\n</entitydescription.he-cleaver>
+  <entityname.he-skillbooktheeuropan>L'Européen - Volume 66</entityname.he-skillbooktheeuropan>
+  <entitydescription.he-skillbooktheeuropan>"... Observez au-délà du voile temporel. Est-ce toi, Robert ? Non, je suis Robert. Mais je suis aussi Doris. Je suis la chair. Nourris-toi de mon être et ne fais qu'un avec le Ver. ..."</entitydescription.he-skillbooktheeuropan>
+  <entityname.he-skillbookauntdoris>L'ART DE LA CUISINE DES PROFONDEUR par l'Oncle Doris</entityname.he-skillbookauntdoris>
+  <entitydescription.he-skillbookauntdoris>La manière de cuisiner à l'européene.</entitydescription.he-skillbookauntdoris>
+  <entityname.he-genesaw>Extracteur Génique</entityname.he-genesaw>
+  <entitydescription.he-genesaw>Permet d'extraire un gène aléatoire depuis un corps.</entitydescription.he-genesaw>
+  <entityname.extractedgene>Gène Extrait</entityname.extractedgene>
+  <entitydescription.extractedgene>Un gène extrait non-identifié.</entitydescription.extractedgene>
+  <!-- Gear -->
+  <entityname.he-chefscap1>Toque de Chef</entityname.he-chefscap1>
+  <entitydescription.he-chefscap1>Montrez-leur à qui appartient la cuisine!</entitydescription.he-chefscap1>
+  <entityname.he-chefsuniform1>Uniforme de Chef</entityname.he-chefsuniform1>
+  <entitydescription.he-chefsuniform1>Porter par tout les chefs d'Europa !</entitydescription.he-chefsuniform1>
+  <entityname.he-chefscapmaster1>Toque de Master Chef</entityname.he-chefscapmaster1>
+  <entitydescription.he-chefscapmaster1>Uniquement pour l'élite de la cuisine !</entitydescription.he-chefscapmaster1>
+  <entityname.he-chefsuniformmaster1>Uniforme de Master Chef</entityname.he-chefsuniformmaster1>
+  <entitydescription.he-chefsuniformmaster1>Porté par les Master Chefs!</entitydescription.he-chefsuniformmaster1>
+  <!-- Fabricators and Containers -->
+  <entityname.he-kitchencounter>Station de Cuisine</entityname.he-kitchencounter>
+  <entitydescription.he-kitchencounter>Permet de stocker une dizaine de petits objets.</entitydescription.he-kitchencounter>
+  <entityname.he-refrigerator>Réfrigérateur</entityname.he-refrigerator>
+  <entitydescription.he-refrigerator>Permet de conserver les aliments en leur évitant de pourrir. Ne peut contenir que de la nourriture et des boissons. Requiert une source d'énergie.</entitydescription.he-refrigerator>
+  <entityname.he-stove>Cuisinière</entityname.he-stove>
+  <entitydescription.he-stove>Utilisés afin de cuisiner. Requiert une source d'énergie.</entitydescription.he-stove>
+  <entityname.he-oven>Four</entityname.he-oven>
+  <entitydescription.he-oven>Utilisés afin de cuisiner. Requiert une source d'énergie.</entitydescription.he-oven>
+  <entityname.he-cuttingboard>Poste de découpe</entityname.he-cuttingboard>
+  <entitydescription.he-cuttingboard>Permet la préparation avancées d'ingrédients.</entitydescription.he-cuttingboard>
+  <!-- Skills -->
+  <skillname.cooking>Cuisine</skillname.cooking>
+  <skillname.butchery>Boucherie</skillname.butchery>
+  <!-- Jobs -->
+  <jobname.he-chef>Chef</jobname.he-chef>
+  <jobdescription.he-chef>Le Chef est responsable de la découpe de la faune, ainsi que la préparation de plats afin de nourrir l'équipage.</jobdescription.he-chef>
+  <!-- Talents -->
+  <talentname.he-hungryeuropan>Européen Affamé</talentname.he-hungryeuropan>
+  <talentdescription.he-hungryeuropan>Vous êtes un Européen qui à desormais besoin de boire et manger.</talentdescription.he-hungryeuropan>
+  <talentname.he-poacher>Braconnier</talentname.he-poacher>
+  <talentdescription.he-poacher>Gagnez [xpbonus]% d'expérience bonus dans les missions de [missiontype1] et [missiontype2].</talentdescription.he-poacher>
+  <talentname.he-saltybusiness>Salé en Affaires</talentname.he-saltybusiness>
+  <talentdescription.he-saltybusiness>La première fois que vous ouvrez un contenant, vous avez une chance supplémentaire de [probability]% de trouver du sel à l'interieur.</talentdescription.he-saltybusiness>
+  <talentname.he-fastfood>Fast Food</talentname.he-fastfood>
+  <talentdescription.he-fastfood>Augmente la vitesse de production des fabricateur de type "cuisine" par [amount]%.</talentdescription.he-fastfood>
+  <talentname.he-chefattire>Uniforme de Master Chef</talentname.he-chefattire>
+  <talentdescription.he-chefattire>Débloque la recette de fabrication de [itemname1] et [itemname2].</talentdescription.he-chefattire>
+  <talentname.he-frenzy>Rage</talentname.he-frenzy>
+  <talentdescription.he-frenzy>Augmente la puissance d'attaque en mélée lors de l'utilisation d'ustensile de cuisine de [powerincrease]%.</talentdescription.he-frenzy>
+  <talentname.he-butchershop>Boucher</talentname.he-butchershop>
+  <talentdescription.he-butchershop>Vous avez un talent pour la boucherie et ça se voit !\nObtenez [amount]% d'argent lors de la vente de viande !</talentdescription.he-butchershop>
+  <talentname.he-coldblood>Sang Froid</talentname.he-coldblood>
+  <talentdescription.he-coldblood>Vous êtes la personne la plus froide aux alentours.\nLes viande ne pourrissent plus lorsque stocker dans votre inventaire.</talentdescription.he-coldblood>
+  <talentname.he-masterchef>Master Chef</talentname.he-masterchef>
+  <talentdescription.he-masterchef>Vous êtes devenu un chef inégalé dans votre art, et vous connaissez parfaitement comment optimiser vos préparations.\nVous avez [chance]% chance de ne pas consommer un ingrédient aléatoire lors de la préparation d'un plat.</talentdescription.he-masterchef>
+  <talentname.he-lifesaver>Sauveteur</talentname.he-lifesaver>
+  <talentdescription.he-lifesaver>Gagnez un bonus de [amount] à votre [skill].\nDébloque la recette suivante : [itemname1].</talentdescription.he-lifesaver>
+  <talentname.he-delicacies>Délices du Chef</talentname.he-delicacies>
+  <talentdescription.he-delicacies>Débloque les recettes avancée de cuisine suivantes :\n[itemname1].</talentdescription.he-delicacies>
+  <!-- Afflictions -->
+  <afflictionname.he-increasedswimmingspeedcrawler>Vitesse de nage améliorée (Nourriture)</afflictionname.he-increasedswimmingspeedcrawler>
+  <afflictiondescription.he-increasedswimmingspeedcrawler>Vous nagez 50% plus vite.</afflictiondescription.he-increasedswimmingspeedcrawler>
+  <afflictionname.he-damageresistancemudraptor>Résistance (Nourriture)</afflictionname.he-damageresistancemudraptor>
+  <afflictiondescription.he-damageresistancemudraptor>Vous recevez 25% de dégàts en moins.</afflictiondescription.he-damageresistancemudraptor>
+  <afflictionname.he-increasedwalkingspeedmudraptor>Vitesse de marche améliorée (Nourriture)</afflictionname.he-increasedwalkingspeedmudraptor>
+  <afflictiondescription.he-increasedwalkingspeedmudraptor>Vous marchez 20% plus vite.</afflictiondescription.he-increasedwalkingspeedmudraptor>
+  <afflictionname.he-damageresistancemoloch>Résistance Supérieure (Nourriture)</afflictionname.he-damageresistancemoloch>
+  <afflictiondescription.he-damageresistancemoloch>Vous recevez 50% de dégàts en moins.</afflictiondescription.he-damageresistancemoloch>
+  <afflictionname.he-increasedmeleedamagehammerhead>Mélée Améliorée (Nourriture)</afflictionname.he-increasedmeleedamagehammerhead>
+  <afflictiondescription.he-increasedmeleedamagehammerhead>Vous faites 25% de dégàs de mélée supplémentaire.</afflictiondescription.he-increasedmeleedamagehammerhead>
+  <afflictionname.he-decreasedoxygenconsumption>Consommation d'Oxygène Réduite (Nourriture)</afflictionname.he-decreasedoxygenconsumption>
+  <afflictiondescription.he-decreasedoxygenconsumption>Vous n'avez plus besoin de respirer.</afflictiondescription.he-decreasedoxygenconsumption>
+  <afflictionname.he-pressureresistance>Résistance à la Pression (Nourriture)</afflictionname.he-pressureresistance>
+  <afflictiondescription.he-pressureresistance>Immunité à la pression océanique.</afflictiondescription.he-pressureresistance>
+  <afflictionname.he-alcoholism>Alcoolique</afflictionname.he-alcoholism>
+  <afflictiondescription.he-alcoholism>Le patient semble heureux... tant qu'il a ce dont à besoin.</afflictiondescription.he-alcoholism>
+  <advancedafflictiondescription.self.he-alcoholism>C'est le moment de se bourré la gueule ! Vous avez une addiction à l'alcool.</advancedafflictiondescription.self.he-alcoholism>
+  <advancedafflictiondescription.others.he-alcoholism>Le patient souffre d'une dépendance à l'alcool.</advancedafflictiondescription.others.he-alcoholism>
+  <afflictionname.he-alcoholwithdrawal>Sevrage (Alcool)</afflictionname.he-alcoholwithdrawal>
+  <afflictiondescription.he-alcoholwithdrawal>Une grande agitation et de fort tremblement évidents, de même que les signes de nausés.</afflictiondescription.he-alcoholwithdrawal>
+  <afflictioncauseofdeath.he-alcoholwithdrawal>Décès suite à un sevrage d'alcool</afflictioncauseofdeath.he-alcoholwithdrawal>
+  <afflictioncauseofdeathself.he-alcoholwithdrawal>Vous êtes mort à cause d'un sevrage d'alcool critique.</afflictioncauseofdeathself.he-alcoholwithdrawal>
+  <advancedafflictiondescription.self.he-alcoholism>Vous avez l'envie de boire un petit coup avec les gars !</advancedafflictiondescription.self.he-alcoholism>
+  <advancedafflictiondescription.others.he-alcoholism>Le patient montre des signes légers d'un sevrage à l'alcool.</advancedafflictiondescription.others.he-alcoholism>
+  <advancedafflictiondescription.self.he-alcoholism.2>Une bière bien fraiche ou une bouteille de Rhum... N'importe quoi pour étancher cette soif d'alcool !</advancedafflictiondescription.self.he-alcoholism.2>
+  <advancedafflictiondescription.others.he-alcoholism.2>Le patient montre des signes majeurs d'un sevrage à l'alcool.</advancedafflictiondescription.others.he-alcoholism.2>
+  <afflictionname.he-drunkinvertcontrols>Désorienté</afflictionname.he-drunkinvertcontrols>
+  <afflictiondescription.he-drunkinvertcontrols>Le haut est en bas, la droite à gauche... Où suis-je ??</afflictiondescription.he-drunkinvertcontrols>
+  <afflictionname.he-stuffed>Rassasié</afflictionname.he-stuffed>
+  <afflictiondescription.he-stuffed>Votre estomac est bien rempli.</afflictiondescription.he-stuffed>
+  <afflictioncauseofdeath.he-stuffed>Étouffé dans son propre vomi.</afflictioncauseofdeath.he-stuffed>
+  <afflictioncauseofdeathself.he-stuffed>Vous vous êtes étouffé dans votre propre vomi.</afflictioncauseofdeathself.he-stuffed>
+  <advancedafflictiondescription.self.he-stuffed>Votre estomac est bien rempli.</advancedafflictiondescription.self.he-stuffed>
+  <advancedafflictiondescription.self.he-stuffed.2>Votre estomac est à sa limite. Manger encore plus pourrai vous faire vomir.</advancedafflictiondescription.self.he-stuffed.2>
+  <advancedafflictiondescription.self.he-stuffed.3>Votre estomac est trop rempli. Vous avez envie de vomir.</advancedafflictiondescription.self.he-stuffed.3>
+  <advancedafflictiondescription.others.he-stuffed>L'estomac est plein. Le patient à bien mangé.</advancedafflictiondescription.others.he-stuffed>
+  <advancedafflictiondescription.others.he-stuffed.2>L'estomac est à sa limite. Le patient à trop manger.</advancedafflictiondescription.others.he-stuffed.2>
+  <advancedafflictiondescription.others.he-stuffed.3>L'estomac est trop rempli. Le patient pourrai vomir.</advancedafflictiondescription.others.he-stuffed.3>
+  <afflictionname.he-stomachache>Douleur stomacale</afflictionname.he-stomachache>
+  <afflictiondescription.he-stomachache>Vous avez mal au ventre.</afflictiondescription.he-stomachache>
+  <afflictioncauseofdeath.he-stomachache>Étouffé dans son propre vomi.</afflictioncauseofdeath.he-stomachache>
+  <afflictioncauseofdeathself.he-stomachache>Vous vous êtes étouffé dans votre propre vomi.</afflictioncauseofdeathself.he-stomachache>
+  <advancedafflictiondescription.self.he-stomachache>Vôtre estomac vous fais mal et vous vous sentez nauséeux.</advancedafflictiondescription.self.he-stomachache>
+  <advancedafflictiondescription.self.he-stomachache.2>Vôtre estomac vous fais extrèmement mal et vous vous sentez très nauséeux.</advancedafflictiondescription.self.he-stomachache.2>
+  <advancedafflictiondescription.others.he-stomachache>L'estomac du patient est douloureux suite à l'ingestion d'eau impure.</advancedafflictiondescription.others.he-stomachache>
+  <afflictionname.he-geneticextraction>Extraction Génique</afflictionname.he-geneticextraction>
+  <afflictiondescription.he-geneticextraction>Des gènes sont en cours d'extraction.</afflictiondescription.he-geneticextraction>
+  <afflictionname.he-butchered>En cours de découpe</afflictionname.he-butchered>
+  <afflictiondescription.he-butchered>Le corps est en cours de découpe.</afflictiondescription.he-butchered>
+  <afflictionname.he-halucinova>Halucinova</afflictionname.he-halucinova>
+  <afflictiondescription.he-halucinova.self>Vous vous sentez comme un voyageur dans un autre plan d'existence.</afflictiondescription.he-halucinova.self>
+  <afflictiondescription.he-halucinova.others>Cette personne est clairement en train de planner.</afflictiondescription.he-halucinova.others>
+</infotexts>

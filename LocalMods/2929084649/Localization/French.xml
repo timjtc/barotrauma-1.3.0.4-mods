@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="French" nowhitespace="false" translatedname="Français">
+  <!--Skills and Jobs-->
+  <jobname.chef_needs>Chef</jobname.chef_needs>
+  <jobdescription.chef_needs>Le Chef est un cuisinier hors-pair, capable de cuisiner pour un équipage entier.</jobdescription.chef_needs>
+  <skillname.cooking>Cuisine</skillname.cooking>
+  <skillname.gardening>Jardinage</skillname.gardening>
+  <!--Talents-->
+  <talentname.gordoomramsay>GorDOOM Ramsay</talentname.gordoomramsay>
+  <talentdescription.gordoomramsay>Au dessus de 50% de vitalité, vous infligez 50% de dégats en melée supplémentaires. En dessous de 50% de vitalité, vous recevez 50% de dégats physique en moins.</talentdescription.gordoomramsay>
+  <talentname.iamacookbut>Je suis un cuistôt, mais...</talentname.iamacookbut>
+  <talentdescription.iamacookbut>Les armes à distance que vous utiliser inflige 25% de dégats supplémentaires.</talentdescription.iamacookbut>
+  <talentname.gourmet>Gourmet</talentname.gourmet>
+  <talentdescription.gourmet>Lorsque vous êtes bien nourri : Gagnez 30% de vitalité maximum suplémentaire.</talentdescription.gourmet>
+  <talentname.powerfromwater>Puissance hydraulique</talentname.powerfromwater>
+  <talentdescription.powerfromwater>Lorsque vous êtes bien hydraté : Gagnez 30% de vitesse de nage et 15% de vitesse de déplacement supplémentaire.</talentdescription.powerfromwater>
+  <talentname.hydroponics>Hydroponiques</talentname.hydroponics>
+  <talentdescription.hydroponics>Débloque le schéma : Caisson Hydroponique.</talentdescription.hydroponics>
+  <talentname.advancedhydroponics>Hydroponiques Avancées</talentname.advancedhydroponics>
+  <talentdescription.advancedhydroponics>Débloque la capacité de faire pousser des plantes d'origine alien dans les caissons hydroponiques.</talentdescription.advancedhydroponics>
+  <!--Items-->
+  <entityname.watercanteen>Gourde</entityname.watercanteen>
+  <entitydescription.watercanteen>Une solide gourde vous permettant de transporter votre précieuse eau potable.</entitydescription.watercanteen>
+  <entityname.watercanteenempty>Gourde (Vide)</entityname.watercanteenempty>
+  <entitydescription.watercanteenempty>Une solide gourde vous permettant de transporter votre précieuse eau potable. Seulement, celle-ci est vide.</entitydescription.watercanteenempty>
+  <entityname.ledouxenergydrink>Boisson Énergisante</entityname.ledouxenergydrink>
+  <entitydescription.ledouxenergydrink>Une boisson savoureuse vous permettant de combattre un peu mieux la fatigue.</entitydescription.ledouxenergydrink>
+  <entityname.cookingstation_needs>Poste de Cuisine</entityname.cookingstation_needs>
+  <entitydescription.cookingstation_needs>Un équipement polyvalent permettant la préparation d'une grand variété de plats. Suffisament léger pour être démonter puis placer ailleurs.</entitydescription.cookingstation_needs>
+  <entityname.portablestove>Cuisinière Portative</entityname.portablestove>
+  <entitydescription.portablestove>Une petite cuisinière électrique utilisée dans la cuisine de recettes simples.</entitydescription.portablestove>
+  <entityname.refrigerator_needs>Réfrigérateur</entityname.refrigerator_needs>
+  <entitydescription.refrigerator_needs>Un lieu parfait afin de stocker et de préserver vos breuvages et denrées.</entitydescription.refrigerator_needs>
+  <entityname.boombox_needs>Lecteur Audio</entityname.boombox_needs>
+  <entitydescription.boombox_needs>Un lecteur audio complétement étanche et sans-fils équipé de puissant aimants vous permettant d'écouter n'importe quelles musiques n'importe où !</entitydescription.boombox_needs>
+  <entityname.chefcap>Toque de Chef</entityname.chefcap>
+  <entitydescription.chefcap>Pour montrer à tout le monde qui est le Chef !</entitydescription.chefcap>
+  <entityname.chefuniform>Uniforme de Chef</entityname.chefuniform>
+  <entitydescription.chefuniform>Une confortable tenue de cuisine résistante au feu portée par beaucoup de cuisiniers sur Europa.</entitydescription.chefuniform>
+  <entityname.fryingpan_needs>Poêle à frire</entityname.fryingpan_needs>
+  <entitydescription.fryingpan_needs>Une solide version à deux main de la poêle à frire classique. Utiliser pour la conception de nombreux plats.</entitydescription.fryingpan_needs>
+  <entityname.kitchenknife_needs>Couteau de cuisine</entityname.kitchenknife_needs>
+  <entitydescription.kitchenknife_needs>L'outil le plus utilisé en cuisine, très coupant.</entitydescription.kitchenknife_needs>
+  <entityname.meatcleaver_needs>Couperet</entityname.meatcleaver_needs>
+  <entitydescription.meatcleaver_needs>Une puissante et large lame pouvant couper les os et la viande en quelques coups seulement. Utilisez le pour découper les cadavres en morceaux plus fins.</entitydescription.meatcleaver_needs>
+  <entityname.cookingpot>Casserole</entityname.cookingpot>
+  <entitydescription.cookingpot>Utilisé dans une grande variété de recette en cuisine, essayer de toujours en avoir une à proximité.</entitydescription.cookingpot>
+  <entityname.handblender>Mixeur à main</entityname.handblender>
+  <entitydescription.handblender>Un petit équipement de cuisine, utilisé pour mixer, mélanger et écraser une multitude d'ingrédients.</entitydescription.handblender>
+  <entityname.hydroponictank>Caisson Hydroponique</entityname.hydroponictank>
+  <entitydescription.hydroponictank>Un dispositif avancé de culture végétale.</entitydescription.hydroponictank>
+  <!--Cooking Ingredients-->
+  <entityname.chocolate>Chocolat</entityname.chocolate>
+  <entitydescription.chocolate>Délicieux délicieux chocolat !</entitydescription.chocolate>
+  <entityname.flour>Farine</entityname.flour>
+  <entitydescription.flour>La base de la patisserie.</entitydescription.flour>
+  <entityname.milk>Lait</entityname.milk>
+  <entitydescription.milk>Difficile d'en avoir depuis une vache, alors le mieux c'est d'en extraire directement depuis du soja.</entitydescription.milk>
+  <entityname.salt>Sel</entityname.salt>
+  <entitydescription.salt>C'est salé.</entitydescription.salt>
+  <entityname.spice>Épice</entityname.spice>
+  <entitydescription.spice>C'est épicé.</entitydescription.spice>
+  <entityname.wine>Vin</entityname.wine>
+  <entitydescription.wine>Nous, les Français, en faisont le meilleur !</entitydescription.wine>
+  <!--Seed Products-->
+  <entityname.apple>Pomme</entityname.apple>
+  <entitydescription.apple>L'origine de nos péchés.</entitydescription.apple>
+  <entityname.cacao>Cacao</entityname.cacao>
+  <entitydescription.cacao>La base pour faire du bon chocolat !</entitydescription.cacao>
+  <entityname.carot>Carotte</entityname.carot>
+  <entitydescription.carot>C'est Orange mais ce n'est pas une Orange.</entitydescription.carot>
+  <entityname.coffeebeen>Grain de Café</entityname.coffeebeen>
+  <entitydescription.coffeebeen>Écrasez le, puis infuser le et voilà ! Du bon café.</entitydescription.coffeebeen>
+  <entityname.grape>Raisin</entityname.grape>
+  <entitydescription.grape>Un délicieux fruit, bien sucré et légèrement acide.</entitydescription.grape>
+  <entityname.orange>Orange</entityname.orange>
+  <entitydescription.orange>C'est une orange.</entitydescription.orange>
+  <entityname.potato>Patate</entityname.potato>
+  <entitydescription.potato>Modifié génétiquement afin de pouvoir pousser dans les arbres et les vignes, une merveille de technologie !</entitydescription.potato>
+  <entityname.soja>Soja</entityname.soja>
+  <entitydescription.soja>On peux en faire du lait.</entitydescription.soja>
+  <entityname.spicefruit>Fruit d'Épice</entityname.spicefruit>
+  <entitydescription.spicefruit>N'essayez pas de le manger comme ça !</entitydescription.spicefruit>
+  <entityname.strawberry>Fraise</entityname.strawberry>
+  <entitydescription.strawberry>un délicieux fruit, utilisé dans de nombreux dessert.</entitydescription.strawberry>
+  <entityname.tomato>Tomate</entityname.tomato>
+  <entitydescription.tomato>Beaucoup pense que mettre des fruits sur une pizza est un acte d'hérésie. Seulement voilà : la tomate est un fruit !</entitydescription.tomato>
+  <entityname.vanillaflower>Fleur de Vanille</entityname.vanillaflower>
+  <entitydescription.vanillaflower>Malgré son nom, cette ingrédient viens bien d'un mod.</entitydescription.vanillaflower>
+  <entityname.weedleaf>Feuille de Marie-Jeanne</entityname.weedleaf>
+  <entitydescription.weedleaf>Je me demande pourquoi vous avez fait poussez ça ?</entitydescription.weedleaf>
+  <entityname.wheat>Blé</entityname.wheat>
+  <entitydescription.wheat>Même dans l'espace nous aurons du blé.</entitydescription.wheat>
+  <!--Seeds-->
+  <entityname.appleseed>Graine de Pomme</entityname.appleseed>
+  <entityname.cacaoseed>Graine de Cacao</entityname.cacaoseed>
+  <entityname.carotseed>Graine de Carotte</entityname.carotseed>
+  <entityname.coffeeseed>Graine de Café</entityname.coffeeseed>
+  <entityname.grapeseed>Graine de Raisin</entityname.grapeseed>
+  <entityname.orangeseed>Graine d'Orange</entityname.orangeseed>
+  <entityname.potatoseed>Graine de Patate</entityname.potatoseed>
+  <entitydescription.potatoseed>Tellement réalistique !</entitydescription.potatoseed>
+  <entityname.sojaseed>Graine de Soja</entityname.sojaseed>
+  <entityname.spiceseed>Graine d'Épice</entityname.spiceseed>
+  <entityname.strawberryseed>Graine de Fraise</entityname.strawberryseed>
+  <entityname.tomatoseed>Graine de Tomate</entityname.tomatoseed>
+  <entityname.vanillaseed>Graine de Vanille</entityname.vanillaseed>
+  <entityname.weedseed>Graine de Marie-jeanne</entityname.weedseed>
+  <entityname.wheatseed>Graine de Blé</entityname.wheatseed>
+  <!--Meat-->
+  <entityname.rottedmeat>Viande Pourrie</entityname.rottedmeat>
+  <entitydescription.rottedmeat>Ne songez même pas à manger "Ça" !</entitydescription.rottedmeat>
+  <entityname.crawlermeat>Viande de Rampeur</entityname.crawlermeat>
+  <entitydescription.crawlermeat>Elle est plutôt tendre, mais ça reste déguelasse.</entitydescription.crawlermeat>
+  <entityname.hammerheadmeat>Viande de Squale-marteau</entityname.hammerheadmeat>
+  <entitydescription.hammerheadmeat>Une viande dure et coriace, mieux vaux l'attendrire.</entitydescription.hammerheadmeat>
+  <entityname.humanmeat>Viande Humaine</entityname.humanmeat>
+  <entitydescription.humanmeat>Manger ses morts, est-ce bien raisonnable ?</entitydescription.humanmeat>
+  <entityname.huskedmeat>Viande Parasitée</entityname.huskedmeat>
+  <entitydescription.huskedmeat>Ça bouge encore...</entitydescription.huskedmeat>
+  <entityname.molochmeat>Viande de Moloch</entityname.molochmeat>
+  <entitydescription.molochmeat>Croustillant à l'extérieur, moelleux à l'interieur.</entitydescription.molochmeat>
+  <entityname.spinelingmeat>Viande d'Échinide</entityname.spinelingmeat>
+  <entitydescription.spinelingmeat>Pourvu qu'un de ces piques ne vous pousse pas soudainement dans l'estomac...</entitydescription.spinelingmeat>
+  <entityname.mudraptormeat>Viande de Raptor Fangeux</entityname.mudraptormeat>
+  <entitydescription.mudraptormeat>Beaucoup disent que ça un goùt de poulet, seulement personne ne sait réellement ce qu'est un poulet...</entitydescription.mudraptormeat>
+  <entityname.threshermeat>Viande de Squale</entityname.threshermeat>
+  <entitydescription.threshermeat>C'est bourrée de nerfs !</entitydescription.threshermeat>
+  <!--Cooked Meat-->
+  <entityname.cookedcrawlermeat>Viande de Rampeur Cuite</entityname.cookedcrawlermeat>
+  <entitydescription.cookedcrawlermeat>Meilleure odeur quand cuite, mais pour le goût...</entitydescription.cookedcrawlermeat>
+  <entityname.cookedhammerheadmeat>Viande de Squale-marteau</entityname.cookedhammerheadmeat>
+  <entitydescription.cookedhammerheadmeat>Un steak sacrément coriace.</entitydescription.cookedhammerheadmeat>
+  <entityname.cookedhumanmeat>Viande Humaine Cuite</entityname.cookedhumanmeat>
+  <entitydescription.cookedhumanmeat>La cuire ne vous en rend pas plus humain.</entitydescription.cookedhumanmeat>
+  <entityname.cookedhuskedmeat>Viande Parasitée Cuite</entityname.cookedhuskedmeat>
+  <entitydescription.cookedhuskedmeat>Au moins elle a arreté de bouger.</entitydescription.cookedhuskedmeat>
+  <entityname.cookedmolochmeat>Viande de Moloch Cuite</entityname.cookedmolochmeat>
+  <entitydescription.cookedmolochmeat>Une suprenante texure parfaitement douce, mais pour le goût ce n'est pas encore ça.</entitydescription.cookedmolochmeat>
+  <entityname.cookedspinelingmeat>Viande d'Échinide Cuite</entityname.cookedspinelingmeat>
+  <entitydescription.cookedspinelingmeat>Très tendre une fois toute les échardes retirées et bien cuite.</entitydescription.cookedspinelingmeat>
+  <entityname.cookedmudraptormeat>Viande de Raptor Fangeux Cuite</entityname.cookedmudraptormeat>
+  <entitydescription.cookedmudraptormeat>Une pièce de la nature parfaitement cuite !</entitydescription.cookedmudraptormeat>
+  <entityname.cookedthreshermeat>Viande de Squale Cuite</entityname.cookedthreshermeat>
+  <entitydescription.cookedthreshermeat>La cuire ne la rend pas plus simple à macher.</entitydescription.cookedthreshermeat>
+  <!-- Canned Foods -->
+  <entityname.tincan>Boîte de Conserve</entityname.tincan>
+  <entitydescription.tincan>Utiliser afin de préserver de la nourriture pendant de longues années.</entitydescription.tincan>
+  <entityname.cannedfood>Nourriture en conserve</entityname.cannedfood>
+  <entitydescription.cannedfood>Ce n'est pas vraiment un bon repas, mais ça vous remplir l'estomac. Point positif : pas de date de péremption, évitez juste de demander ce qu'il y a dedans...</entitydescription.cannedfood>
+  <entityname.cannedcrawlermeat>Rampeur en Boîte</entityname.cannedcrawlermeat>
+  <entitydescription.cannedcrawlermeat>Au moins le sel va cacher le goût.</entitydescription.cannedcrawlermeat>
+  <entityname.cannedhammerheadmeat>Squale-Marteau en Boîte</entityname.cannedhammerheadmeat>
+  <entitydescription.cannedhammerheadmeat>Le plus dur n'est pas de le mâcher mais bien de le sortir de la conserve.</entitydescription.cannedhammerheadmeat>
+  <entityname.cannedhumanmeat>Humain en Boîte</entityname.cannedhumanmeat>
+  <entitydescription.cannedhumanmeat>"Même dans la mort nous seront servi"</entitydescription.cannedhumanmeat>
+  <entityname.cannedhuskedmeat>Parasite en Boîte</entityname.cannedhuskedmeat>
+  <entitydescription.cannedhuskedmeat>Étonnement nourrissant et savoureux, mais ça laisse un drôle d'arrière goût au fond de la gorge...</entitydescription.cannedhuskedmeat>
+  <entityname.cannedmolochmeat>Moloch en Boîte</entityname.cannedmolochmeat>
+  <entitydescription.cannedmolochmeat>Matière grise pour tout le monde !</entitydescription.cannedmolochmeat>
+  <entityname.cannedmudraptormeat>Raptor Fangeux en Boîte</entityname.cannedmudraptormeat>
+  <entitydescription.cannedmudraptormeat>Peut être que le goût de poulet viens de ce que ces choses mangent ?</entitydescription.cannedmudraptormeat>
+  <entityname.cannedspinelingmeat>Échinide en Boîte</entityname.cannedspinelingmeat>
+  <entitydescription.cannedspinelingmeat>Attention aux arêtes !</entitydescription.cannedspinelingmeat>
+  <entityname.cannedthreshermeat>Squale en Boîte</entityname.cannedthreshermeat>
+  <entitydescription.cannedthreshermeat>Après l'avoir passé autant de fois au mixeur c'est plus de la soupe que de la viande.</entitydescription.cannedthreshermeat>
+  <!--Afflictions-->
+  <afflictionname.hungeraffliction>Faim</afflictionname.hungeraffliction>
+  <afflictiondescription.hungeraffliction>Gardez votre faim basse : si elle atteint 50% vous aller ressentir des effets négatifs, et votre corps pourrait ne pas le supporter...</afflictiondescription.hungeraffliction>
+  <afflictioncauseofdeath.hungeraffliction>Mort de faim</afflictioncauseofdeath.hungeraffliction>
+  <afflictioncauseofdeathself.hungeraffliction>La faim était trop dure à supporter...</afflictioncauseofdeathself.hungeraffliction>
+  <afflictionname.thirstaffliction>Soif</afflictionname.thirstaffliction>
+  <afflictiondescription.thirstaffliction>Gardez votre soif basse : si elle atteint 50% vous aller ressentir des effets négatifs, et votre corps pourrait ne pas le supporter...</afflictiondescription.thirstaffliction>
+  <afflictioncauseofdeath.thirstaffliction>Mort de déhydratation</afflictioncauseofdeath.thirstaffliction>
+  <afflictioncauseofdeathself.thirstaffliction>Mourrir de soif au fond d'un océan, quel comble...</afflictioncauseofdeathself.thirstaffliction>
+  <afflictionname.sleepaffliction>Sommeil</afflictionname.sleepaffliction>
+  <afflictiondescription.sleepaffliction>Gardez votre sommeil bas : s'il atteint 50% vous aller ressentir des effets négatifs, et votre corps pourrait ne pas le supporter...</afflictiondescription.sleepaffliction>
+  <afflictioncauseofdeath.sleepaffliction>Mort de privation de sommeil</afflictioncauseofdeath.sleepaffliction>
+  <afflictioncauseofdeathself.sleepaffliction>Vous avez l'éternité pour vous reposer maintenant...</afflictioncauseofdeathself.sleepaffliction>
+  <afflictionname.mood>Humeur</afflictionname.mood>
+  <afflictiondescription.mood>Gardez ce besoin bas : s'il atteint 50% vous aller subir de grandes pénalités sur vos compétence. Alors prenez du bon temps !</afflictiondescription.mood>
+  <afflictioncauseofdeath.mood>Dépression en phase terminale</afflictioncauseofdeath.mood>
+  <afflictioncauseofdeathself.mood>Dites moi comment vous avez fait....</afflictioncauseofdeathself.mood>
+  <afflictionname.wellfed>Bien Nourri</afflictionname.wellfed>
+  <afflictiondescription.wellfed>
++10% vitesse de nage
++10% vitesse d'attaque en melée
++10% puissance d'attaque en melée
+
+La faim progresse plus lentement
+</afflictiondescription.wellfed>
+  <afflictionname.wellhydrated>Bien Hydraté</afflictionname.wellhydrated>
+  <afflictiondescription.wellhydrated>
++10% vitesse de nage
++10% vitesse d'attaque en melée
++10% puissance d'attaque en melée
+
+La soif progresse plus lentement
+</afflictiondescription.wellhydrated>
+  <afflictionname.wellrested>Bien Reposé</afflictionname.wellrested>
+  <afflictiondescription.wellrested>
++5% vitesse de nage
++5% vitesse d'attaque en melée
++5% puissance d'attaque en melée
+
+Le sommeil progresse plus lentement
+</afflictiondescription.wellrested>
+  <afflictionname.jovial>Jovial</afflictionname.jovial>
+  <afflictiondescription.jovial>+5 dans toutes les compétences</afflictiondescription.jovial>
+  <!--afflictionname.></afflictionname.>
+<afflictiondescription.></afflictiondescription.>
+<afflictioncauseofdeath.></afflictioncauseofdeath.>
+<afflictioncauseofdeathself.></afflictioncauseofdeathself.-->
+</infotexts>

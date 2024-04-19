@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Explorer I M-411" modversion="1.0.4" corepackage="False" gameversion="0.18.15.1">
+  <Submarine file="%ModDir%/Explorer I M-411.sub" />
+</contentpackage>

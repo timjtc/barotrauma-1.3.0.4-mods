@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <!--BACKWARDS COMPATIBILITY-->
+  <Override>
+    <Affliction identifier="hungeraffliction" name="Hunger" description="The stomach is happy." type="hunger" causeofdeathdescription="Starved" selfcauseofdeathdescription="You have died of starvation." limbspecific="false" indicatorlimb="Torso" hideiconafterdelay="true" activationthreshold="0" iconcolors="0,180,0,255;180,0,0,255" showinhealthscannerthreshold="0" maxstrength="100" healableinmedicalclinic="false">
+      <!-- Convert hungeraffliction to hunger -->
+      <Effect minstrength="0" maxstrength="100" strengthchange="0">
+        <StatusEffect target="Character">
+          <Conditional hungeraffliction="gte 10" />
+          <Affliction identifier="hunger" strength="10" />
+          <ReduceAffliction identifier="hungeraffliction" strength="10" />
+        </StatusEffect>
+        <StatusEffect target="Character">
+          <Conditional hungeraffliction="gte 1" />
+          <Conditional hungeraffliction="lt 10" />
+          <Affliction identifier="hunger" strength="1" />
+          <ReduceAffliction identifier="hungeraffliction" strength="1" />
+        </StatusEffect>
+        <StatusEffect target="Character">
+          <Conditional hungeraffliction="gt 0.0" />
+          <Conditional hungeraffliction="lt 1" />
+          <Affliction identifier="hunger" strength="0.1" />
+          <ReduceAffliction identifier="hungeraffliction" strength="0.1" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Icons/Hunger.png" origin="0,0" />
+    </Affliction>
+  </Override>
+  <Override>
+    <Affliction identifier="thirstaffliction" name="Thirst" description="You feel refreshed." type="thirst" causeofdeathdescription="Died of thirst" selfcauseofdeathdescription="You have died of thirst." limbspecific="false" indicatorlimb="Torso" hideiconafterdelay="true" iconcolors="0,120,200,255;180,0,0,255" activationthreshold="0" showinhealthscannerthreshold="0" maxstrength="100" healableinmedicalclinic="false">
+      <!-- Convert he-thirst to thirst -->
+      <Effect minstrength="0" maxstrength="100" strengthchange="0">
+        <StatusEffect target="Character">
+          <Conditional thirstaffliction="gte 10" />
+          <Affliction identifier="thirst" strength="10" />
+          <ReduceAffliction identifier="thirstaffliction" strength="10" />
+        </StatusEffect>
+        <StatusEffect target="Character">
+          <Conditional thirstaffliction="gte 1" />
+          <Conditional thirstaffliction="lt 10" />
+          <Affliction identifier="thirst" strength="1" />
+          <ReduceAffliction identifier="thirstaffliction" strength="1" />
+        </StatusEffect>
+        <StatusEffect target="Character">
+          <Conditional thirstaffliction="gt 0.0" />
+          <Conditional thirstaffliction="lt 1" />
+          <Affliction identifier="thirst" strength="0.1" />
+          <ReduceAffliction identifier="thirstaffliction" strength="0.1" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Icons/Thirst.png" origin="0,0" />
+    </Affliction>
+  </Override>
+  <Override>
+    <Affliction name="Hunger" identifier="hunger" description="Keep your hunger low: If it reaches 50% you will start to get negative effects and your body may not endure it..." type="hunger" limbspecific="false" indicatorlimb="Torso" maxstrength="100" affectmachines="true" showiconthreshold="0" showinhealthscannerthreshold="0.5" treatmentthreshold="30" iconcolors="0,100,0,255;100,0,0,255">
+      <Effect minstrength="0" maxstrength="20" strengthchange="-0.002">
+        <StatusEffect target="Character" disabledeltatime="true">
+          <Affliction identifier="wellfed" amount="1" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="20.1" maxstrength="50">
+        <StatusEffect target="Character" disabledeltatime="true">
+          <ReduceAffliction identifier="wellfed" amount="100" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="50" maxstrength="100" minspeedmultiplier="1.0" maxspeedmultiplier="0.05" minscreendistort="0" maxscreendistort="2.0" minradialdistort="0.0" maxradialdistort="2.0" minscreenblur="0.0" maxscreenblur="1.0" minchromaticaberration="0.0" maxchromaticaberration="2.0" minvitalitydecrease="0" maxvitalitydecrease="0.5" multiplybymaxvitality="true">
+        <StatusEffect target="Character" disabledeltatime="true">
+          <Affliction identifier="stomachhungry" amount="1" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Icons/Hunger.png" origin="0,0" />
+    </Affliction>
+  </Override>
+  <Affliction name="Well Fed" identifier="wellfed" description="" type="buff" limbspecific="false" indicatorlimb="Torso" maxstrength="1" affectmachines="true" showiconthreshold="0.5" showinhealthscannerthreshold="0.5" iconcolors="0,100,100,255;0,100,100,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.5">
+      <StatValue stattype="MeleeAttackMultiplier" value="+0.10" />
+      <StatValue stattype="MeleeAttackSpeed" value="+0.10" />
+      <StatValue stattype="SwimmingSpeed" value="+0.10" />
+    </Effect>
+    <icon texture="%ModDir%/Icons/Well Fed.png" origin="0,0" />
+  </Affliction>
+  <Affliction name="Stomach Hungry" identifier="stomachhungry" description="" type="noise" limbspecific="false" indicatorlimb="Torso" maxstrength="1" affectmachines="true" showiconthreshold="1000">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.5" />
+    <PeriodicEffect mininterval="12" maxinterval="16">
+      <StatusEffect target="Character" setvalue="true" duration="1.7" />
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="male" />
+        <Sound file="%ModDir%/Sounds/Hunger1.ogg" range="400" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/Hunger2.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger3.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger4.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger5.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger6.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger7.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger8.ogg" range="400" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="female" />
+        <Sound file="%ModDir%/Sounds/Hunger1.ogg" range="400" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/Hunger2.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger3.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger4.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger5.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger6.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger7.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Hunger8.ogg" range="400" />
+      </StatusEffect>
+    </PeriodicEffect>
+  </Affliction>
+  <Override>
+    <Affliction name="Thirst" identifier="thirst" description="Keep your thirst low: If it reaches 50% you will start to get negative effects and your body may not endure it..." type="thirst" limbspecific="false" indicatorlimb="Torso" maxstrength="100" affectmachines="true" showiconthreshold="0" showinhealthscannerthreshold="0.5" treatmentthreshold="30" iconcolors="0,100,0,255;100,0,0,255">
+      <Effect minstrength="0" maxstrength="20" strengthchange="-0.002">
+        <StatusEffect target="Character" disabledeltatime="true">
+          <Affliction identifier="wellhydrated" amount="1" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="20.1" maxstrength="50">
+        <StatusEffect target="Character" disabledeltatime="true">
+          <ReduceAffliction identifier="wellhydrated" amount="100" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="50" maxstrength="100" minscreenblur="0.0" maxscreenblur="2.0" minchromaticaberration="0.0" maxchromaticaberration="2.0" minvitalitydecrease="0" maxvitalitydecrease="0.5" multiplybymaxvitality="true">
+        <StatusEffect target="Character" disabledeltatime="true">
+          <Affliction identifier="coughthirst" amount="1" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Icons/Thirst.png" origin="0,0" />
+    </Affliction>
+  </Override>
+  <Affliction name="Well Hydrated" identifier="wellhydrated" description="" type="buff" limbspecific="false" indicatorlimb="Torso" maxstrength="1" affectmachines="true" showiconthreshold="0.5" showinhealthscannerthreshold="0.5" iconcolors="0,100,100,255;0,100,100,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.5">
+      <StatValue stattype="MeleeAttackMultiplier" value="+0.10" />
+      <StatValue stattype="MeleeAttackSpeed" value="+0.10" />
+      <StatValue stattype="SwimmingSpeed" value="+0.10" />
+    </Effect>
+    <icon texture="%ModDir%/Icons/Well Hydrated.png" origin="0,0" />
+  </Affliction>
+  <Affliction name="Cough Thirst" identifier="coughthirst" description="" type="noise" limbspecific="false" indicatorlimb="Torso" maxstrength="1" affectmachines="true" showiconthreshold="1000">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.5" />
+    <PeriodicEffect mininterval="12" maxinterval="16">
+      <StatusEffect target="Character" setvalue="true" duration="1.7" />
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="male" />
+        <Sound file="%ModDir%/Sounds/Thirstmale1.ogg" range="400" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/Thirstmale2.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Thirstmale3.ogg" range="400" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="female" />
+        <Sound file="%ModDir%/Sounds/Thirstfemale1.ogg" range="400" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/Thirstfemale2.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Thirstfemale3.ogg" range="400" />
+      </StatusEffect>
+    </PeriodicEffect>
+  </Affliction>
+  <Affliction name="Sleep" identifier="sleepaffliction" description="Keep your sleepiness low: If it reaches 50% you will start to get negative effects and your body may not endure it..." type="sleep" limbspecific="false" indicatorlimb="Head" maxstrength="100" affectmachines="true" showiconthreshold="0" showinhealthscannerthreshold="0.5" iconcolors="0,100,0,255;100,0,0,255">
+    <Effect minstrength="0" maxstrength="20" strengthchange="-0.002">
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Affliction identifier="wellrested" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="20.1" maxstrength="50">
+      <StatusEffect target="Character" disabledeltatime="true">
+        <ReduceAffliction identifier="wellrested" amount="100" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="50" maxstrength="100" minscreenblur="0.0" maxscreenblur="1.0" minchromaticaberration="0.0" maxchromaticaberration="80.0" minvitalitydecrease="0" maxvitalitydecrease="0.2" multiplybymaxvitality="true">
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Affliction identifier="sleepyawn" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Icons/Sleep.png" origin="0,0" />
+  </Affliction>
+  <Affliction name="Well Rested" identifier="wellrested" description="" type="buff" limbspecific="false" indicatorlimb="Head" maxstrength="1" affectmachines="true" showiconthreshold="0.5" showinhealthscannerthreshold="0.5" iconcolors="0,100,100,255;0,100,100,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.5">
+      <StatValue stattype="MeleeAttackMultiplier" value="+0.05" />
+      <StatValue stattype="MeleeAttackSpeed" value="+0.05" />
+      <StatValue stattype="SwimmingSpeed" value="+0.05" />
+    </Effect>
+    <icon texture="%ModDir%/Icons/Well Rested.png" origin="0,0" />
+  </Affliction>
+  <Affliction name="Sleep Yawn" identifier="sleepyawn" description="" type="noise" limbspecific="false" indicatorlimb="Torso" maxstrength="1" affectmachines="true" showiconthreshold="1000">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.5" />
+    <PeriodicEffect mininterval="20" maxinterval="26">
+      <StatusEffect target="Character" setvalue="true" duration="1.7" />
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="male" />
+        <Sound file="%ModDir%/Sounds/Yawnmale1.ogg" range="400" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/Yawnmale2.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Yawnmale3.ogg" range="400" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="female" />
+        <Sound file="%ModDir%/Sounds/Yawnfemale1.ogg" range="400" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/Yawnfemale2.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/Yawnfemale3.ogg" range="400" />
+      </StatusEffect>
+    </PeriodicEffect>
+  </Affliction>
+  <Affliction name="Mood" identifier="mood" description="Keep your mood in check: If it reaches 50% you will start to get negative effects on your skills, so enjoy some good time!" type="happinessneeds" limbspecific="false" indicatorlimb="Head" maxstrength="100" affectmachines="true" showiconthreshold="0" showinhealthscannerthreshold="0.5" iconcolors="0,100,0,255;100,0,0,255">
+    <Effect minstrength="0" maxstrength="20">
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Affliction identifier="jovial" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="20.1" maxstrength="50">
+      <StatusEffect target="Character" disabledeltatime="true">
+        <ReduceAffliction identifier="jovial" amount="100" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="50" maxstrength="60">
+      <StatValue stattype="ElectricalSkillBonus" value="-10" />
+      <StatValue stattype="HelmSkillBonus" value="-10" />
+      <StatValue stattype="MechanicalSkillBonus" value="-10" />
+      <StatValue stattype="MedicalSkillBonus" value="-10" />
+      <StatValue stattype="WeaponsSkillBonus" value="-10" />
+      <StatValue stattype="RepairSpeed" value="-0.10" />
+    </Effect>
+    <Effect minstrength="60.1" maxstrength="70">
+      <StatValue stattype="ElectricalSkillBonus" value="-20" />
+      <StatValue stattype="HelmSkillBonus" value="-20" />
+      <StatValue stattype="MechanicalSkillBonus" value="-20" />
+      <StatValue stattype="MedicalSkillBonus" value="-20" />
+      <StatValue stattype="WeaponsSkillBonus" value="-20" />
+      <StatValue stattype="RepairSpeed" value="-0.20" />
+    </Effect>
+    <Effect minstrength="70.1" maxstrength="80">
+      <StatValue stattype="ElectricalSkillBonus" value="-30" />
+      <StatValue stattype="HelmSkillBonus" value="-30" />
+      <StatValue stattype="MechanicalSkillBonus" value="-30" />
+      <StatValue stattype="MedicalSkillBonus" value="-30" />
+      <StatValue stattype="WeaponsSkillBonus" value="-30" />
+      <StatValue stattype="RepairSpeed" value="-0.30" />
+    </Effect>
+    <Effect minstrength="80.1" maxstrength="90">
+      <StatValue stattype="ElectricalSkillBonus" value="-40" />
+      <StatValue stattype="HelmSkillBonus" value="-40" />
+      <StatValue stattype="MechanicalSkillBonus" value="-40" />
+      <StatValue stattype="MedicalSkillBonus" value="-40" />
+      <StatValue stattype="WeaponsSkillBonus" value="-40" />
+      <StatValue stattype="RepairSpeed" value="-0.40" />
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Affliction identifier="crying" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="90.1" maxstrength="100">
+      <StatValue stattype="ElectricalSkillBonus" value="-50" />
+      <StatValue stattype="HelmSkillBonus" value="-50" />
+      <StatValue stattype="MechanicalSkillBonus" value="-50" />
+      <StatValue stattype="MedicalSkillBonus" value="-50" />
+      <StatValue stattype="WeaponsSkillBonus" value="-50" />
+      <StatValue stattype="RepairSpeed" value="-0.50" />
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Affliction identifier="crying" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Icons/Social.png" origin="0,0" />
+  </Affliction>
+  <Affliction name="Jovial" identifier="jovial" description="" type="buff" limbspecific="false" indicatorlimb="Head" maxstrength="1" affectmachines="true" showiconthreshold="0.5" showinhealthscannerthreshold="0.5" iconcolors="0,100,100,255;0,100,100,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.5">
+      <StatValue stattype="ElectricalSkillBonus" value="+5" />
+      <StatValue stattype="HelmSkillBonus" value="+5" />
+      <StatValue stattype="MechanicalSkillBonus" value="+5" />
+      <StatValue stattype="MedicalSkillBonus" value="+5" />
+      <StatValue stattype="WeaponsSkillBonus" value="+5" />
+      <StatValue stattype="RepairSpeed" value="+0.10" />
+    </Effect>
+    <icon texture="%ModDir%/Icons/Jovial.png" origin="0,0" />
+  </Affliction>
+  <Affliction name="Crying" identifier="crying" description="" type="noise" limbspecific="false" indicatorlimb="Torso" maxstrength="1" affectmachines="true" showiconthreshold="1000">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.5" />
+    <PeriodicEffect mininterval="20" maxinterval="26">
+      <StatusEffect target="Character" setvalue="true" duration="1.7" />
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="male" />
+        <Sound file="%ModDir%/Sounds/CryingMale1.ogg" range="400" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/CryingMale2.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/CryingMale3.ogg" range="400" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="female" />
+        <Sound file="%ModDir%/Sounds/CryingFemale1.ogg" range="400" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/CryingFemale2.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/CryingFemale3.ogg" range="400" />
+      </StatusEffect>
+    </PeriodicEffect>
+  </Affliction>
+  <Affliction name="Sleeping Blindness" identifier="sleepblindnessaffliction" description="You are asleep." type="bedblindness" limbspecific="false" indicatorlimb="Head" maxstrength="100" affectmachines="true" showiconthreshold="1000" iconcolors="0,100,0,255;100,0,0,255">
+    <Effect minstrength="0" maxstrength="100" minscreendistort="0" maxscreendistort="100.0" minradialdistort="0.0" maxradialdistort="100.0" minscreenblur="0.0" maxscreenblur="100.0" minchromaticaberration="0.0" maxchromaticaberration="100.0" strengthchange="-30" afflictionoverlayalphaislinear="true" />
+    <AfflictionOverlay texture="%ModDir%/Icons/Blackout.png" />
+    <PeriodicEffect mininterval="3" maxinterval="6">
+      <StatusEffect target="Character" setvalue="true" duration="1.7" />
+      <StatusEffect target="Character" disabledeltatime="true">
+        <ReduceAffliction identifier="mood" amount="4" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="male" />
+        <Sound file="%ModDir%/Sounds/SnoringMale1.ogg" range="400" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/SnoringMale2.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/SnoringMale3.ogg" range="400" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="female" />
+        <Sound file="%ModDir%/Sounds/SnoringFemale1.ogg" range="400" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/SnoringFemale2.ogg" range="400" />
+        <Sound file="%ModDir%/Sounds/SnoringFemale3.ogg" range="400" />
+      </StatusEffect>
+      <StatusEffect target="Character" speechImpediment="100.0" />
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Icons/Sleep.png" origin="0,0" />
+  </Affliction>
+</Afflictions>

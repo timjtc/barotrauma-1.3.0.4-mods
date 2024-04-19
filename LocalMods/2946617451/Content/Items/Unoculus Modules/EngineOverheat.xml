@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Fire Event" identifier="FireEvent" category="Electrical" Tags="smallitem" scale="0.5">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="64,128,32,32" origin="0.5,0.5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="activate" displayname="connection.activate">
+        <StatusEffect type="OnUse" target="This">
+          <Fire size="10.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+</Items>

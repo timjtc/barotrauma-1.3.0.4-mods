@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Blue Shift" modversion="1.0.19" corepackage="False" steamworkshopid="2875023079" gameversion="1.0.7.0" expectedhash="E80AB076D2E12CB932A2511122F92370">
+  <Submarine file="%ModDir%/Nuclear Torpedo.sub" />
+  <Submarine file="%ModDir%/Blue Shift.sub" />
+</contentpackage>

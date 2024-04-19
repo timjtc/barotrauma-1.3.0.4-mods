@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="MLK Torpedo" modversion="1.0.3" corepackage="False" steamworkshopid="3123443025" gameversion="1.2.7.0" expectedhash="F4B7AB39564F096E6D8882A9FCB81237">
+  <Submarine file="%ModDir%/MLK Torpedo.sub" />
+</contentpackage>

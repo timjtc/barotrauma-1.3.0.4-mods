@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <Affliction name="Camera HUD" identifier="camhud" description="" type="None" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="1" affectmachines="false" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="1" minscreenblur="0.2" maxscreenblur="0.2" minradialdistort="0.5" maxradialdistort="0.5" mingrainstrength="0.5" maxgrainstrength="0.5" minchromaticaberration="3.0" maxchromaticaberration="3.0" strengthchange="-4" MinAfflictionOverlayAlphaMultiplier="1.0" MaxAfflictionOverlayAlphaMultiplier="1.0" />
+    <PeriodicEffect interval="2.0">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="camhudrec" strength="1" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <AfflictionOverlay texture="%ModDir:3020618603%/UI/CamOverlay.png" />
+  </Affliction>
+  <Affliction name="Camera REC" identifier="camhudrec" description="" type="None" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="1" affectmachines="false" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" MinAfflictionOverlayAlphaMultiplier="1.0" MaxAfflictionOverlayAlphaMultiplier="1.0" />
+    <PeriodicEffect interval="2.0">
+      <StatusEffect target="Character">
+        <Affliction identifier="camhudrec" strength="2" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <AfflictionOverlay texture="%ModDir:3020618603%/UI/RecOverlay.png" />
+  </Affliction>
+</Afflictions>

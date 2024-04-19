@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Periscope SIN-COS Translator" modversion="1.0.0" corepackage="False" gameversion="1.1.19.3">
+  <ItemAssembly file="%ModDir%/Periscope SIN-COS Translator.xml" />
+</contentpackage>

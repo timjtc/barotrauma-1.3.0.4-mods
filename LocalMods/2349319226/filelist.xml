@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="N4 Torpedo Assembly Kit" path="Mods/N4 Torpedo Assembly Kit/filelist.xml" corepackage="false" gameversion="0.11.0.10" steamworkshopid="2349319226" installtime="1609805541">
+  <Submarine file="Mods/N4 Torpedo Assembly Kit/N4 Torpedo Assembly Kit.sub" />
+  <None file="Mods/N4 Torpedo Assembly Kit/Torpedo.sub" />
+</contentpackage>

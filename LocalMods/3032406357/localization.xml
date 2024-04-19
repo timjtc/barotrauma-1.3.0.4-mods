@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <entityname.searchlight>Searchlight</entityname.searchlight>
+  <entitydescription.searchlight>Aimable lighting.</entitydescription.searchlight>
+</Override>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="German" nowhitespace="false" translatedname="Deutsch">
+  <submarine.name.unoculus>Unoculus</submarine.name.unoculus>
+  <submarine.description.unoculus>Die Unoculus ist ein einzigartiges U-Boot mit einem großen sphärischen Observatorium vorne, einer ausgefeilten künstlichen Intelligenz und der neuesten Technologie in Navigation und Überwachung, um vor potenziellen Gefahren zu warnen. Basierend auf der Struktur des Cyclops von der Alterra Corporation ©, wird die Unoculus alle Ihre Wünsche erfüllen, solange sie in gutem Zustand gehalten wird.</submarine.description.unoculus>
+  <entityname.Aheadslowbutton>Langsam voraus</entityname.Aheadslowbutton>
+  <entityname.AheadStandardbutton>Normale Geschwindigkeit voraus</entityname.AheadStandardbutton>
+  <entityname.AheadFlankbutton>Volle Kraft voraus</entityname.AheadFlankbutton>
+  <entityname.Enginebutton>Motorleistung</entityname.Enginebutton>
+  <entityname.Silentbutton>Stiller Modus</entityname.Silentbutton>
+  <entityname.musiccontrol>Musik</entityname.musiccontrol>
+  <entityname.msgRadioChannel>Dieses Terminal ist für das Untertitelsystem, das noch nicht in Kraft ist. Tatsächlich ist alles bereit, aber aufgrund eines Fehlers ist es noch nicht möglich (zumindest nicht in allen Sprachen). Der Fehler wurde gemeldet, daher müssen wir auf das nächste Barotrauma-Update warten. Danke für das benutzen Sie Unoculus.</entityname.msgRadioChannel>
+  <!-- <entityname.msgRadioChannel>Willkommen im Untertitel system. Bitte geben Sie den Radiokanal ein, auf dem die Untertitel übertragen werden können. Standardkanal: 2.</entityname.msgRadioChannel>-->
+  <!-- Subtitles section -->
+  <label.AheadFlank>Vorwärts: maximale Geschwindigkeit.</label.AheadFlank>
+  <label.AheadSlow>Vorwärts: niedrige Geschwindigkeit.</label.AheadSlow>
+  <label.AheadStandard>Vorwärts: Standardgeschwindigkeit.</label.AheadStandard>
+  <label.HullIntegrityLow>Warnung, Rumpfintegrität: Niedrig.</label.HullIntegrityLow>
+  <label.Decoy>Köder wird abgeworfen</label.Decoy>
+  <label.EmergencyPower>Nur Notfallstrom verfügbar. Sauerstoffproduktion: ausgefallen.</label.EmergencyPower>
+  <label.SystemFailure>Notfall, Systemversagen.</label.SystemFailure>
+  <label.EngineUp>Reaktor: Fährt hoch.</label.EngineUp>
+  <label.EngineDown>Reaktor: Fährt herunter.</label.EngineDown>
+  <label.ExternalHullDamage>Äußere Rumpfschäden entdeckt.</label.ExternalHullDamage>
+  <label.FireExtinguished>Feuer gelöscht, Luftsäuberung wird eingeleitet.</label.FireExtinguished>
+  <label.FireNeutralization>Feuerlöschsystem: Aktiv.</label.FireNeutralization>
+  <label.PowerLow>Stromversorgung niedrig.</label.PowerLow>
+  <label.SilentRunning>Stelle um auf Schleichfahrt.</label.SilentRunning>
+  <label.SystemAttention>Manche Systeme benötigen Wartung.</label.SystemAttention>
+  <label.EngineCritical>Warnung, Reaktorhitze kritisch.</label.EngineCritical>
+  <label.EngineOverheat>Warnung, Reaktor überhitzt.</label.EngineOverheat>
+  <label.FireDetected>Warnung, Feuer erkannt.</label.FireDetected>
+  <label.HullBreach>Warnung, Rumpfbruch erkannt.</label.HullBreach>
+  <label.HullIntegrityCritical>Warnung, Rumpfintegrität niedrig.</label.HullIntegrityCritical>
+  <label.MaximumDepth>Warnung, Maximale Tiefe erreicht. Rumpfschaden steht unmittelbar bevor..</label.MaximumDepth>
+  <label.CreatureAttack>Warnung, Angriff durch feindliche Kreaturen.</label.CreatureAttack>
+  <label.BestCaptain>Du bist der beste Kapitän auf dem Planeten. Das meine ich ernst, ich erzähle keinen Seemansgarn..</label.BestCaptain>
+</infotexts>

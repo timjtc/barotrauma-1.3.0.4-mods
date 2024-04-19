@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="IKATERE" modversion="1.0.20" corepackage="False" steamworkshopid="2697440509" gameversion="1.2.8.0" expectedhash="941C0822F531136FBF49CB64C16765AB">
+  <Submarine file="%ModDir%/Kaeaea G-120.sub" />
+  <Submarine file="%ModDir%/Kaeaea XR-140.sub" />
+  <Submarine file="%ModDir%/Kaeaea S-60.sub" />
+  <Submarine file="%ModDir%/Ikatere.sub" />
+</contentpackage>

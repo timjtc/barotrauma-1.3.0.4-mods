@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Local Voice Fix" modversion="1.0.1" corepackage="False" steamworkshopid="2362585294" gameversion="0.19.14.0" expectedhash="4AE71336E44BF9BF79D2752E234818A5" installtime="1648935541">
+  <Other file="%ModDir%/Lua/Autorun/localvoicefix.lua" />
+</contentpackage>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Hydroponic Tank" identifier="hydroponictank" tags="donttakeitems,dontsellitems" category="Machine" linkable="true" allowedlinks="deconstructor,locker" description="" scale="0.14" cargocontaineridentifier="ninjutsucrate" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <Price baseprice="150" minavailable="1">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="120">
+      <RequiredSkill identifier="electrical" level="55" />
+      <RequiredItem identifier="fpgacircuit" amount="6" />
+      <RequiredItem identifier="oxygentank" amount="6" />
+      <RequiredItem identifier="aluminium" amount="6" />
+    </Fabricate>
+    <Deconstruct time="30">
+      <Item identifier="fpgacircuit" amount="6" />
+      <Item identifier="oxygentank" amount="6" />
+      <Item identifier="aluminium" amount="6" />
+    </Deconstruct>
+    <Sprite texture="%ModDir%/Items/Hydroponics/Hydroponic Tank.png" sourcerect="0,0,512,700" depth="0.7" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Items/Hydroponics/Hydroponic Tank - Damaged.png" sourcerect="0,0,512,700" depth="0.7" maxcondition="80" fadein="true" />
+    <BrokenSprite texture="%ModDir%/Items/Hydroponics/Hydroponic Tank - Broken.png" sourcerect="0,0,512,700" depth="0.7" maxcondition="0" origin="0.5,0.5" />
+    <LightComponent range="10.0" lightcolor="255,255,255,255" powerconsumption="5" IsOn="true" castshadows="false" allowingameediting="false">
+      <sprite texture="%ModDir%/Items/Hydroponics/Hydroponic Tank - Lights.png" depth="0.025" sourcerect="0,0,512,700" alpha="1.0" />
+    </LightComponent>
+    <InventoryIcon texture="%ModDir%/Items/Hydroponics/Hydroponic Tank.png" sourcerect="0,0,512,700" origin="0.5,0.5" />
+    <Body width="512" height="700" density="100" />
+    <Fabricator canbeselected="true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
+      <sound file="%ModDir%/Sounds/Hydroponic Tank.ogg" type="OnActive" range="300.0" volume="5" loop="true" />
+      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
+      <StatusEffect type="InWater" target="This" condition="-0.5" />
+    </Fabricator>
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredSkill identifier="electrical" level="45" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+        <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="4" />
+        <Affliction identifier="burn" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="electricalrepairsheader" deteriorationspeed="0.125" mindeteriorationdelay="180" maxdeteriorationdelay="720" mindeteriorationcondition="0" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="electrical" level="55" />
+      <RequiredItem items="screwdriver" type="equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="spark" particleburstamount="5" particlespersecond="5" anglemin="0" anglemax="359" velocitymin="100" velocitymax="500" particleburstinterval="2" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0" />
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="50.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+        <Affliction identifier="stun" strength="4" />
+        <Affliction identifier="burn" strength="5" />
+      </StatusEffect>
+    </Repairable>
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" holdpos="50,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgDetachWrench" PickingTime="30.0" attachable="true" attachedbydefault="true" aimable="true">
+      <requireditem identifier="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="Character" SpeedMultiplier="0.4" setvalue="true" />
+    </Holdable>
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="5" uilabel="" allowuioverlap="true" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true" />
+  </Item>
+</Items>

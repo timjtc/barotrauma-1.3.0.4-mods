@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Explorer I M-526 wip" modversion="1.0.3" corepackage="False" gameversion="1.1.19.3">
+  <Submarine file="%ModDir%/Explorer I M-526 wip.sub" />
+</contentpackage>

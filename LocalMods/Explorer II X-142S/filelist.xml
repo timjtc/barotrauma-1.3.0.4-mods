@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Explorer II X-142S" modversion="1.0.2" corepackage="False" gameversion="0.19.11.0">
+  <Submarine file="%ModDir%/Explorer II X-142S.sub" />
+  <Submarine file="%ModDir%/Explorer II X-142SW.sub" />
+</contentpackage>

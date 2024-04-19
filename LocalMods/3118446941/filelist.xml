@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Working Valve" modversion="1.0.1" corepackage="False" steamworkshopid="3118446941" gameversion="1.2.6.0" expectedhash="D2BA25B552240D9B10A49B18C8CFE26B">
+  <Outpost file="%ModDir%/Working Valve.sub" />
+</contentpackage>

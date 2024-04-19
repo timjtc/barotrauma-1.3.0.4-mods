@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="BeaconFACE01" modversion="1.1.1" corepackage="False" steamworkshopid="3138798239" gameversion="1.2.8.0" expectedhash="0331AD48EFD8DE9407B7CC76343D9D0F">
+  <BeaconStation file="%ModDir%/BeaconFACE03.sub" />
+  <BeaconStation file="%ModDir%/BeaconFACE02.sub" />
+  <BeaconStation file="%ModDir%/BeaconFACE01.sub" />
+  <BeaconStation file="%ModDir%/BeaconFACE04.sub" />
+</contentpackage>

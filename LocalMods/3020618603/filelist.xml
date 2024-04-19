@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Wifi Camera" modversion="1.0.8" corepackage="False" steamworkshopid="3020618603" gameversion="1.2.8.0" expectedhash="58377B8BB7BD4FA9FD5C97F290EA4C2F">
+  <Afflictions file="%ModDir%/Afflictions.xml" />
+  <Item file="%ModDir%/Items/wificam.xml" />
+  <ItemAssembly file="%ModDir%/Camera Monitor.xml" />
+  <Text file="%ModDir%/Texts/English.xml" />
+  <Text file="%ModDir%/Texts/Russian.xml" />
+  <UIStyle file="%ModDir%/style.xml" />
+</contentpackage>

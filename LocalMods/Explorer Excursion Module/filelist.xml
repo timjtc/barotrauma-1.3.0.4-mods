@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Explorer Excursion Module" modversion="1.0.2" corepackage="False" gameversion="0.19.11.0">
+  <Submarine file="%ModDir%/Explorer Excursion Module.sub" />
+</contentpackage>

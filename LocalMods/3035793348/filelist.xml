@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Meander" modversion="1.0.6" corepackage="False" steamworkshopid="3035793348" gameversion="1.1.13.0" expectedhash="E874E8F24E0AE0514E24AB65E6E2BC7E">
+  <Submarine file="%ModDir%/Meander.sub" />
+</contentpackage>

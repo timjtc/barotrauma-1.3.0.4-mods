@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Simplified Chinese" nowhitespace="true" translatedname="中文(简体)">
+  <!--Items-->
+  <entityname.watercanteen>水壶</entityname.watercanteen>
+  <entitydescription.watercanteen>一只牢固的水壶，用于储存你珍贵的纯净水。</entitydescription.watercanteen>
+  <entityname.watercanteenempty>水壶（空）</entityname.watercanteenempty>
+  <entitydescription.watercanteenempty>一只牢固的水壶，用于储存你珍贵的纯净水，但已经空了。</entitydescription.watercanteenempty>
+  <entityname.ledouxenergydrink>能量饮料</entityname.ledouxenergydrink>
+  <entitydescription.ledouxenergydrink>一瓶可口的饮料，用于抵抗睡意。</entitydescription.ledouxenergydrink>
+  <entityname.cookingstation_needs>烹饪台</entityname.cookingstation_needs>
+  <entitydescription.cookingstation_needs>能够烹饪诸多食物的全方面厨房器具。十分轻便，可被随处移动。</entitydescription.cookingstation_needs>
+  <entityname.portablestove>便携式火炉</entityname.portablestove>
+  <entitydescription.portablestove>一种小型厨房电器，用于些许简易配方的烹饪。</entitydescription.portablestove>
+  <entityname.refrigerator>冰箱</entityname.refrigerator>
+  <entitydescription.refrigerator>用于储存肉和饮料，防止过期。</entitydescription.refrigerator>
+  <!--Meat-->
+  <entityname.rottedmeat>腐肉</entityname.rottedmeat>
+  <entitydescription.rottedmeat>吃这个？想都别想！</entitydescription.rottedmeat>
+  <entityname.crawlermeat>爬行者肉</entityname.crawlermeat>
+  <entitydescription.crawlermeat>肉质有点软，但还是很恶心。</entitydescription.crawlermeat>
+  <entityname.hammerheadmeat>锤头煞肉</entityname.hammerheadmeat>
+  <entitydescription.hammerheadmeat>肉质很硬，最好先处理下。</entitydescription.hammerheadmeat>
+  <entityname.humanmeat>人肉</entityname.humanmeat>
+  <entitydescription.humanmeat>吃死人，明智吗？</entitydescription.humanmeat>
+  <entityname.huskedmeat>画皮肉</entityname.huskedmeat>
+  <entitydescription.huskedmeat>还在蠕动着……</entitydescription.huskedmeat>
+  <entityname.molochmeat>摩螺克肉</entityname.molochmeat>
+  <entitydescription.molochmeat>外脆里嫩。</entitydescription.molochmeat>
+  <entityname.spinelingmeat>脊刺肉</entityname.spinelingmeat>
+  <entitydescription.spinelingmeat>但愿胃里不会长刺……</entitydescription.spinelingmeat>
+  <entityname.mudraptormeat>迅猛龙肉</entityname.mudraptormeat>
+  <entitydescription.mudraptormeat>人们说尝起来像鸡肉，可惜你不知道什么是鸡……</entitydescription.mudraptormeat>
+  <entityname.threshermeat>虎尾煞肉</entityname.threshermeat>
+  <entitydescription.threshermeat>到处都是神经！</entitydescription.threshermeat>
+  <!--Cooked Meat-->
+  <entityname.cookedcrawlermeat>煮熟的爬行者肉</entityname.cookedcrawlermeat>
+  <entitydescription.cookedcrawlermeat>煮熟后气味好了些，但味道嘛……</entitydescription.cookedcrawlermeat>
+  <entityname.cookedhammerheadmeat>煮熟的锤头煞肉</entityname.cookedhammerheadmeat>
+  <entitydescription.cookedhammerheadmeat>还是他妈好硬啊。</entitydescription.cookedhammerheadmeat>
+  <entityname.cookedhumanmeat>煮熟的人肉</entityname.cookedhumanmeat>
+  <entitydescription.cookedhumanmeat>烹煮并不能改变它是人的事实。</entitydescription.cookedhumanmeat>
+  <entityname.cookedhuskedmeat>煮熟的画皮肉</entityname.cookedhuskedmeat>
+  <entitydescription.cookedhuskedmeat>至少不会自己动了。</entitydescription.cookedhuskedmeat>
+  <entityname.cookedmolochmeat>煮熟的摩螺克肉</entityname.cookedmolochmeat>
+  <entitydescription.cookedmolochmeat>肉质出奇得甜，但口感没那么好。</entitydescription.cookedmolochmeat>
+  <entityname.cookedspinelingmeat>煮熟的脊刺肉</entityname.cookedspinelingmeat>
+  <entitydescription.cookedspinelingmeat>把刺全挑掉后，经过烹煮变得很嫩。</entitydescription.cookedspinelingmeat>
+  <entityname.cookedmudraptormeat>煮熟的迅猛龙肉</entityname.cookedmudraptormeat>
+  <entitydescription.cookedmudraptormeat>完美烹饪的大自然杰作！</entitydescription.cookedmudraptormeat>
+  <entityname.cookedthreshermeat>煮熟的虎尾煞肉</entityname.cookedthreshermeat>
+  <entitydescription.cookedthreshermeat>不，哪怕煮了吃起来还是很费劲，但味道更好了。</entitydescription.cookedthreshermeat>
+  <!-- Canned Foods -->
+  <entityname.tincan>锡罐</entityname.tincan>
+  <entitydescription.tincan>用于长年累月地保存食物。</entitydescription.tincan>
+  <entityname.cannedfood>罐装食物</entityname.cannedfood>
+  <entitydescription.cannedfood>并不丰盛，但能填饱你的肚子。此外似乎不会过期，但别问是用什么做的……</entitydescription.cannedfood>
+  <entityname.cannedcrawlermeat>罐装爬行者肉</entityname.cannedcrawlermeat>
+  <entitydescription.cannedcrawlermeat>至少盐能盖掉味道。</entitydescription.cannedcrawlermeat>
+  <entityname.cannedhammerheadmeat>罐装锤头煞肉</entityname.cannedhammerheadmeat>
+  <entitydescription.cannedhammerheadmeat>比起咀嚼，更难的是把它从罐头里拿出来。</entitydescription.cannedhammerheadmeat>
+  <entityname.cannedhumanmeat>罐装人肉</entityname.cannedhumanmeat>
+  <entitydescription.cannedhumanmeat>"Even in death, I still serve"</entitydescription.cannedhumanmeat>
+  <entityname.cannedhuskedmeat>罐装画皮肉</entityname.cannedhuskedmeat>
+  <entitydescription.cannedhuskedmeat>出乎意料得营养丰富且美味，但在喉咙里留下了奇怪的味道……</entitydescription.cannedhuskedmeat>
+  <entityname.cannedmolochmeat>罐装摩螺克肉</entityname.cannedmolochmeat>
+  <entitydescription.cannedmolochmeat>咸咸的灰色物质，人人有份！</entitydescription.cannedmolochmeat>
+  <entityname.cannedmudraptormeat>罐装迅猛龙肉</entityname.cannedmudraptormeat>
+  <entitydescription.cannedmudraptormeat>或许鸡肉味是因为这些东西吃了很多人？</entitydescription.cannedmudraptormeat>
+  <entityname.cannedspinelingmeat>罐装脊刺肉</entityname.cannedspinelingmeat>
+  <entitydescription.cannedspinelingmeat>食用时请注意：可能会吃到一堆骨头。</entitydescription.cannedspinelingmeat>
+  <entityname.cannedthreshermeat>罐装虎尾煞肉</entityname.cannedthreshermeat>
+  <entitydescription.cannedthreshermeat>在多次搅拌过后更像是汤。</entitydescription.cannedthreshermeat>
+  <!--Afflictions-->
+  <afflictionname.hungeraffliction>饥饿</afflictionname.hungeraffliction>
+  <afflictiondescription.hungeraffliction>压低你的饥饿值：如果其到达50%你将开始获得负面效果，你的身体多半遭不住……</afflictiondescription.hungeraffliction>
+  <afflictioncauseofdeath.hungeraffliction>死于饥饿</afflictioncauseofdeath.hungeraffliction>
+  <afflictioncauseofdeathself.hungeraffliction>饥饿感已经难以忍受了……</afflictioncauseofdeathself.hungeraffliction>
+  <afflictionname.thirstaffliction>口渴</afflictionname.thirstaffliction>
+  <afflictiondescription.thirstaffliction>压低你的口渴值：如果其到达50%你将开始获得负面效果，你的身体多半遭不住……</afflictiondescription.thirstaffliction>
+  <afflictioncauseofdeath.thirstaffliction>死于脱水</afflictioncauseofdeath.thirstaffliction>
+  <afflictioncauseofdeathself.thirstaffliction>周围全是水，但好渴……</afflictioncauseofdeathself.thirstaffliction>
+  <afflictionname.sleepaffliction>睡意</afflictionname.sleepaffliction>
+  <afflictiondescription.sleepaffliction>压低你的睡意值：如果其到达50%你将开始获得负面效果，你的身体多半遭不住……</afflictiondescription.sleepaffliction>
+  <afflictioncauseofdeath.sleepaffliction>死于睡眠剥夺</afflictioncauseofdeath.sleepaffliction>
+  <afflictioncauseofdeathself.sleepaffliction>终于可以睡觉了，永眠吧……</afflictioncauseofdeathself.sleepaffliction>
+  <afflictionname.social>社交</afflictionname.social>
+  <afflictiondescription.social>检查这项需求：如果其到达50%你将开始获得技能等级的负面效果，所以享受点人类的陪伴吧！</afflictiondescription.social>
+  <afflictioncauseofdeath.social>死于致残性抑郁</afflictioncauseofdeath.social>
+  <afflictioncauseofdeathself.social>啊？？？？</afflictioncauseofdeathself.social>
+  <!--afflictionname.></afflictionname.>
+<afflictiondescription.></afflictiondescription.>
+<afflictioncauseofdeath.></afflictioncauseofdeath.>
+<afflictioncauseofdeathself.></afflictioncauseofdeathself.-->
+  <!--entityname.></entityname.>
+<entitydescription.></entitydescription.-->
+</infotexts>

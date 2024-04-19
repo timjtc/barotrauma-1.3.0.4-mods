@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="FDF-Eternity" modversion="1.0.8" corepackage="False" steamworkshopid="3015943424" gameversion="1.2.8.0" expectedhash="4ECBC96EF2E61D7B517517C814E7234A">
+  <Submarine file="%ModDir%/FDF-Eternity.sub" />
+</contentpackage>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Autonomous Reactor" path="Mods/Autonomous Reactor/filelist.xml" corepackage="false" gameversion="0.10.6.2" steamworkshopid="2134006389" installtime="1607476534">
+  <ItemAssembly file="Mods/Autonomous Reactor/AutoReactor V2.1.xml" />
+  <ItemAssembly file="Mods/Autonomous Reactor/AutoReactor V2.1 (Non Interactible).xml" />
+</contentpackage>

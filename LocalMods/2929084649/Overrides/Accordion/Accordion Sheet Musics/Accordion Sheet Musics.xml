@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--Item name="Accordion Sheet : " identifier="" tags="smallitem,accordionsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true" >
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+	
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+	
+    <Fabricate suitablefabricators="fabricator" >
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+	
+    <InventoryIcon texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+
+    <Sprite texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+	
+    <Body width="311" height="340" density="9" />
+	
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect"  >
+		<StatusEffect type="OnUse" target="Character" >
+			<Sound file="%ModDir%/Sounds/Accordion/.ogg" range="800" volume="1.0" loop="true" />
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="NearbyCharacters" range="800" >
+			<ReduceAffliction identifier="mood" amount="0.3" />
+		</StatusEffect>
+	</Holdable>
+  </Item-->
+  <Item name="Accordion Sheet : A French Classic" identifier="A French Classic" tags="smallitem,accordionsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Accordion/A French Classic.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Accordion Sheet : Amelie Poulain" identifier="Amelie Poulain" tags="smallitem,accordionsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Accordion/Amelie Poulain.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Accordion Sheet : Bonetrousle" identifier="Bonetrousle" tags="smallitem,accordionsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Accordion/Bonetrousle.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Accordion Sheet : Cheeki Breeki" identifier="Cheeki Breeki accordion" tags="smallitem,accordionsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Accordion/Cheeki Breeki.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Accordion Sheet : James Bond" identifier="James Bond" tags="smallitem,accordionsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Accordion/James Bond.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Accordion Sheet : Married Life" identifier="Married Life" tags="smallitem,accordionsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Accordion/Married Life.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Accordion Sheet : Pirate Of The Caribbeen" identifier="Pirate Of The Caribbeen" tags="smallitem,accordionsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Accordion/Pirate Of The Caribbeen.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Accordion Sheet : Tetris" identifier="Tetris" tags="smallitem,accordionsheet" category="Equipement" maxstacksize="1" cargocontaineridentifier="metalcrate" scale="0.08" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator">
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Overrides/Accordion/Accordion Sheet Musics/Accordion Sheet - Blank.png" depth="0.55" sourcerect="0,0,311,340" origin="0.5,0.5" />
+    <Body width="311" height="340" density="9" />
+    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <Sound file="%ModDir%/Sounds/Accordion/Tetris.ogg" range="800" volume="1.0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters" range="800">
+        <ReduceAffliction identifier="mood" amount="0.3" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+  <!--Items-->
+  <entityname.watercanteen>Фляжка воды</entityname.watercanteen>
+  <entitydescription.watercanteen>Крепкая фляга для хранения вашей драгоценной очищенной воды.</entitydescription.watercanteen>
+  <entityname.watercanteenempty>Фляжка воды (Пусто)</entityname.watercanteenempty>
+  <entitydescription.watercanteenempty>Крепкая фляга для хранения вашей драгоценной очищенной воды, но сейчас она пустая.</entitydescription.watercanteenempty>
+  <entityname.ledouxenergydrink>Энергетический напиток</entityname.ledouxenergydrink>
+  <entitydescription.ledouxenergydrink>Вкусный напиток, который поможет вам бороться с сонливостью.</entitydescription.ledouxenergydrink>
+  <entityname.cookingstation_needs>Станция для приготовления пищи</entityname.cookingstation_needs>
+  <entitydescription.cookingstation_needs>Универсальная кухня, позволяющая готовить вам огромное разнообразие блюд. Достаточно легкая для переноски куда либо.</entitydescription.cookingstation_needs>
+  <!--Meat-->
+  <entityname.rottedmeat>Гнилое мясо</entityname.rottedmeat>
+  <entitydescription.rottedmeat>Даже не думай это есть!</entitydescription.rottedmeat>
+  <entityname.crawlermeat>Мясо ползуна</entityname.crawlermeat>
+  <entitydescription.crawlermeat>Мясо почти мягкое, но всё еще плотное.</entitydescription.crawlermeat>
+  <entityname.hammerheadmeat>Мясо молотоглава</entityname.hammerheadmeat>
+  <entitydescription.hammerheadmeat>Крепкий и твердый кусок мяса, лучше размягчить его.</entitydescription.hammerheadmeat>
+  <entityname.humanmeat>Мясо человека</entityname.humanmeat>
+  <entitydescription.humanmeat>Поедание мертвых, разумно ли это?</entitydescription.humanmeat>
+  <entityname.huskedmeat>Мясо хасков</entityname.huskedmeat>
+  <entitydescription.huskedmeat>Всё еще шевелится...</entitydescription.huskedmeat>
+  <entityname.molochmeat>Мясо молоха</entityname.molochmeat>
+  <entitydescription.molochmeat>Хрустящий снаружи, мягкий внутри.</entitydescription.molochmeat>
+  <entityname.spinelingmeat>Мясо шипостая</entityname.spinelingmeat>
+  <entitydescription.spinelingmeat>Надеемся, никакой шип не застрянет у тебя в горле...</entitydescription.spinelingmeat>
+  <entityname.mudraptormeat>Мясо грязевого раптора</entityname.mudraptormeat>
+  <entitydescription.mudraptormeat>Люди говорят, это на вкус как курица, плохо, что вы не знаете как это...</entitydescription.mudraptormeat>
+  <entityname.threshermeat>Мясо акульего тигра</entityname.threshermeat>
+  <entitydescription.threshermeat>Весь покрыт нервами!</entitydescription.threshermeat>
+  <!--Cooked Meat-->
+  <entityname.cookedcrawlermeat>Приготовленное мясо ползуна</entityname.cookedcrawlermeat>
+  <entitydescription.cookedcrawlermeat>Пахнет лучше, когда приготовленное. Вкус, однако...</entitydescription.cookedcrawlermeat>
+  <entityname.cookedhammerheadmeat>Приготовленное мясо молотоглава</entityname.cookedhammerheadmeat>
+  <entitydescription.cookedhammerheadmeat>Как стейк, однако.</entitydescription.cookedhammerheadmeat>
+  <entityname.cookedhumanmeat>Приготовленное мясо человека</entityname.cookedhumanmeat>
+  <entitydescription.cookedhumanmeat>Тем не менее приготовление не сделает это мясо менее человеческим.</entitydescription.cookedhumanmeat>
+  <entityname.cookedhuskedmeat>Приготовленное мясо хасков</entityname.cookedhuskedmeat>
+  <entitydescription.cookedhuskedmeat>По крайней мере, оно перестало шевелиться.</entitydescription.cookedhuskedmeat>
+  <entityname.cookedmolochmeat>Приготовленное мясо молоха</entityname.cookedmolochmeat>
+  <entitydescription.cookedmolochmeat>Выглядит удивительно сладким, но на вкус всё еще не так хорошо.</entitydescription.cookedmolochmeat>
+  <entityname.cookedspinelingmeat>Приготовленное мясо шипостая</entityname.cookedspinelingmeat>
+  <entitydescription.cookedspinelingmeat>После удаление всех костей и готовки стало нежным на вкус.</entitydescription.cookedspinelingmeat>
+  <entityname.cookedmudraptormeat>Приготовленное мясо грязевого раптора</entityname.cookedmudraptormeat>
+  <entitydescription.cookedmudraptormeat>Превосходно приготовленный кусок натурального мяса.</entitydescription.cookedmudraptormeat>
+  <entityname.cookedthreshermeat>Приготовленное мясо акульего тигра</entityname.cookedthreshermeat>
+  <entitydescription.cookedthreshermeat>Нет, после готовки это мясо не легче есть. Но оно стало лучше на вкус.</entitydescription.cookedthreshermeat>
+  <!-- Canned Foods -->
+  <entityname.tincan>Консервная банка</entityname.tincan>
+  <entitydescription.tincan>Используется для сохранение продуктов в течение многих лет, если даже не больше.</entitydescription.tincan>
+  <entityname.cannedfood>Консервы</entityname.cannedfood>
+  <entitydescription.cannedfood>В действительности не лучшее блюдо, но оно наполнит твой желудок. Плюс не испортиться, только не спрашиваете из чего это сделали...</entitydescription.cannedfood>
+  <entityname.cannedcrawlermeat>Консервированное мясо ползуна</entityname.cannedcrawlermeat>
+  <entitydescription.cannedcrawlermeat>По крайней мере, соль перекроет вкус.</entitydescription.cannedcrawlermeat>
+  <entityname.cannedhammerheadmeat>Консервированное мясо молотоглава</entityname.cannedhammerheadmeat>
+  <entitydescription.cannedhammerheadmeat>Прожевать это тяжело, но не так сложно, как вынуть из банки.</entitydescription.cannedhammerheadmeat>
+  <entityname.cannedhumanmeat>Консервированное мясо человека</entityname.cannedhumanmeat>
+  <entitydescription.cannedhumanmeat>"Мне служат даже после смерти"</entitydescription.cannedhumanmeat>
+  <entityname.cannedhuskedmeat>Консервированное мясо хасков</entityname.cannedhuskedmeat>
+  <entitydescription.cannedhuskedmeat>Удивительно сытный и вкусный, но у вас во рту остаётся странный привкус...</entitydescription.cannedhuskedmeat>
+  <entityname.cannedmolochmeat>Консервированное мясо молоха</entityname.cannedmolochmeat>
+  <entitydescription.cannedmolochmeat>Соленое серое вещество для всех!</entitydescription.cannedmolochmeat>
+  <entityname.cannedmudraptormeat>Консервированное мясо раптора</entityname.cannedmudraptormeat>
+  <entitydescription.cannedmudraptormeat>Может быть оно на вкус как курица, поскольку он съел много людей?</entitydescription.cannedmudraptormeat>
+  <entityname.cannedspinelingmeat>Консервированное мясо шипостая</entityname.cannedspinelingmeat>
+  <entitydescription.cannedspinelingmeat>Будьте осторожны во время еды: вы можете наткнуться на одну кость или пару десятков.</entitydescription.cannedspinelingmeat>
+  <entityname.cannedthreshermeat>Консервированное мясо акульего тигра</entityname.cannedthreshermeat>
+  <entitydescription.cannedthreshermeat>После долгого измельчения в блендере это теперь похоже на суп.</entitydescription.cannedthreshermeat>
+  <!--Afflictions-->
+  <afflictionname.hungeraffliction>Голод</afflictionname.hungeraffliction>
+  <afflictiondescription.hungeraffliction>Держи свой голод на низком уровне : если он достигнет 50%, вы начнете получать негативные последствия, и ваше тело может этого не вынести...</afflictiondescription.hungeraffliction>
+  <afflictioncauseofdeath.hungeraffliction>Погибает от голода</afflictioncauseofdeath.hungeraffliction>
+  <afflictioncauseofdeathself.hungeraffliction>Голод был невыносим...</afflictioncauseofdeathself.hungeraffliction>
+  <afflictionname.thirstaffliction>Жажда</afflictionname.thirstaffliction>
+  <afflictiondescription.thirstaffliction>Держи свою жажду на низком уровне : если она достигнет 50%, вы начнете получать негативные последствия, и ваше тело может этого не вынести...</afflictiondescription.thirstaffliction>
+  <afflictioncauseofdeath.thirstaffliction>Погибает от обезвоживания</afflictioncauseofdeath.thirstaffliction>
+  <afflictioncauseofdeathself.thirstaffliction>Вокруг так много воды, но так хочется пить...</afflictioncauseofdeathself.thirstaffliction>
+  <afflictionname.sleepaffliction>Сонливость</afflictionname.sleepaffliction>
+  <afflictiondescription.sleepaffliction>Держи свою сонливость на низком уровне : если она достигнет 50%, вы начнете получать негативные последствия, и ваше тело может этого не вынести...</afflictiondescription.sleepaffliction>
+  <afflictioncauseofdeath.sleepaffliction>Погибает от недосыпания</afflictioncauseofdeath.sleepaffliction>
+  <afflictioncauseofdeathself.sleepaffliction>Теперь вы можете отдохнуть, навсегда...</afflictioncauseofdeathself.sleepaffliction>
+  <afflictionname.social>Общение</afflictionname.social>
+  <afflictiondescription.social>Не забывай о нём : если оно достигнет 50%, вы начнёте получать негативные последствия на ваших навыках. Так что наслаждайтесь компанией людей хоть немного!</afflictiondescription.social>
+  <afflictioncauseofdeath.social>Разрушительная депрессия</afflictioncauseofdeath.social>
+  <afflictioncauseofdeathself.social>КАК????</afflictioncauseofdeathself.social>
+</infotexts>

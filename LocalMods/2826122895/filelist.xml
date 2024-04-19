@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="SMX-25" modversion="1.0.60" corepackage="False" steamworkshopid="2826122895" gameversion="1.0.7.0" expectedhash="8D741FFC4E39E559C1CDDFB49BEFB672">
+  <Submarine file="%ModDir%/LumenDrone 0.5.sub" />
+  <Submarine file="%ModDir%/SMX-25.sub" />
+</contentpackage>

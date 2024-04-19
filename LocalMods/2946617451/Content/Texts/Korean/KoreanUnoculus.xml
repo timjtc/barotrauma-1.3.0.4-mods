@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Korean" nowhitespace="true" translatedname="한국어">
+  <submarine.name.unoculus>우노쿨루스 </submarine.name.unoculus>
+  <submarine.description.unoculus>유노큘러스는 전면에 큰 구형 관측소, 정교한 인공 지능 및 최신 항법 및 감시 기술을 갖춘 독특한 잠수함으로, 잠재적인 위험을 경고할 수 있습니다. Alterra Corporation ©의 사이클롭스 구조를 기반으로한 Unoculus는 좋은 작동 상태를 유지한다면 모든 욕구를 충족시킬 수 있습니다.</submarine.description.unoculus>
+  <entityname.Aheadslowbutton>전방 감속</entityname.Aheadslowbutton>
+  <entityname.AheadStandardbutton>전방 표준 속도</entityname.AheadStandardbutton>
+  <entityname.AheadFlankbutton>전방 전속력</entityname.AheadFlankbutton>
+  <entityname.Enginebutton>エンジンパワー</entityname.Enginebutton>
+  <entityname.Silentbutton>サイレントモード</entityname.Silentbutton>
+  <entityname.musiccontrol>음악</entityname.musiccontrol>
+  <entityname.msgRadioChannel>이 터미널은 아직 시행 중이 아닌 자막 시스템을 위한 것입니다. 사실, 모든 준비는 되어 있지만 버그로 인해 모든 언어에서는 아직 가능하지 않습니다. 버그가 신고되어 있으므로 다음 Barotrauma 업데이트를 기다려야 합니다. 우노큘러스를 이용해 주셔서 감사합니다.</entityname.msgRadioChannel>
+  <!-- <entityname.msgRadioChannel>자막 시스템에 오신 것을 환영합니다. 자막을 전송할 수 있는 라디오 채널을 입력해주세요. 기본 채널: 2.</entityname.msgRadioChannel>-->
+  <!-- Subtitles section -->
+  <label.AheadFlank>전방 플랭크, 비상 속도.</label.AheadFlank>
+  <label.AheadSlow>전방 슬로우.</label.AheadSlow>
+  <label.AheadStandard>전방 스탠다드.</label.AheadStandard>
+  <label.HullIntegrityLow>주의, 선체 무결성: 낮음.</label.HullIntegrityLow>
+  <label.Decoy>유인물 투하.</label.Decoy>
+  <label.EmergencyPower>비상 전원만. 산소 생산: 오프라인.</label.EmergencyPower>
+  <label.SystemFailure>비상, 시스템 장애.</label.SystemFailure>
+  <label.EngineUp>엔진: 전원 공급 중.</label.EngineUp>
+  <label.EngineDown>엔진: 전원 차단 중.</label.EngineDown>
+  <label.ExternalHullDamage>외부 선체 손상 감지.</label.ExternalHullDamage>
+  <label.FireExtinguished>소화 완료, 공기 스크러버 가동.</label.FireExtinguished>
+  <label.FireNeutralization>소화 시스템: 작동 중.</label.FireNeutralization>
+  <label.PowerLow>전력 부족.</label.PowerLow>
+  <label.SilentRunning>잠음 모드 준비.</label.SilentRunning>
+  <label.SystemAttention>일부 시스템에 관심 필요.</label.SystemAttention>
+  <label.EngineCritical>경고, 엔진 열이 비상.</label.EngineCritical>
+  <label.EngineOverheat>경고, 엔진 과열.</label.EngineOverheat>
+  <label.FireDetected>경고, 화재 감지.</label.FireDetected>
+  <label.HullBreach>경고, 선체 비치 감지.</label.HullBreach>
+  <label.HullIntegrityCritical>경고, 선체 무결성 비상.</label.HullIntegrityCritical>
+  <label.MaximumDepth>경고, 생물 공격.</label.MaximumDepth>
+  <label.CreatureAttack>당신은 행성에서 최고의 선장입니다. 난 문어 아니에요.</label.CreatureAttack>
+  <label.BestCaptain></label.BestCaptain>
+</infotexts>

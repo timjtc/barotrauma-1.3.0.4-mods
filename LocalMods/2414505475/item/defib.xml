@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="Defibrillator" identifier="defib" category="Medical" Tags="smallitem,weapon,medical" maxstacksize="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A handheld device used to quickly restore proper heart rate of an oxygen-deprived patient, even by untrained personnel. Because a significant electrical shock is required in the process, the device operates on specialized, one-time use capacitors." scale="0.5" impactsoundtag="impact_metal_light">
+  <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  <PreferredContainer primary="medcab" minamount="0" maxamount="1" spawnprobability="0.02" />
+  <!-- Price -->
+  <Price baseprice="400">
+    <Price storeidentifier="merchantoutpost" multiplier="0.9" />
+    <Price storeidentifier="merchantcity" multiplier="0.8" />
+    <Price storeidentifier="merchantmilitary" multiplier="0.85" />
+    <Price storeidentifier="merchantmedical" multiplier="1" />
+  </Price>
+  <!-- Crafting -->
+  <Fabricate suitablefabricators="medicalfabricator" requiredtime="40" amount="1">
+    <RequiredSkill identifier="medical" level="55" />
+    <RequiredItem identifier="plastic" />
+    <RequiredItem identifier="copper" />
+    <RequiredItem identifier="zinc" />
+    <RequiredItem identifier="lithium" />
+  </Fabricate>
+  <Deconstruct time="20">
+    <Item identifier="plastic" />
+    <Item identifier="copper" />
+  </Deconstruct>
+  <!-- Treatment suitability -->
+  <SuitableTreatment identifier="oxygenlow" suitability="100" />
+  <InventoryIcon texture="AED_clean2.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+  <Sprite texture="AED_clean1.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
+  <Body width="64" height="64" density="20" />
+  <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" controlpose="true" aimpos="40,-50" handle1="0,10" holdangle="30" reload="2.0" msg="ItemMsgPickUpSelect">
+    <RequiredSkill identifier="medical" level="45" />
+    <StatusEffect type="OnSuccess" target="This" Condition="-100.0" disabledeltatime="true" />
+    <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+    <!-- Immediate effects -->
+    <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="2.0">
+      <Sound file="%ModDir%/sounds/defib.ogg" type="OnSuccess" range="750" />
+      <ReduceAffliction identifier="oxygenlow" amount="110" />
+      <Affliction identifier="stun" amount="1" />
+    </StatusEffect>
+    <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="4.0">
+      <Sound file="%ModDir%/sounds/defib.ogg" type="OnSuccess" range="750" />
+      <ReduceAffliction identifier="oxygenlow" amount="55" />
+      <Affliction identifier="stun" amount="1" />
+    </StatusEffect>
+    <!-- Prolonged effects -->
+    <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="10.0">
+      <Affliction identifier="organdamage" amount="0.5" />
+    </StatusEffect>
+    <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="10.0">
+      <Affliction identifier="organdamage" amount="1.5" />
+    </StatusEffect>
+  </MeleeWeapon>
+</Item>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Auto Operate Toggle Turrets" modversion="1.0.2" corepackage="False" steamworkshopid="2961643561" gameversion="1.0.9.0" expectedhash="1FFAB370DECCDF69F20AA645C6F14F5B">
+  <Item file="%ModDir%/Auto Operate Toggle Turrets.xml" />
+</contentpackage>

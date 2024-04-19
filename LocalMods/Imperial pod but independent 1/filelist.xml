@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Imperial pod but independent 1" modversion="1.0.0" corepackage="False" gameversion="0.19.11.0">
+  <Submarine file="%ModDir%/Imperial pod but independent 1.sub" />
+</contentpackage>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="S-618 SCORCH" modversion="1.0.47" corepackage="False" steamworkshopid="3037572847" gameversion="1.1.18.1" expectedhash="6B965FD593CFC7EFEA80E51B4215D88E">
+  <Submarine file="%ModDir%/S-618 SCORCH.sub" />
+</contentpackage>

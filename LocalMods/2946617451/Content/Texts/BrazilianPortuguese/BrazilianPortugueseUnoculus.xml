@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Brazilian Portuguese" nowhitespace="false" translatedname="Português brasileiro">
+  <submarine.name.unoculus>Unóculo</submarine.name.unoculus>
+  <submarine.description.unoculus>O Unoculus é um submarino único em sua categoria, com um grande observatório esférico na frente, uma inteligência artificial sofisticada e a tecnologia mais avançada em navegação e vigilância para alertar sobre quaisquer perigos potenciais. Baseado na estrutura do Cyclops da Corporação Alterra ©, o Unoculus irá satisfazer todos os seus desejos, desde que seja mantido em bom estado de funcionamento.</submarine.description.unoculus>
+  <entityname.Aheadslowbutton>À frente velocidade reduzida</entityname.Aheadslowbutton>
+  <entityname.AheadStandardbutton>À frente velocidade padrão</entityname.AheadStandardbutton>
+  <entityname.AheadFlankbutton>À frente plena potência</entityname.AheadFlankbutton>
+  <entityname.Enginebutton>Potência do motor</entityname.Enginebutton>
+  <entityname.Silentbutton>Modo silencioso</entityname.Silentbutton>
+  <entityname.musiccontrol>Música</entityname.musiccontrol>
+  <entityname.msgRadioChannel>Este terminal é para o sistema de legendas que ainda não está em vigor. Na verdade, tudo está pronto, mas devido a um bug, ainda não é possível (pelo menos em todos os idiomas). O bug foi relatado, então é necessário aguardar a próxima atualização do Barotrauma. Obrigado use o Unoculus.</entityname.msgRadioChannel>
+  <!-- <entityname.msgRadioChannel>Bem-vindo ao sistema de legendas. Por favor, insira o canal de rádio onde as legendas podem ser transmitidas. Canal padrão: 2.</entityname.msgRadioChannel>-->
+  <!-- Subtitles section -->
+  <label.AheadFlank>Flanco à frente, velocidade máxima.</label.AheadFlank>
+  <label.AheadSlow>Avante em baixa velocidade.</label.AheadSlow>
+  <label.AheadStandard>Avante em velocidade normal.</label.AheadStandard>
+  <label.HullIntegrityLow>Cuidado, integridade do casco: Baixa.</label.HullIntegrityLow>
+  <label.Decoy>Soltando isca.</label.Decoy>
+  <label.EmergencyPower>Somente reserva de energia emegencial disponível. Produção de oxigênio: Offline.</label.EmergencyPower>
+  <label.SystemFailure>Emergência, falha no sistema.</label.SystemFailure>
+  <label.EngineUp>Motor: ligando.</label.EngineUp>
+  <label.EngineDown>Motor: desligando.</label.EngineDown>
+  <label.ExternalHullDamage>Dano no casco externo detectado.</label.ExternalHullDamage>
+  <label.FireExtinguished>Incêndio contido, filtros de ar ligados.</label.FireExtinguished>
+  <label.FireNeutralization>Sistema de supressão de incêndio: Ativo.</label.FireNeutralization>
+  <label.PowerLow>Energia fraca.</label.PowerLow>
+  <label.SilentRunning>Preparar para navegação silenciosa.</label.SilentRunning>
+  <label.SystemAttention>Alguns sistemas precisam de atenção.</label.SystemAttention>
+  <label.EngineCritical>Aviso, nível de calor do motor crítico.</label.EngineCritical>
+  <label.EngineOverheat>Aviso, superaquecimento do motor.</label.EngineOverheat>
+  <label.FireDetected>Aviso, fogo detectado.</label.FireDetected>
+  <label.HullBreach>Aviso, brecha no casco detectada.</label.HullBreach>
+  <label.HullIntegrityCritical>Aviso, integridade do casco crítica.</label.HullIntegrityCritical>
+  <label.MaximumDepth>Aviso, profundidade máxima suportada alcançada. Dano iminente ao casco.</label.MaximumDepth>
+  <label.CreatureAttack>Aviso, há criaturas atacando.</label.CreatureAttack>
+  <label.BestCaptain>Você é o melhor capitão do mundo, sem brincadeira.</label.BestCaptain>
+</infotexts>

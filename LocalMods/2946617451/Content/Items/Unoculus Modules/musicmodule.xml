@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Red Alert" description="" identifier="musicmoduleredalert" Tags="sound,voicemodule,performancefix" category="Electrical" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750">
+    <Sprite texture="%ModDir%/Content/Items/Music-module.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret launchimpulse="80.0" canbeselected="false" characterusable="false" linkable="true" barrelpos="130,182" firingoffset="0,-190" rotationlimits="-360,360" powerconsumption="0.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="0.25" springstiffnesslowskill="100" springstiffnesshighskill="100" springdampinglowskill="10" springdampinghighskill="10" rotationspeedlowskill="100" rotationspeedhighskill="100">
+      <BarrelSprite texture="%ModDir%/Content/Items/Music-module.png" depth="0.8" sourcerect="256,0,256,256" origin="0.5,0.75" />
+      <MoveSound file="%ModDir%/Content/Items/Audio/Red Alert loop.ogg" range="5000.0" volume="1" dontmuffle="true" />
+      <StartMoveSound file="%ModDir%/Content/Items/Audio/Red Alert intro.ogg" range="5000.0" volume="1" dontmuffle="true" />
+      <EndMoveSound file="%ModDir%/Content/Items/Audio/Red Alert outro.ogg" range="5000.0" volume="1" dontmuffle="true" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </Turret>
+    <aitarget maxsightrange="0" maxsoundrange="0" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+    </ConnectionPanel>
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
+  <Item name="Leviathan" description="" identifier="musicmoduleleviathan" Tags="sound,voicemodule,performancefix" category="Electrical" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750">
+    <Sprite texture="%ModDir%/Content/Items/Music-module.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret launchimpulse="80.0" canbeselected="false" characterusable="false" linkable="true" barrelpos="130,182" firingoffset="0,-190" rotationlimits="-360,360" powerconsumption="0.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="0.25" springstiffnesslowskill="100" springstiffnesshighskill="100" springdampinglowskill="10" springdampinghighskill="10" rotationspeedlowskill="100" rotationspeedhighskill="100">
+      <BarrelSprite texture="%ModDir%/Content/Items/Music-module.png" depth="0.8" sourcerect="256,0,256,256" origin="0.5,0.75" />
+      <MoveSound file="%ModDir%/Content/Items/Audio/Leviathan loop.ogg" range="5000.0" volume="1" dontmuffle="true" />
+      <StartMoveSound file="%ModDir%/Content/Items/Audio/Leviathan intro.ogg" range="5000.0" volume="1" dontmuffle="true" />
+      <EndMoveSound file="%ModDir%/Content/Items/Audio/Leviathan outro.ogg" range="5000.0" volume="1" dontmuffle="true" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </Turret>
+    <aitarget maxsightrange="0" maxsoundrange="0" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+    </ConnectionPanel>
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
+  <Item name="Abandon Ship " description="" identifier="musicmoduleabandonship" Tags="sound,voicemodule,performancefix" category="Electrical" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750">
+    <Sprite texture="%ModDir%/Content/Items/Music-module.png" depth="0.8" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret launchimpulse="80.0" canbeselected="false" characterusable="false" linkable="true" barrelpos="130,182" firingoffset="0,-190" rotationlimits="-360,360" powerconsumption="0.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="0.25" springstiffnesslowskill="100" springstiffnesshighskill="100" springdampinglowskill="10" springdampinghighskill="10" rotationspeedlowskill="100" rotationspeedhighskill="100">
+      <BarrelSprite texture="%ModDir%/Content/Items/Music-module.png" depth="0.8" sourcerect="256,0,256,256" origin="0.5,0.75" />
+      <MoveSound file="%ModDir%/Content/Items/Audio/Abandon Ship loop.ogg" range="5000.0" volume="1" dontmuffle="true" />
+      <StartMoveSound file="%ModDir%/Content/Items/Audio/Abandon Ship intro.ogg" range="5000.0" volume="1" dontmuffle="true" />
+      <EndMoveSound file="%ModDir%/Content/Items/Audio/Abandon Ship outro.ogg" range="5000.0" volume="1" dontmuffle="true" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </Turret>
+    <aitarget maxsightrange="0" maxsoundrange="0" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+    </ConnectionPanel>
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
+</Items>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Utility Turrets" modversion="2.1.4" corepackage="False" steamworkshopid="3032406357" gameversion="1.0.21.0" expectedhash="B2B356275FDF1D423ECB43EDDFFF104A">
+  <Item file="%ModDir%/items/maintenanceturret.xml" />
+  <Item file="%ModDir%/items/flarelauncher.xml" />
+  <Item file="%ModDir%/items/override.xml" />
+  <Text file="%ModDir%/localization.xml" />
+  <Other file="%ModDir%/items/maintenanceturret.png" />
+  <Other file="%ModDir%/items/flarelauncher.png" />
+</contentpackage>

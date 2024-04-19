@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="FDF-Chopper B1.1" modversion="1.0.3" corepackage="False" steamworkshopid="3068573590" gameversion="1.1.19.3">
+  <Submarine file="%ModDir%/FDF-Chopper B1.1.sub" />
+</contentpackage>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Alicorn2 Stealth Light Cruiser" modversion="1.0.121" corepackage="False" steamworkshopid="2804745599" gameversion="1.0.7.0" altnames="Alicorn2" expectedhash="4FA3A00FB7045242124AC0270496DBD2">
+  <Submarine file="%ModDir%/Alicorn2+.sub" />
+  <Submarine file="%ModDir%/Alicorn2-.sub" />
+</contentpackage>

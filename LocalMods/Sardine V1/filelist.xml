@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Sardine V1" modversion="1.0.3" corepackage="False" steamworkshopid="3071887504" gameversion="1.1.19.3">
+  <Submarine file="%ModDir%/Sardine V1.sub" />
+</contentpackage>
